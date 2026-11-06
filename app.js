@@ -90,11 +90,21 @@
   VEN.forEach(v => v.weekly.forEach(w => w.weekly_hours = 8)); // un torneo serale dura di solito meno di un Day 1 da festival
   const asFest = v => ({ id: v.id, timezone: v.timezone, venue: v.venue, city: v.city, country: v.country, festival: v.venue });
   // il torneo settimanale di oggi (nel fuso della sala), se oggi è uno dei suoi giorni
+  const DATED = (DATA.dated || []).map((x, i) => ({ ...x, i, weekly_hours: 8 }));
+  const VBYID = Object.fromEntries(VEN.map(v => [v.id, v]));
+  // tornei datati (calendario ufficiale della sala) di un giorno, come "flight" del clock
+  const datedFl = x => x.time ? { label: fmtDate(x.date), start: `${x.date}T${x.time}` } : { label: fmtDate(x.date), date: x.date };
   function todayWeekly() {
     const out = [];
     VEN.forEach(v => {
       if (v.status === "closed") return;
       const wd = weekdayIn(v.timezone, now()), d = todayIn(v.timezone);
+      if (v.dated_source) { // la sala pubblica il calendario vero: si usa quello, non lo schema settimanale
+        DATED.filter(x => x.venue_id === v.id && x.date === d && x.kind !== "cash").forEach(x => {
+          const fl = datedFl(x); out.push({ v, w: x, wi: "d" + x.i, href: `#/d/${x.i}`, fl, st: flightState(asFest(v), x, fl) });
+        });
+        return;
+      }
       v.weekly.forEach((w, wi) => {
         if (!w.days.includes(wd)) return;
         const fl = w.time ? { label: DAYIT[wd], start: `${d}T${w.time}` } : { label: DAYIT[wd], date: d };
@@ -213,11 +223,11 @@
       <div class="foot"><span class="meta">${icon("clock")} ${lr}</span>${e.buy_in_eur != null ? `<span class="money">${eur(e.buy_in_eur)}</span>` : ""}</div>
     </a>`;
   }
-  function weeklyRow({ v, w, wi, st }) {
+  function weeklyRow({ v, w, wi, st, href }) {
     const cls = st.k === "live" ? "live" : st.k === "done" ? "done" : "";
     const t = w.time ? `${esc(w.time)}${st.k === "live" ? "<small>in corso</small>" : st.k === "done" ? "<small>finito</small>" : ""}` : `<small>orario<br>n.d.</small>`;
-    return `<a class="li ${cls}" href="#/w/${v.id}/${wi}"><span class="t">${t}</span>
-      <span class="n"><b>${esc(w.name)}</b><span>${flag(v.country)} ${esc(v.venue)} · ${esc(v.city)}</span></span>
+    return `<a class="li ${cls}" href="${href || `#/w/${v.id}/${wi}`}"><span class="t">${t}</span>
+      <span class="n"><b>${esc(w.series ? w.series + " · " : "")}${esc(w.name)}</b><span>${flag(v.country)} ${esc(v.venue)} · ${esc(v.city)}</span></span>
       <span>${w.buy_in_eur != null ? `<span class="money">${eur(w.buy_in_eur)}</span>` : `<span class="faint">n.d.</span>`}</span></a>`;
   }
 
@@ -465,8 +475,10 @@
       <div class="btns">${v.poker_page ? `<a class="btn ghost" href="${esc(v.poker_page)}" target="_blank" rel="noopener">${icon("link")} Pagina poker ufficiale</a>` : ""}<a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=${enc(v.venue + " " + v.city)}" target="_blank" rel="noopener">${icon("nav")} Indicazioni</a></div>
       ${v.status === "closed" ? `<div class="box warn" style="margin-top:16px"><h3>Attenzione</h3><p style="margin:0">${esc(v.status_note)}</p></div>` : ""}
       <div class="layout" style="margin-top:16px"><div>
-        <section><div class="sec-h"><h2>Tornei della settimana</h2></div>
-          ${rows ? `<div class="tablewrap"><table><tbody>${rows}</tbody></table></div>` : `<div class="empty">La sala non pubblica un programma settimanale online.</div>`}</section>
+        ${v.dated_source ? (() => { const d0 = todayIn(v.timezone); const up = DATED.filter(x => x.venue_id === v.id && x.date >= d0 && x.kind !== "cash").slice(0, 30);
+          return `<section><div class="sec-h"><h2>Prossimi tornei</h2><span class="meta">calendario ufficiale ${esc(v.dated_source)}</span></div>${up.length ? `<div class="list">${up.map(x => `<a class="li" href="#/d/${x.i}"><span class="t" style="font-size:15px">${x.date === d0 ? "oggi" : fmtDate(x.date).replace(/ \d{4}$/, "")}<small>${esc(x.time || "")}</small></span><span class="n"><b>${esc(x.series ? x.series + " · " : "")}${esc(x.name)}</b><span>${esc(x.buy_in_text || "")}</span></span><span>${x.buy_in_eur != null ? `<span class="money">${eur(x.buy_in_eur)}</span>` : ""}</span></a>`).join("")}</div>` : `<div class="empty">Nessun torneo nei prossimi giorni.</div>`}</section>`; })()
+        : `<section><div class="sec-h"><h2>Tornei della settimana</h2></div>
+          ${rows ? `<div class="tablewrap"><table><tbody>${rows}</tbody></table></div>` : `<div class="empty">La sala non pubblica un programma settimanale online.</div>`}</section>`}
         ${v.cash_games ? `<section class="sec"><div class="sec-h"><h2>Cash game</h2></div><div class="box">${esc(v.cash_games)}</div></section>` : ""}
         ${FEST.some(f => f.city === v.city && festStatus(f).k !== "past") ? `<section class="sec"><div class="sec-h"><h2>Festival a ${esc(v.city)}</h2></div><div class="grid">${FEST.filter(f => f.city === v.city && festStatus(f).k !== "past").map(festCard).join("")}</div></section>` : ""}
         <section class="sec"><div class="sec-h"><h2>Organizza il viaggio</h2></div>${travelGuide(asFest(v))}</section>
@@ -492,6 +504,18 @@
     });
   }
 
+  // torneo datato del calendario ufficiale di una sala
+  function viewDated(i) {
+    const x = DATED[+i], v = x && VBYID[x.venue_id]; if (!x || !v) return notFound();
+    const fl = datedFl(x);
+    renderTournament({
+      f: asFest(v), e: x, fl, k: `yg_rep_d_${x.venue_id}_${x.date}_${x.time}_${x.name}`, fav: `d:${x.venue_id}|${x.date}|${x.time}|${x.name}`, title: `${x.series ? x.series + " · " : ""}${x.name}`, hash: `#/d/${i}`,
+      crumbs: `<a href="#/v/${v.id}">${icon("back")} ${esc(v.venue)}</a>`,
+      others: `<div class="box"><h3>${icon("cal")} Dal calendario ufficiale</h3><p class="meta" style="margin:0 0 10px">${esc(v.dated_source)} · ${fmtDate(x.date)}${x.time ? " alle " + esc(x.time) : ""}${x.buy_in_text ? " · buy-in " + esc(x.buy_in_text) : ""}</p>${x.url ? `<a class="btn ghost block" href="${esc(x.url)}" target="_blank" rel="noopener">${icon("link")} Scheda ufficiale</a>` : ""}</div>`,
+      guide: `#/v/${v.id}`,
+    });
+  }
+
   /* ---------- il mio piano (preferiti) ---------- */
   function viewPlan() {
     const items = FAV().map(k => {
@@ -499,6 +523,8 @@
       if (t === "f") { const f = FEST.find(x => x.id === rest); return f && { k, sort: f.start_date, html: festCard(f), ics: festIcs(f) }; }
       if (t === "t") { const [fid, ei, i] = rest.split("|"); const f = FEST.find(x => x.id === fid), e = f && f.events[+ei], fl = e && e.flights[+i]; if (!fl) return null; const hash = `#/t/${fid}/${ei}/${i}`;
         return { k, sort: fl.start || fl.date, html: `<a class="card" href="${hash}">${starBtn(k)}<h3 style="padding-right:36px">${esc(e.name)} — ${esc(fl.label)}</h3><div class="venue"><span>${flag(f.country)}</span><span>${esc(f.festival)} · ${esc(f.city)}</span></div><div class="foot"><span class="meta">${icon("clock")} ${fl.start ? localTime(zonedToUtc(fl.start, f.timezone), f.timezone) : fmtDate(fl.date)}</span>${e.buy_in_eur != null ? `<span class="money">${eur(e.buy_in_eur)}</span>` : ""}</div></a>`, ics: flightIcs(f, e, fl, hash) }; }
+      if (t === "d") { const [vid, date, time, ...nm] = rest.split("|"); const x = DATED.find(y => y.venue_id === vid && y.date === date && (y.time || "") === time && y.name === nm.join("|")); const v = x && VBYID[vid]; if (!x || !v) return null; const fl = datedFl(x), f = asFest(v);
+        return { k, sort: x.date, html: `<a class="card" href="#/d/${x.i}">${starBtn(k)}<h3 style="padding-right:36px">${esc(x.name)}</h3><div class="venue"><span>${flag(v.country)}</span><span>${esc(v.venue)} · ${esc(v.city)}</span></div><div class="foot"><span class="meta">${icon("clock")} ${fmtDate(x.date)}${x.time ? " · " + esc(x.time) : ""}</span>${x.buy_in_eur != null ? `<span class="money">${eur(x.buy_in_eur)}</span>` : ""}</div></a>`, ics: flightIcs(f, x, fl, `#/d/${x.i}`) }; }
       if (t === "w") { const [vid, wi] = rest.split("|"); const v = VEN.find(x => x.id === vid), w = v && v.weekly[+wi]; if (!w) return null;
         return { k, sort: "9999", html: `<a class="card" href="#/w/${vid}/${wi}">${starBtn(k)}<h3 style="padding-right:36px">${esc(w.name)}</h3><div class="venue"><span>${flag(v.country)}</span><span>${esc(v.venue)} · ${esc(v.city)}</span></div><div class="foot"><span class="meta">${icon("cal")} ogni ${w.days.map(d => DAYIT[d]).join(", ")}${w.time ? " · " + esc(w.time) : ""}</span>${w.buy_in_eur != null ? `<span class="money">${eur(w.buy_in_eur)}</span>` : ""}</div></a>`, ics: null }; }
       return null;
@@ -590,10 +616,10 @@
   function route() {
     clearInterval(timer);
     const h = location.hash.replace(/^#\/?/, "").split("/");
-    const sect = { "": "home", f: "home", t: "home", live: "home", oggi: "sale", sale: "sale", v: "sale", w: "sale", piano: "piano", diario: "diario", info: "info" }[h[0]] || "home";
+    const sect = { "": "home", f: "home", t: "home", live: "home", oggi: "sale", sale: "sale", v: "sale", w: "sale", d: "sale", piano: "piano", diario: "diario", info: "info" }[h[0]] || "home";
     document.querySelectorAll("[data-nav]").forEach(a => { const on = a.dataset.nav === sect; a.classList.toggle("on", on); on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"); });
     if (!h[0]) viewHome(); else if (h[0] === "live") viewLive(); else if (h[0] === "info") viewInfo();
-    else if (h[0] === "oggi") viewToday(); else if (h[0] === "sale") viewVenues(); else if (h[0] === "v") viewVenue(h[1]); else if (h[0] === "w") viewWeekly(h[1], h[2]);
+    else if (h[0] === "oggi") viewToday(); else if (h[0] === "sale") viewVenues(); else if (h[0] === "v") viewVenue(h[1]); else if (h[0] === "w") viewWeekly(h[1], h[2]); else if (h[0] === "d") viewDated(h[1]);
     else if (h[0] === "piano") viewPlan(); else if (h[0] === "diario") viewDiary();
     else if (h[0] === "f") viewFestival(h[1]); else if (h[0] === "t") viewTournament(h[1], h[2], h[3]); else notFound();
     const h1 = $app.querySelector("h1");
@@ -619,6 +645,6 @@
   if (demoNow) dn.value = demoNow.slice(0, 16);
   dn.addEventListener("change", () => { demoNow = dn.value || null; try { demoNow ? sessionStorage.setItem("yg_demo", demoNow) : sessionStorage.removeItem("yg_demo"); } catch (e) { } location.reload(); });
   document.getElementById("demoReset").addEventListener("click", () => { try { sessionStorage.removeItem("yg_demo"); } catch (e) { } location.href = location.pathname + location.hash; });
-  document.getElementById("dataStamp").textContent = `Dati aggiornati: ${DATA.generated || "?"}`;
+  document.getElementById("dataStamp").textContent = `Dati aggiornati: ${DATA.generated || "?"}` + (DATA.sources || []).map(s => ` · ${s.label} letto ${String(s.fetched_at || "?").replace("T", " ")}`).join("");
   route();
 })();
