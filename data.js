@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-06 22:46. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-06 22:47. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-06 22:46",
+ "generated": "2026-11-06 22:47",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
