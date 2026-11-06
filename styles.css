@@ -64,7 +64,7 @@ svg.i{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .tabbar{display:none}
 @media (max-width:860px){
   .topnav{display:none}
-  .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:20;height:calc(var(--nav-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);
+  .tabbar{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:20;height:calc(var(--nav-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);
     background:color-mix(in srgb,var(--card) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
   .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--faint);font-size:11px;font-weight:700;letter-spacing:.02em;text-decoration:none;position:relative}
   .tabbar a.on{color:var(--accent)}
@@ -251,3 +251,10 @@ main>.sec .btn{margin-right:8px}
 .prose figure.foto img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;border-radius:16px}
 .prose figure.foto figcaption{margin-top:8px;font-size:12px;line-height:1.4;color:var(--muted,#6b7a73)}
 .prose figure.foto figcaption a{color:inherit;text-decoration:underline}
+
+/* riquadro del gioco istruttivo in home (/gioco/) */
+.gioco-box{display:flex;align-items:center;gap:14px;margin:14px 0;padding:14px 16px;text-decoration:none;color:var(--text)}
+.gioco-box b{display:block;font-size:16px}
+.gioco-box small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.gioco-ico{font-size:28px;line-height:1}
+.gioco-go{margin-left:auto;font-size:26px;color:var(--muted)}

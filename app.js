@@ -260,6 +260,7 @@
           <div><b class="num">${countries.length}</b>paesi</div>
         </div>
       </section>
+      <a class="panel gioco-box" href="/gioco/"><span class="gioco-ico" aria-hidden="true">🃏</span><span><b>Impara giocando</b><small>Quiz sulle mani, test Poker IQ e sfide. Gratis, senza soldi veri.</small></span><span class="gioco-go" aria-hidden="true">›</span></a>
       <div class="layout home" style="margin-top:24px"><div>
         ${liveF.length ? `<section class="sec" style="margin-top:0"><div class="sec-h"><h2>Festival in gioco</h2><a class="meta" href="#/live">Vedi tutti (${liveF.length})</a></div>
           <div class="scroller">${liveF.slice(0, 10).map(liveCard).join("")}</div></section>` : ""}
