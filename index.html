@@ -2,25 +2,47 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YUGRIND — tutti i tornei di poker live in Europa</title>
-<meta name="description" content="Tutti i tornei e i festival di poker live in Europa: cosa si gioca adesso, oggi e nei prossimi mesi, con clock, late registration, guida del viaggio e fonti.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YUGRIND · Tutti i tornei di poker live in Europa</title>
+<meta name="description" content="Tutti i tornei e i festival di poker live in Europa: cosa si gioca adesso, i tornei di stasera nei casinò e il calendario dei prossimi mesi, con clock, late registration e guida del viaggio.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b110f" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://yugrind.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YUGRIND">
+<meta property="og:title" content="YUGRIND · Tutti i tornei di poker live in Europa">
+<meta property="og:description" content="Cosa si gioca adesso, stasera e nei prossimi mesi nei casinò d'Europa. Clock, late reg e guida del viaggio.">
+<meta property="og:url" content="https://yugrind.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23177a4e'/%3E%3Cpath d='M16 6c-2.6 3.4-7 5.6-7 9.5a3.5 3.5 0 0 0 6 2.3V20l-1.6 3h5.2L17 20v-2.2a3.5 3.5 0 0 0 6-2.3C23 11.6 18.6 9.4 16 6z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"YUGRIND","url":"https://yugrind.com/","inLanguage":"it","description":"Calendario indipendente dei tornei di poker live in Europa."}</script>
 </head>
 <body>
+<a class="sr" href="#app">Vai al contenuto</a>
 <header class="top">
-  <a class="brand" href="#/"><span class="chip"></span>YU<b>GRIND</b></a>
-  <nav>
-    <a href="#/" data-nav="home">Calendario</a>
-    <a href="#/live" data-nav="live">In corso <span id="liveCount" class="pill-live" hidden></span></a>
-    <a href="#/oggi" data-nav="oggi">Oggi</a>
+  <a class="brand" href="#/" aria-label="YUGRIND, home"><span class="logo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 6 4 8.5 4 13a4 4 0 0 0 7 2.6V18l-2 3h6l-2-3v-2.4A4 4 0 0 0 20 13c0-4.5-5-7-8-11z"/></svg></span><span>YU<b>GRIND</b></span></a>
+  <nav class="topnav" aria-label="Principale">
+    <a href="#/" data-nav="home">Tornei <span class="pill-live liveCount" hidden></span></a>
     <a href="#/sale" data-nav="sale">Sale</a>
-    <a href="#/info" data-nav="info">Come funziona</a>
+    <a href="#/piano" data-nav="piano">Il mio piano</a>
+    <a href="#/diario" data-nav="diario">Diario</a>
+    <a href="#/info" data-nav="info">Info</a>
   </nav>
+  <span class="spacer"></span>
+  <a class="iconbtn" href="#/live" aria-label="In corso adesso"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></a>
+  <button class="iconbtn" id="theme" type="button" aria-label="Cambia tema"></button>
 </header>
-<main id="app" aria-live="polite"></main>
-<footer class="foot">
-  <div>Dati raccolti da fonti pubbliche (organizzatori, casinò, media): ogni festival mostra le sue fonti. Se un dato non è verificato scriviamo <i>non disponibile</i>, mai un numero inventato.</div>
+<main id="app" tabindex="-1"></main>
+<nav class="tabbar" aria-label="Navigazione">
+  <a href="#/" data-nav="home"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg>Tornei<span class="pill-live liveCount" hidden></span></a>
+  <a href="#/sale" data-nav="sale"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>Sale</a>
+  <a href="#/piano" data-nav="piano"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Piano</a>
+  <a href="#/diario" data-nav="diario"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M20 17v4H6.5"/></svg>Diario</a>
+  <a href="#/info" data-nav="info"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Info</a>
+</nav>
+<footer class="foot-site">
+  <div><b>YUGRIND</b> è un calendario indipendente: non organizziamo tornei, non vendiamo posti e non abbiamo rapporti con siti di gioco online. I dati vengono da fonti pubbliche (organizzatori, casinò, media) e ogni pagina mostra le sue fonti. Se un dato non è verificato scriviamo «n.d.», mai un numero inventato. Il gioco è vietato ai minori e può causare dipendenza.</div>
   <div class="demo">
     <span id="demoBox" hidden><label>Ora simulata (prova): <input type="datetime-local" id="demoNow"></label>
     <button id="demoReset" type="button">Ora reale</button></span>
