@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YUGRIND — tutti i tornei di poker live in Europa</title>
+<meta name="description" content="Tutti i tornei e i festival di poker live in Europa: cosa si gioca adesso, oggi e nei prossimi mesi, con clock, late registration, guida del viaggio e fonti.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/"><span class="chip"></span>YU<b>GRIND</b></a>
+  <nav>
+    <a href="#/" data-nav="home">Calendario</a>
+    <a href="#/live" data-nav="live">In corso <span id="liveCount" class="pill-live" hidden></span></a>
+    <a href="#/oggi" data-nav="oggi">Oggi</a>
+    <a href="#/sale" data-nav="sale">Sale</a>
+    <a href="#/info" data-nav="info">Come funziona</a>
+  </nav>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="foot">
+  <div>Dati raccolti da fonti pubbliche (organizzatori, casinò, media): ogni festival mostra le sue fonti. Se un dato non è verificato scriviamo <i>non disponibile</i>, mai un numero inventato.</div>
+  <div class="demo">
+    <span id="demoBox" hidden><label>Ora simulata (prova): <input type="datetime-local" id="demoNow"></label>
+    <button id="demoReset" type="button">Ora reale</button></span>
+    <span id="dataStamp"></span>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
