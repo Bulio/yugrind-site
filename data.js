@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-06 23:29. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-07 00:39. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-06 23:29",
+ "generated": "2026-11-07 00:39",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -220,12 +220,12 @@ window.PLE_DATA = {
   },
   {
    "festival": "PokerStars Open Aix-en-Provence",
-   "tour": "PokerStars Open",
+   "tour": null,
    "venue": "Pasino GRAND",
    "city": "Aix-en-Provence",
    "country": "FR",
-   "lat": 43.5297,
-   "lon": 5.4474,
+   "lat": null,
+   "lon": null,
    "timezone": "Europe/Paris",
    "start_date": "2026-11-01",
    "end_date": "2026-11-08",
@@ -235,7 +235,7 @@ window.PLE_DATA = {
     "https://www.cardplayer.com/nl/pokerstars-open-aix-en-provence"
    ],
    "confidence": "medium",
-   "notes": "Date festival confermate dal sito ufficiale (1-8 nov). Main Event 4-8 nov. Altre fonti indicano inizio 2 nov. Orari flight/guarantee non trovati (pagina schedule non letta). Cardplayer NL cita anche High Roller 2.200 (3-4 nov), Second Chance 550, SHR 5.000, Mystery Bounty Cup 400.",
+   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale. | Date festival confermate dal sito ufficiale (1-8 nov). Main Event 4-8 nov. Altre fonti indicano inizio 2 nov. Orari flight/guarantee non trovati (pagina schedule non letta). Cardplayer NL cita anche High Roller 2.200 (3-4 nov), Second Chance 550, SHR 5.000, Mystery Bounty Cup 400.",
    "events": [
     {
      "name": "PokerStars Open Main Event",
@@ -253,38 +253,38 @@ window.PLE_DATA = {
    "id": "pokerstars-open-aix-en-provence-2026-11-01"
   },
   {
-   "festival": "Vamos Poker Tour - Sofia",
+   "festival": "VPT Sofia 2026",
    "tour": null,
-   "venue": "Palms Royale Sofia Casino",
+   "venue": "Palms Royale Casino Sofia",
    "city": "Sofia",
    "country": "BG",
-   "lat": 42.7,
-   "lon": 23.32,
+   "lat": null,
+   "lon": null,
    "timezone": "Europe/Sofia",
    "start_date": "2026-11-02",
    "end_date": "2026-11-08",
    "website": "https://www.vamospokertour.com/festivals/vpt-sofia-2026/",
    "source_urls": [
-    "https://evbets.com/tornei-poker-live/evento/167/",
-    "https://www.vamospokertour.com/festivals/vpt-sofia-2026/"
+    "https://www.vamospokertour.com/festivals/vpt-sofia-2026/",
+    "https://evbets.com/tornei-poker-live/evento/167/"
    ],
    "confidence": "medium",
-   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Estratto in automatico (modello gratis) da www.vamospokertour.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
-     "name": "Main Event (dato festival)",
+     "name": "Main Event",
      "is_main": true,
      "buy_in_eur": 350,
-     "guarantee_eur": 400000,
+     "guarantee_eur": null,
      "flights": [],
      "level_minutes": null,
      "starting_stack": null,
      "late_reg": null,
      "structure_url": null,
-     "id": "main-event-dato-festival"
+     "id": "main-event"
     }
    ],
-   "id": "vamos-poker-tour-sofia-2026-11-02"
+   "id": "vpt-sofia-2026-2026-11-02"
   },
   {
    "tour": "Banco Casino",
@@ -1540,7 +1540,7 @@ window.PLE_DATA = {
     "https://somuchpoker.com/events-calendar/ept/2026/ept-prague-2026"
    ],
    "confidence": "high",
-   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati.",
+   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "events": [
     {
      "name": "EPT Main Event",
@@ -1852,7 +1852,7 @@ window.PLE_DATA = {
    "lat": 48.15,
    "lon": 17.11,
    "website": "https://evbets.com/en/",
-   "notes": "Flights fino a 10% del field avanza. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Flights fino a 10% del field avanza. | Estratto in automatico (modello gratis) da evbets.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "festival": "EVBETS LIVE Experience",
    "venue": "Banco Casino Bratislava",
    "city": "Bratislava",
@@ -1863,6 +1863,7 @@ window.PLE_DATA = {
    "source_urls": [
     "https://www.bancocasino.sk/ba/sk/event/evbets-live-prichadza-do-banco-bratislava-eu300000-main-event-novy-level-pokru-vo-vianocnej",
     "https://www.bancocasino.sk/ba/en/tournaments",
+    "https://evbets.com/en/",
     "https://evbets.com/tornei-poker-live/evento/152/"
    ],
    "confidence": "high",
@@ -2007,7 +2008,7 @@ window.PLE_DATA = {
     "https://www.pokerstarslive.com/"
    ],
    "confidence": "medium",
-   "notes": "Date e buy-in 1.250 da PokerNews (ott 2026); programma 'still being finalized'. Edizioni precedenti avevano garantito 1M sul Main (2027 non confermato). | Solo date e venue ufficiali; schedule completo 'coming soon'. Fuori scope geografico (Italia), incluso per completezza.",
+   "notes": "Date e buy-in 1.250 da PokerNews (ott 2026); programma 'still being finalized'. Edizioni precedenti avevano garantito 1M sul Main (2027 non confermato). | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale. | Solo date e venue ufficiali; schedule completo 'coming soon'. Fuori scope geografico (Italia), incluso per completezza.",
    "events": [
     {
      "name": "PokerStars Open Main Event",
@@ -2175,10 +2176,11 @@ window.PLE_DATA = {
    "website": "https://www.pokerstarslive.com/irishopen/",
    "source_urls": [
     "https://www.pokernews.com/news/2026/10/2027-irish-poker-open-runs-march-18-29-full-schedule-52651.htm",
-    "https://www.pokerstarslive.com/"
+    "https://www.pokerstarslive.com/",
+    "https://www.pokerstarslive.com/irishopen/"
    ],
    "confidence": "high",
-   "notes": "48 eventi. Main Event 1.150 / 2,5M GTD (RedStar indica 1.050 e date 18-27 mar: discrepanza). Mystery Bounty 1.150 / 1M GTD (da 18 mar 12:00); Mini Irish Open 250 / 1M GTD (da 18 mar 18:00). Day 2 il 27/3 13:00, Day 3 il 28/3, finale 29/3.",
+   "notes": "48 eventi. Main Event 1.150 / 2,5M GTD (RedStar indica 1.050 e date 18-27 mar: discrepanza). Mystery Bounty 1.150 / 1M GTD (da 18 mar 12:00); Mini Irish Open 250 / 1M GTD (da 18 mar 18:00). Day 2 il 27/3 13:00, Day 3 il 28/3, finale 29/3. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "events": [
     {
      "name": "Irish Open Main Event",
@@ -3545,114 +3547,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-06",
-   "time": "13:00",
-   "name": "NLH Satellite Main Event 1B",
-   "series": "CAPT",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-nlh-satellite-main-event-1b-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-06",
-   "time": "14:00",
-   "name": "NLH Main Event 1B",
-   "series": "CAPT",
-   "buy_in_eur": 1100,
-   "buy_in_text": "€ 1.000 + 100",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-nlh-main-event-1b-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-06",
-   "time": "15:00",
-   "name": "PL Omaha 5 — Card",
-   "series": "CAPT",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-pl-omaha-5-card-innsbruck"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-06",
-   "time": "17:00",
-   "name": "Freitags Freezeout",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-freitags-freezeout-baden"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-06",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-bregenz-bregenz",
-   "date": "2026-11-06",
-   "time": "17:30",
-   "name": "Der Klassiker",
-   "series": null,
-   "buy_in_eur": 173,
-   "buy_in_text": "€ 150 + 23",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-der-klassiker-bregenz"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-06",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "name": "NLH Satellite CAPT Million",
-   "series": "CAPT",
-   "buy_in_eur": 90,
-   "buy_in_text": "€ 75 + 15",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-06-nlh-satellite-capt-million-innsbruck"
-  },
   {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-11-07",

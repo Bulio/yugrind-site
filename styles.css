@@ -245,3 +245,9 @@ details.faq p{color:var(--muted);margin:8px 0 0}
 .langs a{font-weight:700;font-size:13px;color:var(--muted);padding:8px 10px;border-radius:10px;text-decoration:none}
 .langs a[aria-current]{color:var(--text);background:var(--raised)}
 main>.sec .btn{margin-right:8px}
+
+/* foto con licenza negli articoli del blog (scripts/blog/foto.py) */
+.prose figure.foto{margin:18px 0 22px}
+.prose figure.foto img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;border-radius:16px}
+.prose figure.foto figcaption{margin-top:8px;font-size:12px;line-height:1.4;color:var(--muted,#6b7a73)}
+.prose figure.foto figcaption a{color:inherit;text-decoration:underline}

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gioco di poker per imparare: quiz e sfide · YUGRIND</title><meta name="description" content="Impara il poker giocando: lezioni brevi, quiz sulle mani e sfide contro le Leggende. Gratis, senza soldi veri e senza registrazione."><link rel="canonical" href="https://yugrind.com/gioco/"><meta property="og:image" content="https://yugrind.com/og/yugrind.png"><link rel="icon" href="img/favicon.png"><link rel="apple-touch-icon" href="img/icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#16526d">
+<style>
+:root{--bg:#2f7f9a;--bg2:#1d5d78;--card:#fff;--ink:#14324a;--mut:#6b8396;--ok:#1fb47a;--ko:#e5484d;--gold:#f5b72e;--navy:#23395d;--teal:#3cc3c9}
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,system-ui,sans-serif}
+body{background:#0e2433;display:flex;justify-content:center;min-height:100vh}
+#app{width:100%;max-width:420px;min-height:100vh;background:linear-gradient(180deg,var(--bg),var(--bg2));color:#fff;position:relative;padding-bottom:80px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px}
+.pill{background:rgba(0,0,0,.25);border-radius:20px;padding:6px 12px;font-weight:700;font-size:14px}
+h1{font-size:22px;padding:0 16px 8px}
+h2{font-size:18px;margin:16px 16px 8px}
+.card{background:var(--card);color:var(--ink);border-radius:16px;margin:10px 16px;padding:16px;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.btn{display:block;width:100%;border:0;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;background:linear-gradient(90deg,var(--teal),#2aa6b8);color:#fff;margin-top:10px}
+.btn.sec{background:transparent;border:1px solid rgba(255,255,255,.4)}
+.btn.red{background:var(--ko)}
+.path{display:flex;flex-direction:column;align-items:center;gap:18px;padding:16px}
+.node{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;border:5px solid rgba(255,255,255,.5);cursor:pointer;background:var(--gold);box-shadow:0 6px 0 #b9831a}
+.node.lock{background:#5d7d90;box-shadow:0 6px 0 #3c5566;cursor:default}
+.node.done{background:var(--ok);box-shadow:0 6px 0 #127a52}
+.node:nth-child(4n+2){transform:translateX(50px)}.node:nth-child(4n){transform:translateX(-50px)}
+.lbl{font-size:12px;text-align:center;margin-top:-12px;opacity:.9}
+.unit{background:var(--navy);margin:16px;border-radius:16px;padding:14px}
+.unit small{opacity:.7}
+nav{position:fixed;bottom:0;width:100%;max-width:420px;display:flex;background:#16344a;border-top:1px solid rgba(255,255,255,.1)}
+nav button{flex:1;background:none;border:0;color:#9fbccd;padding:10px 0;font-size:11px;cursor:pointer}
+nav button b{display:block;font-size:22px}
+nav button.on{color:#fff}
+.bar{height:10px;background:#dfe8ee;border-radius:6px;overflow:hidden;margin:8px 16px}
+.bar i{display:block;height:100%;background:var(--gold);transition:.3s}
+.q{display:flex;gap:10px;align-items:center}
+.coach{font-size:44px}
+.bubble{background:#fff;color:var(--ink);border-radius:14px;padding:12px;font-weight:600;flex:1}
+.opt{background:#fff;color:var(--ink);border:2px solid #e3eaf0;border-radius:12px;padding:14px;margin:8px 16px;font-size:17px;font-weight:600;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:#e6f8f0}.opt.ko{border-color:var(--ko);background:#fdeceb}
+.fb{margin:12px 16px;border-radius:14px;padding:14px;color:var(--ink)}
+.fb.ok{background:#e6f8f0}.fb.ko{background:#fdeceb}
+.cardp{display:inline-block;background:#fff;color:#111;border-radius:6px;padding:2px 6px;margin:0 2px;font-weight:800;border:1px solid #ccc}
+.r{color:#d22}
+.tabs{display:flex;background:rgba(0,0,0,.2);border-radius:12px;margin:0 16px;padding:4px}
+.tabs button{flex:1;border:0;background:none;color:#fff;padding:8px;border-radius:9px;font-weight:700;cursor:pointer}
+.tabs .on{background:#fff;color:var(--ink)}
+.podium{display:flex;justify-content:center;align-items:flex-end;gap:14px;margin:18px 0}
+.podium div{text-align:center;font-size:12px}.podium .av{font-size:38px;background:#fff2;border-radius:50%;width:64px;height:64px;display:flex;align-items:center;justify-content:center;margin:auto;border:3px solid var(--gold)}
+.podium .first .av{width:80px;height:80px;font-size:48px}
+.row{display:flex;align-items:center;gap:10px;background:#fff;color:var(--ink);margin:6px 16px;border-radius:12px;padding:10px 12px;font-weight:600}
+.row.me{border:2px solid var(--teal);background:#e8f8fa}
+.row span:last-child{margin-left:auto}
+.chal{background:linear-gradient(160deg,#3a2a5e,#23395d);border-radius:18px;margin:12px 16px;padding:18px;text-align:center}
+.chal .av{font-size:70px}
+.big{font-size:34px;font-weight:800;color:var(--gold)}
+.hands{display:flex;gap:10px;justify-content:center;margin:12px 0}
+.hands button{width:58px;height:78px;border-radius:10px;border:2px solid #fff6;background:#2d4a72;color:#fff;font-size:20px;font-weight:800;cursor:pointer}
+.hands button.on{background:var(--ko);border-color:#fff}
+.table{background:radial-gradient(#2e7d4f,#174d30);border:8px solid #5b3a1e;border-radius:120px;margin:16px;padding:30px 16px;text-align:center}
+.center{text-align:center}
+.hidden{display:none}
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);background:var(--gold);color:#222;padding:10px 18px;border-radius:20px;font-weight:800;z-index:9}
+</style><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{font-family:Nunito,-apple-system,system-ui,sans-serif}
+#app{background:radial-gradient(120% 60% at 50% 0%,#4fb3cf 0%,#2a7f9e 45%,#16526d 100%)}
+h1,h2,h3{font-weight:900;letter-spacing:-.3px}
+.top{position:sticky;top:0;z-index:5;background:rgba(18,70,95,.75);backdrop-filter:blur(10px)}
+.pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);font-weight:800}
+.btn{border-radius:16px;box-shadow:0 5px 0 #1b7f8d;transition:transform .08s,box-shadow .08s;font-weight:900;letter-spacing:.3px}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #1b7f8d}
+.btn.red{box-shadow:0 5px 0 #a3262a}.btn.sec{box-shadow:none}
+.card{border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.unit{background:linear-gradient(135deg,#2b4a7a,#1d3358);border:1px solid rgba(255,255,255,.15);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.node{width:78px;height:78px;background:radial-gradient(circle at 35% 30%,#ffe08a,#f5b72e 60%,#d9921a);box-shadow:0 7px 0 #a8700f,0 12px 20px rgba(0,0,0,.25);transition:transform .15s}
+.node:hover{filter:brightness(1.08)}
+.node.done{background:radial-gradient(circle at 35% 30%,#7ff0bf,#1fb47a 60%,#13865a)}
+.node.lock{background:radial-gradient(circle at 35% 30%,#8aa6b8,#5d7d90)}
+.node.cur{animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 7px 0 #a8700f,0 0 0 0 rgba(255,215,90,.7)}50%{box-shadow:0 7px 0 #a8700f,0 0 0 14px rgba(255,215,90,0)}}
+.cardp{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:34px;height:46px;border-radius:6px;background:linear-gradient(#fff,#f1f1f1);border:1px solid #bbb;box-shadow:0 2px 4px rgba(0,0,0,.25);font-size:15px;line-height:1;vertical-align:middle;margin:2px;color:#1a1a1a}
+.cardp.r{color:#d0202a}
+.opt{border-radius:16px;border:2px solid #dbe5ec;box-shadow:0 4px 0 #dbe5ec;transition:transform .08s}
+.opt:active{transform:translateY(3px);box-shadow:0 1px 0 #dbe5ec}
+.opt.ok{box-shadow:0 4px 0 #1fb47a;animation:pop .3s}.opt.ko{box-shadow:0 4px 0 #e5484d;animation:shake .35s}
+@keyframes pop{50%{transform:scale(1.04)}}@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.bubble{border-radius:18px 18px 18px 4px;box-shadow:0 6px 16px rgba(0,0,0,.15);line-height:1.5}
+.coach{font-size:56px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.3))}
+.fb{animation:up .25s}@keyframes up{from{transform:translateY(20px);opacity:0}}
+.chal{background:radial-gradient(120% 80% at 50% 0%,#5b3d8f,#2a2350 70%);border:1px solid rgba(255,255,255,.15);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.chal .av{font-size:90px;filter:drop-shadow(0 10px 12px rgba(0,0,0,.45))}
+.big{text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.row{border-radius:14px;box-shadow:0 3px 0 rgba(0,0,0,.08)}
+.podium .av{background:linear-gradient(#fff3,#fff1)}
+nav{backdrop-filter:blur(12px);background:rgba(14,40,58,.92);padding-bottom:env(safe-area-inset-bottom)}
+nav button.on b{transform:scale(1.15)}
+.table{box-shadow:inset 0 0 40px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.4)}
+.toast{animation:up .25s;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.confetti{position:fixed;top:-10px;font-size:22px;animation:fall 1.6s linear forwards;z-index:20;pointer-events:none}
+@keyframes fall{to{transform:translateY(105vh) rotate(540deg)}}
+.masc{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.3);background:#bfe6f2;flex:none}
+.chal .av .masc{width:150px;height:150px;border:4px solid var(--gold)}
+.masc.hero{width:110px;height:110px;margin-bottom:8px}
+.coach{font-size:0}
+.logo{width:40px;height:40px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)}.pill.pro{display:inline-block;background:var(--gold);color:#3a2600;border:0}.unit.locked{opacity:.8;cursor:pointer}.plan{border:2px solid #dbe5ec;border-radius:16px;padding:14px;margin:8px 0;cursor:pointer;box-shadow:0 4px 0 #dbe5ec}.plan.best{border-color:var(--gold);box-shadow:0 4px 0 #d9921a;background:#fff8e6}
+.card.day{cursor:pointer;background:linear-gradient(135deg,#fff,#fff6dc);border:2px solid var(--gold)}.card.day.done{opacity:.7;border-color:#cde}.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}.badge{background:#eef3f6;border-radius:12px;padding:8px 2px;font-size:24px;filter:grayscale(1);opacity:.45;text-align:center}.badge.on{filter:none;opacity:1;background:#fff6dc}.badge small{display:block;font-size:9px;line-height:1.1;margin-top:3px;color:var(--ink)}
+.consent{display:flex;gap:8px;align-items:flex-start;font-size:13px;margin:10px 0;color:var(--ink)}.consent input{margin-top:3px;width:18px;height:18px;flex:none}footer{text-align:center;font-size:11px;opacity:.7;padding:16px}footer a{color:#fff}
+</style></head><body><div id="app"></div>
+<script>
+let S;try{S=JSON.parse(localStorage.getItem('ap'))}catch(e){}S=Object.assign({xp:0,iq:null,done:[],nome:'Tu',hr:3,hrDay:'',leg:[],streak:0,lastDay:''},S||{});
+const today=new Date().toDateString();if(S.hrDay!==today){S.hr=3;S.hrDay=today}
+if(S.lastDay!==today){const y=new Date(Date.now()-864e5).toDateString();S.streak=S.lastDay===y?S.streak:0}
+const save=()=>{try{localStorage.setItem('ap',JSON.stringify(S))}catch(e){}};
+const C=(r,s)=>`<span class="cardp ${'♥♦'.includes(s)?'r':''}">${r}${s}</span>`;
+const UNITS=[{"t": "Unità 1 · Le basi del Texas Hold'em", "lez": [{"t": "Regole e obiettivo", "e": "🃏", "q": [{"d": "Quante carte coperte riceve ogni giocatore nel Texas Hold'em?", "o": ["2", "1", "3", "4"], "a": 0, "x": "Ogni giocatore riceve due carte private, dette hole cards."}, {"d": "Quante carte comuni vengono scoperte in totale sul board a fine mano?", "o": ["3", "5", "4", "7"], "a": 1, "x": "Il board finale ha 5 carte: 3 al flop, 1 al turn, 1 al river."}, {"d": "Hai [A♠][K♠] e il board è [Q♠][J♠][10♦][2♣][3♥]. Che mano hai?", "o": ["Colore", "Coppia", "Scala (Broadway, dall'asso al 10)", "Carta alta"], "a": 2, "x": "A-K-Q-J-10 sono cinque carte consecutive: è la scala più alta. Hai solo 4 picche, quindi niente colore."}, {"d": "Allo showdown, quali carte puoi usare per formare la tua mano?", "o": ["Obbligatoriamente le tue 2 carte e 3 del board", "Solo le tue 2 carte", "Solo le 5 carte del board, mai le tue", "Le migliori 5 tra le tue 2 e le 5 del board, anche solo il board"], "a": 3, "x": "Conta la migliore combinazione di 5 carte tra le 7 disponibili. Puoi anche 'giocare il board'."}, {"d": "Qual è l'obiettivo di ogni mano?", "o": ["Vincere il piatto con la mano migliore o facendo foldare tutti gli altri", "Avere sempre la mano migliore allo showdown", "Giocare il maggior numero di mani possibile", "Arrivare sempre al river"], "a": 0, "x": "Il piatto si vince anche senza showdown: se tutti foldano, è tuo."}, {"d": "Di quante carte è composto il mazzo usato nel Texas Hold'em?", "o": ["54, con due jolly", "52, senza jolly", "40", "32"], "a": 1, "x": "Si usa un mazzo francese standard da 52 carte."}]}, {"t": "Ordine delle mani", "e": "🏆", "q": [{"d": "Quale mano è più forte?", "o": ["Colore", "Scala", "Tris", "Doppia coppia"], "a": 0, "x": "Ordine: scala colore, poker, full, colore, scala, tris, doppia coppia, coppia, carta alta."}, {"d": "Quale mano vince tra un full e un colore?", "o": ["Il colore", "Il full", "Pareggio", "Dipende dal seme"], "a": 1, "x": "Il full house batte il colore."}, {"d": "Tu hai un tris, l'avversario una doppia coppia. Chi vince?", "o": ["L'avversario", "Pareggio", "Tu, il tris batte la doppia coppia", "Dipende dai kicker"], "a": 2, "x": "Il tris è sopra la doppia coppia nella classifica."}, {"d": "Qual è la mano più forte in assoluto?", "o": ["Poker d'assi", "Full di assi", "Colore all'asso", "Scala reale (A-K-Q-J-10 dello stesso seme)"], "a": 3, "x": "La scala reale è la scala colore più alta e non è battibile."}, {"d": "Hai [A♥][4♣] e il board è [2♠][3♦][5♥][K♣][9♦]. Che mano hai?", "o": ["Scala dall'asso al 5 (wheel)", "Coppia", "Carta alta", "Tris"], "a": 0, "x": "L'asso conta anche come 1: A-2-3-4-5 è la scala più bassa."}, {"d": "Hai [A♠][Q♦], l'avversario [A♥][J♣], il board è [A♦][8♣][5♠][3♥][2♦]. Chi vince?", "o": ["L'avversario", "Tu: stessa coppia d'assi ma kicker Q contro J", "Pareggio", "Nessuno, il board è senza scala"], "a": 1, "x": "A parità di coppia decide la carta più alta fuori dalla coppia, il kicker."}]}, {"t": "Svolgimento della mano", "e": "🔄", "q": [{"d": "Qual è l'ordine dei giri di puntata?", "o": ["Preflop, flop, turn, river", "Flop, preflop, turn, river", "Preflop, turn, flop, river", "Flop, turn, river, preflop"], "a": 0, "x": "Si parte dal preflop, poi flop (3 carte), turn (1) e river (1)."}, {"d": "Quante carte vengono scoperte al flop?", "o": ["1", "3", "2", "4"], "a": 1, "x": "Il flop porta tre carte comuni insieme."}, {"d": "Dopo il flop, chi agisce per primo?", "o": ["Il bottone", "Chi ha rilanciato preflop", "Il primo giocatore ancora in mano a sinistra del bottone", "Il giocatore con più fiche"], "a": 2, "x": "Postflop si parte dal bui a sinistra del bottone: il bottone agisce per ultimo."}, {"d": "Sul flop nessuno ha puntato. Quale azione NON hai a disposizione?", "o": ["Check", "Bet", "Fold (anche se inutile)", "Call"], "a": 3, "x": "Senza puntata da pareggiare non c'è nulla da chiamare: puoi solo checkare o puntare."}, {"d": "Chi deve mostrare per primo le carte allo showdown?", "o": ["L'ultimo giocatore che ha puntato o rilanciato nell'ultimo giro", "Chi ha meno fiche", "Il bottone", "Sempre il piccolo buio"], "a": 0, "x": "Se nel river tutti fanno check, mostra per primo il primo a sinistra del bottone."}, {"d": "In un tavolo 6-max, chi agisce per primo preflop?", "o": ["Il bottone", "UTG, a sinistra del big blind", "Il piccolo buio", "Il big blind"], "a": 1, "x": "Preflop si parte dal giocatore dopo il BB; i bui agiscono per ultimi."}]}, {"t": "Bui e ante", "e": "💰", "q": [{"d": "Bui 100/200. Quanto è il piccolo buio?", "o": ["100", "200", "50", "400"], "a": 0, "x": "Il small blind vale tipicamente metà del big blind."}, {"d": "Dove si trovano i bui rispetto al bottone?", "o": ["BB subito a sinistra del bottone, poi SB", "SB subito a sinistra del bottone, poi BB", "Entrambi a destra del bottone", "SB e BB sono il bottone"], "a": 1, "x": "L'ordine è: bottone, small blind, big blind, poi UTG."}, {"d": "Che cos'è la big blind ante?", "o": ["Un'ante pagata solo dal bottone", "Un secondo big blind pagato dal SB", "L'ante pagata per tutti dal solo giocatore al BB", "Una penale per chi folda"], "a": 2, "x": "Nei tornei moderni il BB versa l'ante per tutto il tavolo."}, {"d": "Bui 100/200 con big blind ante da 200. Quanto c'è nel piatto prima di agire?", "o": ["300", "400", "700", "500"], "a": 3, "x": "100 (SB) + 200 (BB) + 200 (ante) = 500."}, {"d": "Hai 3.000 fiche e i bui sono 100/200. Quanti big blind hai?", "o": ["15", "10", "20", "30"], "a": 0, "x": "3.000 / 200 = 15 big blind."}, {"d": "9 giocatori, ante da 25 ciascuno e bui 100/200. Quanto è il piatto iniziale?", "o": ["300", "525", "425", "625"], "a": 1, "x": "Ante 9×25 = 225, più 100 + 200 = 525."}]}]}, {"t": "Unità 2 · Posizioni e preflop", "lez": [{"t": "Posizioni al tavolo", "e": "📍", "q": [{"d": "Qual è la posizione migliore al tavolo postflop?", "o": ["Il bottone (BTN)", "Il big blind", "UTG", "Il small blind"], "a": 0, "x": "Il bottone agisce per ultimo postflop e vede le azioni degli altri prima di decidere."}, {"d": "In un tavolo 6-max, qual è l'ordine di azione preflop?", "o": ["BTN, CO, HJ, UTG, SB, BB", "UTG, HJ, CO, BTN, SB, BB", "SB, BB, UTG, HJ, CO, BTN", "UTG, CO, HJ, BTN, BB, SB"], "a": 1, "x": "Si parte da UTG e si arriva ai bui, che chiudono l'azione."}, {"d": "Dove si siede il cutoff (CO)?", "o": ["Subito a sinistra del bottone", "A sinistra del big blind", "Subito a destra del bottone", "Accanto al small blind"], "a": 2, "x": "Il cutoff precede il bottone nell'ordine di azione."}, {"d": "Perché la posizione vale così tanto?", "o": ["Ricevi carte migliori", "Paghi meno bui", "Puoi vedere le loro carte", "Vedi cosa fanno gli avversari prima di decidere"], "a": 3, "x": "Avere più informazioni permette decisioni più precise e di controllare la dimensione del piatto."}, {"d": "Contro il bottone, come agiscono SB e BB postflop?", "o": ["Per primi: sono fuori posizione", "Per ultimi", "Dopo il CO ma prima del BTN", "A scelta"], "a": 0, "x": "I bui parlano per primi dopo il flop e restano fuori posizione sul bottone."}, {"d": "Quale posizione è definita 'early position' in un tavolo 6-max?", "o": ["Il bottone", "UTG", "Il cutoff", "Il big blind"], "a": 1, "x": "UTG agisce per primo con molti giocatori dietro: serve un range più stretto."}]}, {"t": "Range di apertura", "e": "📋", "q": [{"d": "UTG, 6-max, 100bb, hai [7♠][2♦]. Cosa fai?", "o": ["Fold", "Raise", "Call", "All-in"], "a": 0, "x": "Il 7-2 offsuit è la mano peggiore: si folda sempre da qualsiasi posizione di apertura."}, {"d": "Dal CO con [A♥][J♥], 30bb, tutti foldano: cosa fai?", "o": ["Fold", "Raise (open)", "Limp", "All-in da 30bb senza motivo"], "a": 1, "x": "AJs è chiaramente una mano da aprire dal cutoff."}, {"d": "UTG, 100bb, hai [K♦][9♣]. Cosa fai?", "o": ["Raise", "Limp", "Fold", "All-in"], "a": 2, "x": "K9 offsuit è troppo debole da posizione iniziale."}, {"d": "Quale mano di norma si apre dal BTN ma si folda da UTG?", "o": ["[A♠][K♦]", "[Q♦][Q♣]", "[A♥][A♣]", "[K♥][7♥]"], "a": 3, "x": "K7 suited è marginale: da UTG si folda, dal BTN con pochi giocatori dietro si apre."}, {"d": "Perché il range di apertura si allarga verso il bottone?", "o": ["Restano meno giocatori dietro di te", "Hai carte migliori", "I bui sono più alti", "Il piatto è più piccolo"], "a": 0, "x": "Meno avversari da battere e miglior posizione postflop permettono di aprire più mani."}, {"d": "Tutti foldano al BTN, hai [Q♥][J♦] e 40bb. Cosa fai?", "o": ["Fold", "Raise (open)", "Limp", "Call"], "a": 1, "x": "QJ offsuit è un'apertura standard dal bottone."}]}, {"t": "Dimensione dell'open", "e": "📏", "q": [{"d": "Qual è la dimensione standard di un open raise a 100bb?", "o": ["Circa 2-2,5bb", "10bb", "1bb", "6bb"], "a": 0, "x": "Un raise piccolo rischia poco per rubare i bui."}, {"d": "Perché si apre con un raise piccolo dal bottone?", "o": ["Per fare foldare tutti sempre", "Rischi poco per vincere gli stessi bui", "Perché lo impone il regolamento", "Per giocare piatti più grandi"], "a": 1, "x": "Rischiando meno per lo stesso premio, basta una frequenza di fold più bassa per guadagnare."}, {"d": "Dal SB è comune aprire più grande (circa 3bb): perché?", "o": ["Perché hai carte migliori", "Per pagare meno", "Sei fuori posizione e il BB prende un buon prezzo", "Non è vero, si apre sempre 2bb"], "a": 2, "x": "Fuori posizione conviene alzare per ridurre il prezzo favorevole del BB."}, {"d": "Bui 0,5/1bb senza ante. Apri a 2,5bb dal BTN e tutti foldano. Quanto guadagni?", "o": ["2,5bb", "1bb", "4bb", "1,5bb"], "a": 3, "x": "Vinci SB (0,5bb) + BB (1bb) = 1,5bb; i tuoi 2,5bb tornano indietro."}, {"d": "Un giocatore limpa. Hai [A♦][Q♠] al BTN. Quale raise è tipico?", "o": ["Circa 4bb", "2bb", "10bb", "Solo call"], "a": 0, "x": "L'iso-raise è circa 3bb più 1bb per ogni limper."}, {"d": "A stack corti, intorno a 25bb, quale open è molto comune?", "o": ["5bb", "2bb (min-raise) o 2-2,2bb", "8bb", "Sempre all-in"], "a": 1, "x": "Con stack bassi si apre piccolo per mantenere flessibilità."}]}, {"t": "Limp contro raise", "e": "⚔️", "q": [{"d": "Cosa significa fare 'open limp'?", "o": ["Entrare nel piatto chiamando il BB quando nessuno ha ancora rilanciato", "Rilanciare per primo", "Foldare al BB", "Fare all-in"], "a": 0, "x": "Il limp è il call del big blind senza rilancio."}, {"d": "Un giocatore limpa. Hai [8♣][8♦] al BTN. Cosa fai di solito?", "o": ["Fold", "Raise per isolare il limper", "Limp", "Check"], "a": 1, "x": "Con una mano forte e posizione, il raise isola il limper e prende l'iniziativa."}, {"d": "Qual è il vantaggio principale di rilanciare invece di limpare?", "o": ["Paghi meno", "Vedi il flop gratis", "Puoi vincere subito il piatto se tutti foldano", "Nessuno, sono equivalenti"], "a": 2, "x": "Il raise crea fold equity: il limp no."}, {"d": "Un limper davanti a te, hai [A♠][K♥]. Cosa fai?", "o": ["Limp dietro", "Fold", "Check", "Raise"], "a": 3, "x": "AK è una mano premium: si rilancia per costruire il piatto."}, {"d": "Cosa è un over-limp?", "o": ["Limpare dopo che altri hanno già limpato", "Un limp fatto da UTG", "Un raise molto grande", "Un check del BB"], "a": 0, "x": "Dopo uno o più limper, chiamare il big blind è un over-limp."}, {"d": "Tutti foldano al CO, hai [K♠][Q♠]. Cosa fai?", "o": ["Limp", "Raise, non limp", "Fold", "Check"], "a": 1, "x": "Aprire con un raise è la linea standard: limpare perde fold equity e valore."}]}]}, {"t": "Unità 3 · 3-bet, 4-bet e difesa del big blind", "lez": [{"t": "Il 3-bet", "e": "⚔️", "q": []}, {"t": "Il 4-bet", "e": "🔥", "q": []}, {"t": "Difesa del big blind", "e": "🛡️", "q": []}, {"t": "Dopo il flop", "e": "🃏", "q": []}]}, {"t": "Unità 4 · Matematica del poker (outs, regola del 2 e 4, pot odds, implied odds, equity, expected value)", "lez": [{"t": "Outs e regola del 2 e 4", "e": "🔢", "q": []}, {"t": "Pot odds", "e": "🧮", "q": []}, {"t": "Implied odds ed equity", "e": "💰", "q": []}, {"t": "Expected value (EV)", "e": "📈", "q": []}]}, {"t": "Unità 5 · Gioco al flop (c-bet, texture del board, range advantage, sizing, check-raise)", "lez": [{"t": "La c-bet: quando e perché", "e": "🎯", "q": []}, {"t": "Texture del board", "e": "🧩", "q": []}, {"t": "Vantaggio di range e sizing", "e": "📏", "q": []}, {"t": "Check-raise e difese", "e": "🔁", "q": []}]}, {"t": "Unità 6 · Turn e river (barrel, value bet, bluff, bluff catcher, blocker, sizing al river)", "lez": [{"t": "Il barrel al turn", "e": "🔫", "q": []}, {"t": "Value bet e bluff al river", "e": "🌊", "q": []}, {"t": "Bluff catcher e blocker", "e": "🧱", "q": []}, {"t": "Sizing al river", "e": "⚖️", "q": []}]}, {"t": "Unità 7 · Strategia da torneo", "lez": [{"t": "Contare in big blind", "e": "📏", "q": []}, {"t": "Push/fold sotto 15 bb", "e": "🚀", "q": []}, {"t": "Il resteal", "e": "🔁", "q": []}, {"t": "Le ante", "e": "🪙", "q": []}]}, {"t": "Unità 8 · ICM, bolla e tavolo finale", "lez": [{"t": "ICM base", "e": "💰", "q": []}, {"t": "La bolla", "e": "🫧", "q": []}, {"t": "Il salto di premio", "e": "📈", "q": []}, {"t": "Mentalità e bankroll", "e": "🧠", "q": []}]}];UNITS.forEach(u=>u.t=u.t.replace(/\s*\(.*\)/,''));
+const IMG=n=>`<img src="img/${n}.webp" alt="" class="masc">`;const LEG_AV=['professore','squala','matematico','gentiluomo','lupo','civetta','tigre','campione'].map(IMG),LEG_N=['Il Professore','La Squala','Il Matematico','Il Gentiluomo','Il Lupo','La Civetta','La Tigre','Il Campione'];
+const LEGENDS=UNITS.map((u,i)=>({n:LEG_N[i%8],av:LEG_AV[i%8],tema:u.t.split('· ')[1]||u.t,xp:300+i*50,u:i}));
+const FREE_UNITS=2;let PRO=null,TOKEN=null;try{TOKEN=localStorage.getItem('pl_token')}catch(e){}
+const isOpen=ui=>ui<FREE_UNITS||!!PRO;
+const ALLQ_=()=>UNITS.filter((u,i)=>isOpen(i)).flatMap(u=>u.lez.flatMap(l=>l.q)).filter(Boolean);
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const IQTEST=()=>{const by=UNITS.filter((u,i)=>isOpen(i)).map(u=>shuf(u.lez.flatMap(l=>l.q))[0]);return by.concat(shuf(ALLQ_()).filter(q=>!by.includes(q))).slice(0,12)};
+const cards=t=>String(t).replace(/\[(10|[2-9JQKA])([♠♥♦♣])\]/g,(m,r,s)=>`<span class="cardp ${'♥♦'.includes(s)?'r':''}">${r}${s}</span>`);
+let BOARD=null;const API=null;
+async function api(path,opt={}){if(API===null)throw new Error('offline');const r=await fetch(API+path,{...opt,headers:{'content-type':'application/json',...(TOKEN?{authorization:'Bearer '+TOKEN}:{}),...(opt.headers||{})}});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||('HTTP '+r.status));return j}
+async function loadPro(){if(!TOKEN)return;try{const j=await api('/api/content');PRO=j;j.units.forEach(pu=>{const u=UNITS[pu.i];if(u)pu.lez.forEach((l,li)=>{if(u.lez[li])u.lez[li].q=l.q})});render()}catch(e){if(/scadut|valid/i.test(e.message)){PRO=null;toast('Abbonamento non attivo')}}}
+async function claim(){const sid=new URLSearchParams(location.search).get('session_id');if(!sid)return;history.replaceState(null,'',location.pathname);try{const j=await api('/api/claim?session_id='+encodeURIComponent(sid));TOKEN=j.token;try{localStorage.setItem('pl_token',TOKEN)}catch(e){}S.email=j.email;save();toast('Benvenuto in PokerLab Pro! 🎉');confetti();await loadPro();tab='me';render()}catch(e){toast('Pagamento non verificato: '+e.message)}}
+async function loadBoard(){try{BOARD=(await api('/api/leaderboard?by='+lb)).rows}catch(e){BOARD=[]}render()}
+async function pushScore(){if(!S.nick)return;try{await api('/api/score',{method:'POST',body:JSON.stringify({id:S.pid,nick:S.nick,xp:S.xp,iq:S.iq||0})})}catch(e){}}
+function esc(t){return String(t).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';')}
+function paywall(){ev('paywall');tab='pro';quiz=null;render()}
+async function buy(plan){if(!document.getElementById('c18')?.checked||!document.getElementById('crec')?.checked){toast('Spunta le due caselle per continuare');return}ev('buy_'+plan);const email=prompt('La tua email (per la ricevuta e per recuperare l\'accesso):',S.email||'');if(!email)return;S.email=email;save();try{const j=await api('/api/checkout',{method:'POST',body:JSON.stringify({plan,email,consent:new Date().toISOString()})});location.href=j.url}catch(e){toast('Errore: '+e.message)}}
+async function restore(){const email=prompt('Email usata per l\'acquisto:',S.email||'');if(!email)return;try{await api('/api/restore',{method:'POST',body:JSON.stringify({email})});const code=prompt('Ti abbiamo inviato un codice via email. Inseriscilo qui:');if(!code)return;const j=await api('/api/restore/verify',{method:'POST',body:JSON.stringify({email,code})});TOKEN=j.token;localStorage.setItem('pl_token',TOKEN);await loadPro();toast('Accesso Pro ripristinato')}catch(e){toast('Errore: '+e.message)}}
+async function portal(){try{const j=await api('/api/portal',{method:'POST'});location.href=j.url}catch(e){toast('Errore: '+e.message)}}
+let tab='home',lb='iq',quiz=null;
+const app=document.getElementById('app');
+let AC=null;
+function snd(kind){if(S.mute)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const t=AC.currentTime;
+ const N={ok:[[660,0],[990,.09]],ko:[[220,0],[160,.12]],tap:[[520,0]],win:[[523,0],[659,.1],[784,.2],[1047,.32]],coin:[[1320,0],[1760,.06]]}[kind]||[];
+ N.forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=kind==='ko'?'triangle':'sine';o.frequency.value=f;g.gain.setValueAtTime(0,t+d);g.gain.linearRampToValueAtTime(.18,t+d+.01);g.gain.exponentialRampToValueAtTime(.001,t+d+(kind==='win'?.35:.18));o.connect(g).connect(AC.destination);o.start(t+d);o.stop(t+d+.4)})}catch(e){}
+ try{navigator.vibrate&&navigator.vibrate(kind==='ko'?[60,40,60]:kind==='win'?[30,30,30,30,80]:15)}catch(e){}}
+function ev(name){if(API===null)return;try{navigator.sendBeacon('/api/ev',JSON.stringify({e:name}))}catch(e){}}
+function confetti(){for(let i=0;i<30;i++){const c=document.createElement('div');c.className='confetti';c.textContent='♠♥♦♣★'[i%5];c.style.left=Math.random()*100+'vw';c.style.animationDelay=Math.random()*.5+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),2200)}}
+const TQ=[];let tBusy=false;function toast(t){TQ.push(t);if(!tBusy)nextToast()}
+function nextToast(){const t=TQ.shift();if(t===undefined){tBusy=false;return}tBusy=true;const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>{d.remove();nextToast()},1800)}
+function head(){return `<div class="top"><a href="/" title="Torna a YUGRIND" aria-label="Torna a YUGRIND"><img src="img/logo.png" alt="PokerLab Italia" class="logo"></a><div class="pill">🧠 IQ ${S.iq??'—'}</div><div class="pill">🔥 ${S.streak}</div><div class="pill">⚡ ${S.xp} XP</div></div>`}
+function nav(){return `<nav>${[['home','🗺️','Percorso'],['leg','🥊','Sfide'],['rank','🏆','Classifica'],['hr','🎰','High Roller'],['me','👤','Profilo']].map(([k,i,l])=>`<button class="${tab==k?'on':''}" onclick="go('${k}')"><b>${i}</b>${l}</button>`).join('')}</nav>`}
+function go(t){snd('tap');tab=t;quiz=null;render()}
+function render(){
+ if(quiz) return renderQuiz();
+ let h=head();
+ if(tab==='home'){
+  if(S.iq==null) h+=`<div class="card center">${IMG('coach').replace('masc','masc hero')}<h3>Scopri il tuo Poker IQ</h3><p style="color:var(--mut);margin:6px 0">12 domande per capire il tuo livello di partenza.</p><button class="btn" onclick="startIQ()">Inizia il test</button></div>`;
+  h+=`<div class="card day ${S.dayDone===today?'done':''}" onclick="startDay()"><b>🃏 Mano del giorno</b> ${S.dayDone===today?'<span class="pill pro">✓ Fatta</span>':'<span class="pill pro">XP ×2</span>'}<br><small style="color:var(--mut)">Una domanda al giorno per tenere viva la serie 🔥 ${S.streak}</small></div>`;
+  let unlocked=true;
+  UNITS.forEach((u,ui)=>{if(!isOpen(ui)){h+=`<div class="unit locked" onclick="paywall()"><b>${u.t}</b> <span class="pill pro">🔒 PRO</span><br><small>${u.lez.length} lezioni · ${u.lez.map(l=>l.t).join(' · ')}</small></div>`;return}h+=`<div class="unit"><b>${u.t}</b><br><small>${u.lez.length} lezioni · ${u.lez.filter((l,li)=>S.done.includes(ui+'-'+li)).length} completate</small></div><div class="path">`;
+   u.lez.forEach((l,li)=>{const id=ui+'-'+li,done=S.done.includes(id),cls=done?'done':unlocked?'cur':'lock';
+    h+=`<div class="node ${cls}" onclick="${cls==='lock'?'':`startLesson(${ui},${li})`}">${cls==='lock'?'🔒':done?'✓':l.e}</div><div class="lbl">${l.t}</div>`;
+    if(!done)unlocked=false;});
+   h+='</div>';});
+ }
+ if(tab==='leg'){h+='<h1>Sfida le Leggende</h1><p style="padding:0 16px;opacity:.8">Una Leggenda per ogni unità: si sblocca quando completi la prima lezione dell\'unità.</p>';LEGENDS.forEach((L,i)=>{const ok=S.done.includes(L.u+'-0'),win=S.leg.includes(i);h+=!isOpen(L.u)?`<div class="chal" style="opacity:.85" onclick="paywall()"><div class="av">${L.av}</div><h3>${L.n}</h3><p>${L.tema}</p><div class="pill pro">🔒 PRO</div></div>`:!ok?`<div class="chal" style="opacity:.5"><div class="av">🔒</div><h3>${L.n}</h3><p>${L.tema}</p></div>`:`<div class="chal">${win?'<div class="pill" style="display:inline-block">🏅 Battuta</div>':''}<div class="av">${L.av}</div><h3>${L.n}</h3><p>ti sfida su <b>${L.tema}</b></p><small>GUADAGNA FINO A</small><div class="big">⚡ ${L.xp}</div><button class="btn" onclick="startLegend(${i})">Sfida (8 domande, vinci con 6)</button><button class="btn sec" onclick="go('home')">Più tardi</button></div>`})}
+ if(tab==='rank'){
+  h+=`<div class="tabs"><button class="${lb==='iq'?'on':''}" onclick="lb='iq';BOARD=null;render()">IQ</button><button class="${lb==='xp'?'on':''}" onclick="lb='xp';BOARD=null;render()">XP</button></div>`;
+  if(!S.nick){h+=`<div class="card center"><h3>Entra in classifica</h3><p style="color:var(--mut)">Scegli un nome pubblico (niente nome e cognome veri se non vuoi).</p><button class="btn" onclick="const n=prompt('Nome in classifica (3-20 caratteri):');if(n&&n.trim().length>=3){S.nick=n.trim().slice(0,20);S.pid=S.pid||crypto.randomUUID();save();pushScore().then(()=>{BOARD=null;render()})}">Scegli nome</button></div>`}
+  if(API===null)h+=`<div class="card center">La classifica online arriva presto.</div>`;
+  else if(BOARD===null){h+=`<div class="card center">Caricamento…</div>`;setTimeout(loadBoard)}
+  else if(!BOARD.length)h+=`<div class="card center">Nessuno in classifica: sii il primo!</div>`;
+  else{const v=p=>lb==='iq'?p.iq+' IQ':p.xp+' XP';const[a,b,c]=BOARD;
+   h+=`<div class="podium">${b?`<div><div class="av">🥈</div>${esc(b.nick)}<br>${v(b)}</div>`:''}<div class="first"><div class="av">🥇</div>${esc(a.nick)}<br>${v(a)}</div>${c?`<div><div class="av">🥉</div>${esc(c.nick)}<br>${v(c)}</div>`:''}</div>`;
+   BOARD.slice(3).forEach((p,i)=>h+=`<div class="row ${p.nick===S.nick?'me':''}"><span>${i+4}</span><span>${esc(p.nick)}</span><span>${v(p)}</span></div>`)}
+ }
+ if(tab==='pro'){h+=`<div class="chal"><img src="img/logo.png" style="width:120px;border-radius:50%" alt=""><h2>Unità avanzate in arrivo</h2><p style="margin:8px 0;opacity:.9">Preflop avanzato, matematica, flop, turn e river, tornei e ICM. Intanto rigioca le prime due unità e sfida le Leggende.</p></div>`}
+ if(tab==='hr'){h+=`<div class="table"><div style="font-size:60px">🎰</div><h2 style="margin:6px">Tavoli High Roller</h2></div><div class="card center"><small style="color:var(--mut)">${PRO?'SESSIONI':'SESSIONI GRATIS OGGI'}</small><div class="big">${PRO?'∞':S.hr}</div><p style="color:var(--mut)">Mani per sessione</p><div class="hands">${[5,10,20,50].map(n=>`<button class="${n===5?'on':''}" onclick="this.parentNode.querySelectorAll('button').forEach(b=>b.classList.remove('on'));this.classList.add('on')">${n}</button>`).join('')}</div><button class="btn" onclick="startHR()">Continua</button></div>`}
+ if(tab==='me'){h+=`<div class="card center">${IMG('coach').replace('masc','masc hero')}<h3>${S.nome}</h3><p>Poker IQ: <b>${S.iq??'non misurato'}</b></p><p>XP totali: <b>${S.xp}</b></p><p>Lezioni completate: <b>${S.done.length}</b> / ${UNITS.reduce((a,u)=>a+u.lez.length,0)}</p><p>Leggende battute: <b>${S.leg.length}</b> / ${LEGENDS.length}</p><p>Serie giorni: <b>🔥 ${S.streak}</b></p><div class="badges">${BADGES.map(([id,i,t])=>`<div class="badge ${(S.badges||[]).includes(id)?'on':''}" title="${t}">${i}<small>${t}</small></div>`).join('')}</div>${S.iq!=null?'<button class="btn" onclick="share()">📤 Condividi il tuo Poker IQ</button>':''}<button class="btn sec" style="color:var(--ink);border-color:#ccd" onclick="S.mute=!S.mute;save();render()">${S.mute?'🔇 Suoni spenti':'🔊 Suoni accesi'}</button><p>Piano: <b>${PRO?'PRO ✅ ('+PRO.plan+')':'Gratis'}</b></p>${PRO?(PRO.plan!=='lifetime'?'<button class="btn sec" style="color:var(--ink)" onclick="portal()">Gestisci abbonamento</button>':''):'<button class="btn" onclick="paywall()">Passa a PRO</button><button class="btn sec" style="color:var(--ink);border-color:#ccd" onclick="restore()">Ripristina acquisto</button>'}<button class="btn" onclick="startIQ()">Rifai il test Poker IQ</button><button class="btn red" onclick="if(confirm('Azzerare i progressi?')){localStorage.removeItem('ap');location.reload()}">Azzera progressi</button></div>`}
+ app.innerHTML=h+`<footer>I progressi restano solo nel tuo browser · Solo formazione, niente soldi veri · 18+ · <a href="/">yugrind.com</a></footer>`+nav();
+}
+function startQuiz(qs,kind,meta){qs=qs.map(q=>{const idx=shuf([0,1,2,3]);return{...q,o:idx.map(i=>q.o[i]),a:idx.indexOf(q.a)}});quiz={qs,i:0,ok:0,kind,meta,ans:null};render()}
+function dayQ(){const qs=ALLQ_();let h=0;for(const c of today)h=(h*31+c.charCodeAt(0))>>>0;return qs[h%qs.length]}
+function startDay(){if(S.dayDone===today)return toast('Mano del giorno già fatta: torna domani!');startQuiz([dayQ()],'day')}
+const BADGES=[['first','🎯','Prima lezione',()=>S.done.length>=1],['u1','📗','Unità 1 completata',()=>[0,1,2,3].every(i=>S.done.includes('0-'+i))],['leg1','🥊','Prima Leggenda battuta',()=>S.leg.length>=1],['s3','🔥','3 giorni di fila',()=>S.streak>=3],['s7','🌟','7 giorni di fila',()=>S.streak>=7],['xp1k','⚡','1.000 XP',()=>S.xp>=1000],['iq130','🧠','Poker IQ 130+',()=>(S.iq||0)>=130],['all8','👑','Tutte le Leggende',()=>S.leg.length>=8]];
+function checkBadges(){S.badges=S.badges||[];BADGES.forEach(([id,i,t,f])=>{if(!S.badges.includes(id)&&f()){S.badges.push(id);setTimeout(()=>{toast('Nuovo traguardo: '+i+' '+t);snd('win')},1700)}});save()}
+async function share(){const t=`Il mio Poker IQ è ${S.iq??'?'} su PokerLab Italia 🧠♠ Riesci a battermi?`,u=location.origin==='null'?'':location.origin;ev('share');try{if(navigator.share)await navigator.share({title:'PokerLab Italia',text:t,url:u});else{await navigator.clipboard.writeText(t+' '+u);toast('Copiato! Incollalo dove vuoi')}}catch(e){}}
+function startIQ(){startQuiz(IQTEST(),'iq')}
+function startLesson(u,l){startQuiz(UNITS[u].lez[l].q,'lez',u+'-'+l)}
+function startLegend(i){const u=UNITS[LEGENDS[i].u];startQuiz(shuf(u.lez.flatMap(l=>l.q)).slice(0,8),'leg',i)}
+function startHR(){if(!PRO){if(S.hr<=0){toast('Sessioni gratis finite per oggi');return paywall()}S.hr--;save()}const n=+(document.querySelector('.hands .on')?.textContent||5);startQuiz(shuf(ALLQ_()).slice(0,n),'hr')}
+function renderQuiz(){
+ const q=quiz.qs[quiz.i];const coach=quiz.kind==='leg'?LEGENDS[quiz.meta].av:IMG('coach');
+ let h=`<div class="top"><span style="cursor:pointer;font-size:22px" onclick="go(tab)">✕</span><div class="pill">${quiz.i+1}/${quiz.qs.length}</div></div><div class="bar"><i style="width:${quiz.i/quiz.qs.length*100}%"></i></div>
+ <div class="q" style="margin:16px"><div class="coach">${coach}</div><div class="bubble">${cards(q.d)}</div></div>`;
+ q.o.forEach((o,i)=>{let c='';if(quiz.ans!=null){if(i===q.a)c='ok';else if(i===quiz.ans)c='ko'}h+=`<div class="opt ${c}" onclick="answer(${i})">${cards(o)}</div>`});
+ if(quiz.ans!=null){const ok=quiz.ans===q.a;h+=`<div class="fb ${ok?'ok':'ko'}"><b>${ok?(quiz.kind==='day'?'✅ Giusto! +20 XP (doppi)':'✅ Giusto! +10 XP'):'❌ Risposta sbagliata'}</b><p style="margin-top:6px">${cards(q.x)}</p></div><div style="margin:0 16px"><button class="btn ${ok?'':'red'}" onclick="next()">Continua</button></div>`}
+ app.innerHTML=h;
+}
+function answer(i){if(quiz.ans!=null)return;quiz.ans=i;const ok=i===quiz.qs[quiz.i].a;if(ok){quiz.ok++;S.xp+=quiz.kind==='day'?20:10;save()}snd(ok?'ok':'ko');renderQuiz()}
+function next(){quiz.i++;quiz.ans=null;if(quiz.i<quiz.qs.length)return renderQuiz();
+ const r=quiz.ok/quiz.qs.length;let msg;
+ if(quiz.kind==='iq'){S.iq=Math.round(70+r*90);msg='Il tuo Poker IQ è '+S.iq;tab='me'}
+ if(quiz.kind==='lez'){if(!S.done.includes(quiz.meta))S.done.push(quiz.meta);S.xp+=20;msg='Lezione completata! +20 XP'}
+ if(quiz.kind==='leg'){const b=Math.round(LEGENDS[quiz.meta].xp*r);S.xp+=b;if(r>=.75&&!S.leg.includes(quiz.meta))S.leg.push(quiz.meta);msg=r>=.75?'Hai battuto la Leggenda! +'+b+' XP':'La Leggenda ha vinto ('+quiz.ok+'/8). +'+b+' XP'}
+ if(quiz.kind==='day'){S.dayDone=today;msg=quiz.ok?'Mano del giorno vinta! Torna domani 🔥':'Domani ci riprovi!'}
+ if(quiz.kind==='hr'){msg='Sessione finita: '+quiz.ok+'/'+quiz.qs.length}
+ if(S.lastDay!==today){S.streak++;S.lastDay=today}save();pushScore();checkBadges();if(r>=.75){confetti();snd('win')}else snd('coin');ev('fine_'+quiz.kind);quiz=null;toast(msg);render()}
+render();claim();loadPro();ev('open');
+</script></body></html>
