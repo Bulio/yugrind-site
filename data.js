@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-07 17:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-08 09:10. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-07 17:32",
+ "generated": "2026-11-08 09:10",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3547,114 +3547,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-07",
-   "time": "12:30",
-   "name": "NLH Deepstack Freezeout Party",
-   "series": "CAPT",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-nlh-deepstack-freezeout-party-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-07",
-   "time": "13:00",
-   "name": "NLH Main Event Day 2",
-   "series": "CAPT",
-   "buy_in_eur": 1100,
-   "buy_in_text": "€ 1.000 + 100",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-nlh-main-event-day-2-innsbruck"
-  },
-  {
-   "venue_id": "casino-velden-velden-am-worthersee",
-   "date": "2026-11-07",
-   "time": "16:00",
-   "name": "CAPT Million Starttag Velden",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-capt-million-starttag-velden-velden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-07",
-   "time": "16:00",
-   "name": "NLH CAPT Million Day 1A",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-nlh-capt-million-day-1a-innsbruck"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-07",
-   "time": "17:00",
-   "name": "CAPT Million DAY 1 Starttag",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-capt-million-day-1-starttag-baden"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-07",
-   "time": "17:00",
-   "name": "Saturday Deepstack Special | Galanacht des Spiels",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-saturday-deepstack-special-galanacht-des-spiels-linz"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-07",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-07",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-07-weekly-high-hand-linz"
-  },
   {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-11-08",
