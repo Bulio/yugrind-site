@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-08 09:10. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-08 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-08 09:10",
+ "generated": "2026-11-08 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -6992,6 +6992,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-nlh-deepstack-xl-innsbruck"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2026-12-10",
+   "time": "18:00",
+   "name": "Donnerstag Deepstack",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-donnerstag-deepstack-baden"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-10",
    "time": "18:30",
@@ -7038,6 +7050,102 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-poker-donnerstag-progressive-bounty-salzburg"
+  },
+  {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-12-11",
+   "time": "17:00",
+   "name": "NLH Classic",
+   "series": "Pokermania",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-nlh-classic-innsbruck"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2026-12-11",
+   "time": "17:00",
+   "name": "Freitags Freezeout",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-freitags-freezeout-baden"
+  },
+  {
+   "venue_id": "casino-bregenz-bregenz",
+   "date": "2026-12-11",
+   "time": "17:30",
+   "name": "Der Klassiker",
+   "series": null,
+   "buy_in_eur": 173,
+   "buy_in_text": "€ 150 + 23",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-der-klassiker-bregenz"
+  },
+  {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2026-12-11",
+   "time": "17:30",
+   "name": "NLH | PLO Early Bird Bonus",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-nlh-plo-early-bird-bonus-salzburg"
+  },
+  {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2026-12-11",
+   "time": "17:30",
+   "name": "NLH | PLO Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-nlh-plo-bad-beat-jackpot-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-11",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2026-12-12",
+   "time": "17:30",
+   "name": "NLH | PLO Early Bird Bonus",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-12-nlh-plo-early-bird-bonus-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-12",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-12-weekly-high-hand-linz"
   }
  ],
  "sources": [
@@ -7045,7 +7153,7 @@ window.PLE_DATA = {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-07T17:32",
+   "fetched_at": "2026-11-08T17:32",
    "rows": 300
   }
  ]
