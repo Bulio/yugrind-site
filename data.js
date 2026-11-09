@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-09 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-09 07:04. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-09 06:32",
+ "generated": "2026-11-09 07:04",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -220,12 +220,12 @@ window.PLE_DATA = {
   },
   {
    "festival": "PokerStars Open Aix-en-Provence",
-   "tour": null,
+   "tour": "PokerStars Open",
    "venue": "Pasino GRAND",
    "city": "Aix-en-Provence",
    "country": "FR",
-   "lat": null,
-   "lon": null,
+   "lat": 43.5297,
+   "lon": 5.4474,
    "timezone": "Europe/Paris",
    "start_date": "2026-11-01",
    "end_date": "2026-11-08",
@@ -235,7 +235,7 @@ window.PLE_DATA = {
     "https://www.cardplayer.com/nl/pokerstars-open-aix-en-provence"
    ],
    "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Date festival confermate dal sito ufficiale (1-8 nov). Main Event 4-8 nov. Altre fonti indicano inizio 2 nov. Orari flight/guarantee non trovati (pagina schedule non letta). Cardplayer NL cita anche High Roller 2.200 (3-4 nov), Second Chance 550, SHR 5.000, Mystery Bounty Cup 400.",
+   "notes": "Date festival confermate dal sito ufficiale (1-8 nov). Main Event 4-8 nov. Altre fonti indicano inizio 2 nov. Orari flight/guarantee non trovati (pagina schedule non letta). Cardplayer NL cita anche High Roller 2.200 (3-4 nov), Second Chance 550, SHR 5.000, Mystery Bounty Cup 400.",
    "events": [
     {
      "name": "PokerStars Open Main Event",
@@ -253,38 +253,38 @@ window.PLE_DATA = {
    "id": "pokerstars-open-aix-en-provence-2026-11-01"
   },
   {
-   "festival": "VPT Sofia 2026",
+   "festival": "Vamos Poker Tour - Sofia",
    "tour": null,
-   "venue": "Palms Royale Casino Sofia",
+   "venue": "Palms Royale Sofia Casino",
    "city": "Sofia",
    "country": "BG",
-   "lat": null,
-   "lon": null,
+   "lat": 42.7,
+   "lon": 23.32,
    "timezone": "Europe/Sofia",
    "start_date": "2026-11-02",
    "end_date": "2026-11-08",
    "website": "https://www.vamospokertour.com/festivals/vpt-sofia-2026/",
    "source_urls": [
-    "https://www.vamospokertour.com/festivals/vpt-sofia-2026/",
-    "https://evbets.com/tornei-poker-live/evento/167/"
+    "https://evbets.com/tornei-poker-live/evento/167/",
+    "https://www.vamospokertour.com/festivals/vpt-sofia-2026/"
    ],
    "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.vamospokertour.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
-     "name": "Main Event",
+     "name": "Main Event (dato festival)",
      "is_main": true,
      "buy_in_eur": 350,
-     "guarantee_eur": null,
+     "guarantee_eur": 400000,
      "flights": [],
      "level_minutes": null,
      "starting_stack": null,
      "late_reg": null,
      "structure_url": null,
-     "id": "main-event"
+     "id": "main-event-dato-festival"
     }
    ],
-   "id": "vpt-sofia-2026-2026-11-02"
+   "id": "vamos-poker-tour-sofia-2026-11-02"
   },
   {
    "tour": "Banco Casino",
@@ -827,30 +827,30 @@ window.PLE_DATA = {
    "venue": "Circus Casino Resort Namur",
    "city": "Namur",
    "country": "BE",
-   "lat": 50.47,
-   "lon": 4.87,
+   "lat": null,
+   "lon": null,
    "timezone": "Europe/Brussels",
    "start_date": "2026-11-17",
    "end_date": "2026-11-29",
    "website": "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
    "source_urls": [
-    "https://evbets.com/tornei-poker-live/evento/184/",
-    "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur"
+    "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
+    "https://evbets.com/tornei-poker-live/evento/184/"
    ],
    "confidence": "medium",
-   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Estratto in automatico (modello gratis) da www.circus-poker.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
-     "name": "Main Event (dato festival)",
+     "name": "CPS Main Event",
      "is_main": true,
      "buy_in_eur": 2200,
-     "guarantee_eur": 2000000,
+     "guarantee_eur": 800000,
      "flights": [],
      "level_minutes": null,
      "starting_stack": null,
      "late_reg": null,
      "structure_url": null,
-     "id": "main-event-dato-festival"
+     "id": "cps-main-event"
     }
    ],
    "id": "circus-poker-series-2026-2026-11-17"
@@ -938,6 +938,40 @@ window.PLE_DATA = {
    "id": "gukpt-grand-final-london-2026-11-19"
   },
   {
+   "festival": "The Festival Tallinn 2026",
+   "tour": null,
+   "venue": "Olympic Park Casino",
+   "city": "Tallinn",
+   "country": "EE",
+   "lat": null,
+   "lon": null,
+   "timezone": "Europe/Tallinn",
+   "start_date": "2026-11-20",
+   "end_date": "2026-11-29",
+   "website": "https://www.thefestival.com/the-festival-tallinn-2026",
+   "source_urls": [
+    "https://www.thefestival.com/the-festival-tallinn-2026",
+    "https://evbets.com/tornei-poker-live/evento/154/"
+   ],
+   "confidence": "medium",
+   "notes": "Estratto in automatico (modello gratis) da www.thefestival.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "events": [
+    {
+     "name": "NLH Main Event",
+     "is_main": true,
+     "buy_in_eur": 555,
+     "guarantee_eur": null,
+     "flights": [],
+     "level_minutes": null,
+     "starting_stack": null,
+     "late_reg": null,
+     "structure_url": null,
+     "id": "nlh-main-event"
+    }
+   ],
+   "id": "the-festival-tallinn-2026-2026-11-20"
+  },
+  {
    "tour": "German Poker Tour",
    "lat": 49.7,
    "lon": 13.0,
@@ -1020,40 +1054,6 @@ window.PLE_DATA = {
    "country": "CZ",
    "timezone": "Europe/Prague",
    "id": "german-poker-masters-1million-2026-11-20"
-  },
-  {
-   "festival": "The Festival Tallinn 2026",
-   "tour": null,
-   "venue": "Olympic Park Casino",
-   "city": "Tallinn",
-   "country": "EE",
-   "lat": 59.44,
-   "lon": 24.75,
-   "timezone": "Europe/Tallinn",
-   "start_date": "2026-11-20",
-   "end_date": "2026-11-29",
-   "website": "https://www.thefestival.com/the-festival-tallinn-2026",
-   "source_urls": [
-    "https://evbets.com/tornei-poker-live/evento/154/",
-    "https://www.thefestival.com/the-festival-tallinn-2026"
-   ],
-   "confidence": "medium",
-   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
-   "events": [
-    {
-     "name": "Main Event (dato festival)",
-     "is_main": true,
-     "buy_in_eur": 350,
-     "guarantee_eur": null,
-     "flights": [],
-     "level_minutes": null,
-     "starting_stack": null,
-     "late_reg": null,
-     "structure_url": null,
-     "id": "main-event-dato-festival"
-    }
-   ],
-   "id": "the-festival-tallinn-2026-2026-11-20"
   },
   {
    "festival": "WSOP Circuit Sanremo 2026",
@@ -1540,7 +1540,7 @@ window.PLE_DATA = {
     "https://somuchpoker.com/events-calendar/ept/2026/ept-prague-2026"
    ],
    "confidence": "high",
-   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
+   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "events": [
     {
      "name": "EPT Main Event",
@@ -1852,7 +1852,7 @@ window.PLE_DATA = {
    "lat": 48.15,
    "lon": 17.11,
    "website": "https://evbets.com/en/",
-   "notes": "Flights fino a 10% del field avanza. | Estratto in automatico (modello gratis) da evbets.com il 2026-11-06; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Flights fino a 10% del field avanza. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "festival": "EVBETS LIVE Experience",
    "venue": "Banco Casino Bratislava",
    "city": "Bratislava",
@@ -1863,7 +1863,6 @@ window.PLE_DATA = {
    "source_urls": [
     "https://www.bancocasino.sk/ba/sk/event/evbets-live-prichadza-do-banco-bratislava-eu300000-main-event-novy-level-pokru-vo-vianocnej",
     "https://www.bancocasino.sk/ba/en/tournaments",
-    "https://evbets.com/en/",
     "https://evbets.com/tornei-poker-live/evento/152/"
    ],
    "confidence": "high",
@@ -8515,14 +8514,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-09T06:32",
+   "fetched_at": "2026-11-09T07:04",
    "rows": 112
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-09T06:32",
+   "fetched_at": "2026-11-09T07:04",
    "rows": 300
   }
  ]
