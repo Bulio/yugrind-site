@@ -5,7 +5,9 @@
 (function () {
   "use strict";
   const C = window.YG_CONFIG || {};
-  const ATTIVA = !!(C.supabaseUrl && C.supabaseAnonKey);
+  // aperta: l'interruttore di Giuliano. Finché è false l'area online mostra «In arrivo»; sull'anteprima locale (127.0.0.1) si prova lo stesso.
+  const LOCALE = /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+  const ATTIVA = !!(C.supabaseUrl && C.supabaseAnonKey && (C.aperta || LOCALE));
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const ls = {
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
