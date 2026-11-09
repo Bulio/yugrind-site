@@ -613,15 +613,16 @@
   function notFound() { $app.innerHTML = `<div class="empty">Pagina non trovata.<br><br><a class="btn" href="#/">Torna al calendario</a></div>`; }
 
   /* ---------- router, titoli, tema ---------- */
-  const TITLES = { "": "Tutti i tornei di poker live in Europa", live: "In corso adesso", oggi: "Oggi nelle sale", sale: "Sale da poker in Europa", piano: "Il tuo piano", diario: "Il tuo diario", info: "Chi siamo e domande frequenti" };
+  const TITLES = { "": "Tutti i tornei di poker live in Europa", live: "In corso adesso", oggi: "Oggi nelle sale", sale: "Sale da poker in Europa", piano: "Il tuo piano", diario: "Il tuo diario", info: "Chi siamo e domande frequenti", area: "Area iscritti" };
   function route() {
     clearInterval(timer);
     const h = location.hash.replace(/^#\/?/, "").split("/");
-    const sect = { "": "home", f: "home", t: "home", live: "home", oggi: "sale", sale: "sale", v: "sale", w: "sale", d: "sale", piano: "piano", diario: "diario", info: "info" }[h[0]] || "home";
+    const sect = { "": "home", f: "home", t: "home", live: "home", oggi: "sale", sale: "sale", v: "sale", w: "sale", d: "sale", piano: "piano", diario: "diario", info: "info", area: "area" }[h[0]] || "home";
     document.querySelectorAll("[data-nav]").forEach(a => { const on = a.dataset.nav === sect; a.classList.toggle("on", on); on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"); });
     if (!h[0]) viewHome(); else if (h[0] === "live") viewLive(); else if (h[0] === "info") viewInfo();
     else if (h[0] === "oggi") viewToday(); else if (h[0] === "sale") viewVenues(); else if (h[0] === "v") viewVenue(h[1]); else if (h[0] === "w") viewWeekly(h[1], h[2]); else if (h[0] === "d") viewDated(h[1]);
     else if (h[0] === "piano") viewPlan(); else if (h[0] === "diario") viewDiary();
+    else if (h[0] === "area" && window.YG_AREA) window.YG_AREA.view($app);
     else if (h[0] === "f") viewFestival(h[1]); else if (h[0] === "t") viewTournament(h[1], h[2], h[3]); else notFound();
     const h1 = $app.querySelector("h1");
     document.title = `${TITLES[h[0]] || (h1 ? h1.textContent : "YUGRIND")} · YUGRIND`;

@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-08 17:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-09 02:57. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-08 17:32",
+ "generated": "2026-11-09 02:57",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3544,105 +3544,27 @@ window.PLE_DATA = {
    "id": "perla-casino-hit-nova-gorica",
    "status": "closed",
    "status_note": "Sala poker chiusa: la pagina ufficiale (6/11/2026) dice che i tornei 2026 sono annullati."
+  },
+  {
+   "venue": "Banco Casino Bratislava",
+   "city": "Bratislava",
+   "country": "SK",
+   "timezone": "Europe/Bratislava",
+   "website": null,
+   "poker_page": "https://www.bancocasino.sk/ba/sk/turnaje",
+   "cash_games": null,
+   "source_urls": [
+    "https://www.bancocasino.sk/ba/sk/turnaje"
+   ],
+   "confidence": "high",
+   "notes": "Sala aggiunta dal calendario ufficiale Banco Casino Bratislava.",
+   "weekly": [],
+   "id": "banco-casino-bratislava-bratislava",
+   "status": "open",
+   "dated_source": "Banco Casino Bratislava"
   }
  ],
  "dated": [
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-08",
-   "time": "13:00",
-   "name": "NLH Main Event Final Day",
-   "series": "CAPT",
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-nlh-main-event-final-day-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-08",
-   "time": "14:00",
-   "name": "NLH CAPT Million Day 2 of Day 1 60min",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-nlh-capt-million-day-2-of-day-1-60min-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-08",
-   "time": "15:00",
-   "name": "NLH CAPT Million 30min",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-nlh-capt-million-30min-innsbruck"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-08",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-08",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-08",
-   "time": "18:00",
-   "name": "Omaha Tag - Cash Game",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-omaha-tag-cash-game-baden"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-08",
-   "time": "18:00",
-   "name": "Omaha Tag - PLO Bounty Turnier",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-omaha-tag-plo-bounty-turnier-baden"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-08",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-08-weekly-high-hand-linz"
-  },
   {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-11-09",
@@ -3666,6 +3588,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-09-nlh-plo-early-bird-bonus-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-09",
+   "time": "18:00",
+   "name": "#1 PPC Main Event Day 1/D",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=85e618b8-300c-44c9-9e7a-3c6dbca0cb57"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -3764,6 +3698,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-10-nlh-plo-early-bird-bonus-salzburg-1"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-10",
+   "time": "18:00",
+   "name": "#1 PPC Main Event Day 1/E",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=287f4a42-69fc-45f3-a650-590c3ce2ddf9"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-10",
    "time": "18:00",
@@ -3860,6 +3806,42 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-10-poker-dienstag-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-11",
+   "time": "12:00",
+   "name": "#1 PPC Main Event Day 1/F",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d7d03107-9306-4be0-bb31-52874f7c1b13"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-11",
+   "time": "16:00",
+   "name": "#2 PPC Deepstack (1 Day Event)",
+   "series": null,
+   "buy_in_eur": 250,
+   "buy_in_text": null,
+   "guarantee_eur": 20000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=baa2875b-ffb5-4adf-a96f-ca6773310eb6"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-11",
+   "time": "17:00",
+   "name": "#1 PPC Main Event Day 1/G",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=31690aaa-ba83-4df7-95fb-56b5fc146959"
+  },
+  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-11-11",
    "time": "17:30",
@@ -3942,6 +3924,78 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-poker-mittwoch-nlh-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-11",
+   "time": "22:00",
+   "name": "#1 PPC Main Event Day 1/H Turbo",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=723d62d4-9ccb-465a-84f3-2dcba143dc4a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "10:00",
+   "name": "#3 Satellite to SPPC Super High Roller (3x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=aee9b75d-1c26-4995-b101-e3096fa5675a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "12:00",
+   "name": "#1 PPC Main Event Day 1/I",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=acc234ba-7e25-4244-abe4-a9cf808cb659"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "14:00",
+   "name": "#4 PPC Celebrating 10 years of Polish Poker Series - Road to Dubai (3x 1750€ Package)",
+   "series": null,
+   "buy_in_eur": 50,
+   "buy_in_text": null,
+   "guarantee_eur": 5250,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=497c2d9c-0f9f-4f91-8b1b-743aa8f0d611"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "17:00",
+   "name": "#1 PPC Main Event Day 1/J",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3ef6dae7-13f6-46d0-98d5-f09c3941785a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "17:00",
+   "name": "#5 PPC Super High Roller (1-Day event)",
+   "series": null,
+   "buy_in_eur": 1000,
+   "buy_in_text": null,
+   "guarantee_eur": 40000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f6cf199a-66d9-4340-9eaa-2fae60595fa1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4050,6 +4104,66 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-12-poker-donnerstag-deepstack-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "name": "#6 PPC Ladies Event",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 1000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=51f58958-c67f-4403-8f40-9344bfd4d5f4"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-12",
+   "time": "22:00",
+   "name": "#1 PPC Main Event Day 1/K Turbo",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=9ce8822c-8056-4b18-bd9a-0bc2df9b28ce"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "10:00",
+   "name": "#7 Satellite to PPC High Roller (15x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 6000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2de9d132-8800-4fe5-b276-93d56b67e361"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "11:00",
+   "name": "#1 PPC Main Event Day 1/L",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=aff61f7c-32f1-4cb1-986d-8f38b31696e4"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "16:00",
+   "name": "#8 PPC High Roller Day 1",
+   "series": null,
+   "buy_in_eur": 400,
+   "buy_in_text": null,
+   "guarantee_eur": 60000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=071b815a-f5f3-4973-8690-d334267bc9b5"
   },
   {
    "venue_id": "casino-wien-wien",
@@ -4172,6 +4286,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-nlh-plo-early-bird-bonus-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "name": "#1 PPC Main Event Day 1/M",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=bfbfc115-ebdf-4be0-9f4c-a1c33d0c99cf"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-11-13",
    "time": "18:00",
@@ -4194,6 +4320,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-poker-cash-game-aktion-graz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "name": "#9 PPC NLH Championship K.O. (90€+60€ BOUNTY)",
+   "series": null,
+   "buy_in_eur": 90,
+   "buy_in_text": "75€ + 15€",
+   "guarantee_eur": 10000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f96fb08c-2c20-48a8-a7ed-48f16ac026a7"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -4244,6 +4382,42 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-linz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-13",
+   "time": "23:59",
+   "name": "#1 PPC Main Event Day 1/N Turbo",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0bfca950-6ad2-4752-863c-04c95aecd651"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "10:00",
+   "name": "#10 PPC Mixed NLH/ PLO4/ PLO5",
+   "series": null,
+   "buy_in_eur": 75,
+   "buy_in_text": null,
+   "guarantee_eur": 10000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=644b8932-6663-4468-bd67-5753f776f6bf"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "11:00",
+   "name": "#1 PPC Main Event Day 1/O",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=58c23e2b-7906-4f76-b364-eee7d90eecdd"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-14",
    "time": "15:00",
@@ -4254,6 +4428,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-14-capt-million-day-2-of-1a-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "16:00",
+   "name": "#8 PPC High Roller Final Day (FT)",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 60000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a04c0449-6b0f-4117-aa4a-d3d01ce0d9b3"
   },
   {
    "venue_id": "casino-graz-graz",
@@ -4352,6 +4538,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-14-nlh-plo-early-bird-bonus-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "name": "#1 PPC Main Event Day 1/P",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=77847d55-afa2-4896-9965-80d0b2a89ae5"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-14",
    "time": "19:00",
@@ -4364,6 +4562,42 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-14-weekly-high-hand-linz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "name": "#11 PPC Freezeout Turbo Deepstack",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": "135€ + 15€",
+   "guarantee_eur": 10000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f36b588b-c0e2-462e-bf0e-e0793eadd56d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-14",
+   "time": "23:59",
+   "name": "#1 PPC Main Event Day 1/Q Turbo",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=bad40b5c-abd8-4bfc-b0e2-da66937119c1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-15",
+   "time": "14:00",
+   "name": "#1 PPC Main Event Day 2",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=ea258b47-f0e9-4d9a-a71e-e3896aa72647"
+  },
+  {
    "venue_id": "casino-wien-wien",
    "date": "2026-11-15",
    "time": "15:30",
@@ -4374,6 +4608,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-15-capt-million-day-1-starttag-wien"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-15",
+   "time": "16:00",
+   "name": "#12 PPC Championship Mystery Bounty (50€+50€ BOUNTY)",
+   "series": null,
+   "buy_in_eur": 50,
+   "buy_in_text": null,
+   "guarantee_eur": 20000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=27f873d5-18ff-46ba-b1da-d5517b667145"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4434,6 +4680,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-15-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-16",
+   "time": "14:00",
+   "name": "#1 PPC Main Event Final Day",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 500000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=52504192-0d4c-46ca-8da4-7eeef1afc02c"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-16",
+   "time": "14:00",
+   "name": "#13 PPC Farewell Turbo Deepstack",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": null,
+   "guarantee_eur": 5000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=efa55101-a69e-4380-848d-8cf84237af8c"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -4530,6 +4800,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-low-budget-monday-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-17",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a1b3e401-f745-4be9-9f08-ba737b3efe5a"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -4700,6 +4982,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-18-wednesday-poker-challenge-nlh-classic-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "name": "Ladies Night",
+   "series": null,
+   "buy_in_eur": 30,
+   "buy_in_text": null,
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=ba5f14fd-b1f6-478c-a146-87d31b5dbfd3"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2026-11-18",
    "time": "19:00",
@@ -4782,6 +5076,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-19-nlh-bounty-satellite-capt-million-bregenz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "name": "Satellite to EvBets ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 55,
+   "buy_in_text": "50€ + 5€",
+   "guarantee_eur": 3500,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=fd3d2755-97a0-4566-9d0e-140be2f09c97"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -4904,6 +5210,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-20-nlh-plo-early-bird-bonus-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "name": "Super Friday",
+   "series": null,
+   "buy_in_eur": 50,
+   "buy_in_text": null,
+   "guarantee_eur": 10000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=12e9bb04-8ad1-4d1a-bbad-ec66ff138b8e"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-20",
    "time": "19:00",
@@ -5012,6 +5330,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-nlh-capt-million-day-1-bregenz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "name": "Banco Poker Open",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": null,
+   "guarantee_eur": 50000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d4cd5fb3-a520-4104-8c6b-c3a4a176d2ab"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-21",
    "time": "19:00",
@@ -5046,6 +5376,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-capt-million-day-1-of-1a-turnier-baden-1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-22",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=077e8912-e0ec-444e-aab2-90262e325553"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5130,6 +5472,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-19-capt-million-mega-satellite-baden-1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-23",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3d11b271-38ee-455e-84a0-00e84de766d8"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5238,6 +5592,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-high-roller-satellite-turbo-baden"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-24",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=91909c66-6bb7-414a-bf8d-8319e1ebd424"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5432,6 +5798,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-wednesday-poker-challenge-nlh-classic-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "name": "Ladies Night",
+   "series": null,
+   "buy_in_eur": 30,
+   "buy_in_text": null,
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=04d20052-cc52-4b60-b956-461c068edaff"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-25",
    "time": "19:00",
@@ -5576,6 +5954,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-dst-bounty-bregenz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-26",
+   "time": "19:00",
+   "name": "BCM Satellite to ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 35,
+   "buy_in_text": "30€ + 5€",
+   "guarantee_eur": 1700,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3801bf08-eb82-4a56-af3a-f3109d5a6873"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-26",
    "time": "19:00",
@@ -5696,6 +6086,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-27-nlh-plo-early-bird-bonus-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-27",
+   "time": "19:00",
+   "name": "Friday P.K.O (25€+20€ Bounty)",
+   "series": null,
+   "buy_in_eur": 25,
+   "buy_in_text": null,
+   "guarantee_eur": 4000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=489a7bb2-99c4-4289-bc0f-4ce2d76d512d"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-27",
    "time": "19:00",
@@ -5792,6 +6194,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-28-nlh-plo-early-bird-bonus-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "name": "Saturday Ladies Night",
+   "series": null,
+   "buy_in_eur": 30,
+   "buy_in_text": null,
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=afba5790-7604-4bc6-b28f-5de98efb1f7a"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-28",
    "time": "19:00",
@@ -5814,6 +6228,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-29-capt-million-day-3-baden"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-29",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=36d00937-2ed0-46b3-97d4-78b8f536c48e"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5924,6 +6350,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-30-nlh-deepstack-wochenturnier-innsbruck"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-11-30",
+   "time": "19:00",
+   "name": "BCM Supersatellite to ME (15x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 35,
+   "buy_in_text": "30€ + 5€",
+   "guarantee_eur": 2550,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5dfd3061-e5fa-47f8-9faf-274fc963c2b1"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-30",
    "time": "19:00",
@@ -5982,6 +6420,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-nlh-plo-bad-beat-jackpot-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-01",
+   "time": "18:00",
+   "name": "BCM Main Event Day 1/A HALF PRICE",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=e73065d2-c1fc-4b33-a419-9ec83da9c21f"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -6080,6 +6530,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-poker-dienstag-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-02",
+   "time": "16:00",
+   "name": "BCM Satellite to ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 35,
+   "buy_in_text": "30€ + 5€",
+   "guarantee_eur": 1700,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=07431f95-0205-4b14-8f30-1acc9a1714e3"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-02",
    "time": "17:00",
@@ -6116,6 +6578,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-nlh-plo-bad-beat-jackpot-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-02",
+   "time": "18:00",
+   "name": "BCM Main Event Day 1/B",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8484fe66-0723-459a-b1ce-f80698c3d479"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-12-02",
    "time": "18:00",
@@ -6138,6 +6612,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-wednesday-poker-challenge-nlh-classic-seefeld"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-02",
+   "time": "19:00",
+   "name": "BCM Satellite to SP Challenger High Roller (5x 550€ Ticket)",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "50€ + 10€",
+   "guarantee_eur": 2750,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=c4a97de1-e787-448a-bb5b-e15eea3d6196"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -6176,6 +6662,42 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-poker-mittwoch-nlh-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-02",
+   "time": "21:00",
+   "name": "BCM PLO Nightly Turbo",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "50€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7584d7e3-cabb-4730-82e6-eaaa7fc2c689"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "15:00",
+   "name": "BCM Main Event Day 1/C",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=6820ccdd-bed0-4286-bc03-d1f4608d7f0f"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "15:00",
+   "name": "Satellite to PLO Masters ME (5x 250€ Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 35,
+   "buy_in_text": "30€ + 5€",
+   "guarantee_eur": 1250,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=71d41aef-d41c-486d-95e7-505e07944565"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-03",
    "time": "17:00",
@@ -6212,6 +6734,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-nlh-plo-bad-beat-jackpot-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "18:00",
+   "name": "PLO Masters Main Event (PLO, 8-max) Day 1/A",
+   "series": null,
+   "buy_in_eur": 250,
+   "buy_in_text": "225€ + 25€",
+   "guarantee_eur": 15000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=145b946a-5057-4c87-b49b-ada7e266fa60"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-12-03",
    "time": "18:00",
@@ -6234,6 +6768,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-mix-game-nlh-plo-wochenturnier-innsbruck"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "name": "BCM Satellite to SP Challenger High Roller (5x 550€ Ticket)",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "50€ + 10€",
+   "guarantee_eur": 2750,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=4070e5d6-b1a7-4acc-bb8d-c1ad1ebcc416"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -6296,6 +6842,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-poker-donnerstag-deepstack-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "20:00",
+   "name": "BCM Sat. to Main Event Day 1/D",
+   "series": null,
+   "buy_in_eur": 15,
+   "buy_in_text": "10€ + 5€",
+   "guarantee_eur": 170,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d2caca26-544f-4086-aebc-a4ef6bf50135"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-03",
    "time": "20:00",
@@ -6308,6 +6866,42 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-nlh-turbo-bounty-satellite-xmas-main-event-bregenz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "21:00",
+   "name": "BCM NLH/ PLO LOE",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": "135€ + 15€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=aaed9e3d-8308-4acc-8b6e-8f178c3b44b8"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-03",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/D Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0a461f4c-82cc-4c66-90d5-1867e8b06bb3"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "15:00",
+   "name": "BCM Main Event Day 1/E",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5f137723-8734-4447-99be-85e28987695a"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-04",
    "time": "15:00",
@@ -6318,6 +6912,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-nlh-xmas-progressive-bounty-eur-100-kopie-1-bregenz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "16:00",
+   "name": "BCM PLO Masters Mystery Bounty (75€+55€ BOUNTY)",
+   "series": null,
+   "buy_in_eur": 75,
+   "buy_in_text": "55€ + 20€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=70be78bc-aad0-452d-963f-bab3b9d0a5c2"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "17:00",
+   "name": "SP Challenger NLH High Roller Day 1 (8-max)",
+   "series": null,
+   "buy_in_eur": 550,
+   "buy_in_text": "500€ + 50€",
+   "guarantee_eur": 20000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d80eb49b-4b52-4f9b-b2e6-358ddabf6e65"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -6380,6 +6998,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-poker-cup-salzburg-1a-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "19:00",
+   "name": "PLO Masters Main Event (PLO, 8-max) Day 1/B",
+   "series": null,
+   "buy_in_eur": 250,
+   "buy_in_text": "225€ + 25€",
+   "guarantee_eur": 15000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b250ed33-f0bf-4aae-8a55-835dbb40b599"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-04",
    "time": "19:00",
@@ -6390,6 +7020,54 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "20:00",
+   "name": "BCM Sat. to Main Event Day 1/F",
+   "series": null,
+   "buy_in_eur": 15,
+   "buy_in_text": "10€ + 5€",
+   "guarantee_eur": 170,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=e02cf05e-d5d0-433d-82dd-f04cf68ef0aa"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-04",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/F Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=e39c4d45-8153-453f-9076-2e9f40a9423f"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "12:00",
+   "name": "BCM Main Event Day 1/G",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=22ff18de-a8fa-45e2-be25-154ee380c569"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "15:00",
+   "name": "PLO Masters Main Event (PLO, 8-max) Final Day",
+   "series": null,
+   "buy_in_eur": 250,
+   "buy_in_text": "225€ + 25€",
+   "guarantee_eur": 15000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=49112385-9b4b-45a8-ac5a-a439f83052ca"
   },
   {
    "venue_id": "casino-bregenz-bregenz",
@@ -6414,6 +7092,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-krampus-666-wien"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "17:00",
+   "name": "BCM Main Event Day 1/H",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a5834027-36cf-44ef-8950-8e37e38b467a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "17:00",
+   "name": "SP Challenger NLH High Roller Final Day",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 20000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5f84f127-ff8f-4486-a969-fa565521f1eb"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -6536,6 +7238,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-krampus-666-graz"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "name": "PLO Masters Big O (PLO5 hi/lo)",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": "135€ + 15€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=107e5b69-987b-43fb-a910-b52205bdcb74"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-05",
    "time": "19:00",
@@ -6584,6 +7298,54 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-krampus-666-velden"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-05",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/I Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3147589b-45f8-40aa-b17c-6e42a582a6d5"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "10:00",
+   "name": "BCM Main Event Day 1/J Hyperturbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=162c46b3-6305-4f03-964e-7c77fdb06a3d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "12:30",
+   "name": "BCM Last Chance Flip ´n´ Go to Main Event",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=fe7622e2-a8a4-40ae-9cf4-d35e920ed539"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "13:00",
+   "name": "MGC 10-Game Mix Final Day",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 25000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=1135e6f3-70a2-4b87-b567-2dec5cba7cc0"
+  },
+  {
    "venue_id": "casino-bregenz-bregenz",
    "date": "2026-12-06",
    "time": "14:00",
@@ -6606,6 +7368,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-nlh-xmas-weekender-kopie-1-bregenz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "16:00",
+   "name": "BCM Main Event Day 2",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=24e9997c-c667-48dd-911f-2d34408512fc"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -6656,6 +7430,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-poker-cup-salzburg-finale-salzburg"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "18:00",
+   "name": "BCM NLH Mystery Bounty (125€+100€ BOUNTY)",
+   "series": null,
+   "buy_in_eur": 125,
+   "buy_in_text": "100€ + 25€",
+   "guarantee_eur": 10000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d88e9c29-0984-40ba-bf40-882252d49ffd"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-06",
    "time": "19:00",
@@ -6666,6 +7452,42 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-06",
+   "time": "20:00",
+   "name": "PLO Masters PLO 4/5/6 (7-max)",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "50€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2650a515-60ab-4fa3-8a02-3d5c90c22085"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-07",
+   "time": "16:00",
+   "name": "BCM Main Event Final Day",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8c8d7c26-b172-4d88-91a9-bc6d025d5b2c"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-07",
+   "time": "17:00",
+   "name": "BCM Farewell NLH Turbo Deepstack",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "50€ + 10€",
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=08c5c6b8-9a23-4d69-9d63-eea8f279fbc2"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -6762,6 +7584,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-low-budget-monday-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-08",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=025bf508-97d1-4fa6-ad4d-223601a3e13c"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -6930,6 +7764,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-09-surrender-turnier-baden"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-09",
+   "time": "19:00",
+   "name": "Ladies Night",
+   "series": null,
+   "buy_in_eur": 35,
+   "buy_in_text": null,
+   "guarantee_eur": 3000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8ce0c746-bc8c-49a9-8c80-f13cae0f8d7b"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -7146,9 +7992,436 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-12-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-13",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=21c5e7bc-1715-4f16-9531-3497d4b02bea"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-14",
+   "time": "20:00",
+   "name": "Supersatellite to EvBets ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 3500,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b05863df-44d1-45f7-91cc-9915825f35ef"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-15",
+   "time": "16:00",
+   "name": "#1 Supersatellite to EvBets ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 3500,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f877ae91-67c3-4b68-a264-5268b04ea74b"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-15",
+   "time": "18:00",
+   "name": "#2 EvBets Live Main Event Day 1/A",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f6c66f40-0518-483b-80be-a466d2451734"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-16",
+   "time": "13:00",
+   "name": "#4 Supersatellite to EvBets ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 3500,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d36270d2-ba27-498c-a9f1-4ebd80a4c8ed"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-16",
+   "time": "15:00",
+   "name": "#2 EvBets Live Main Event Day 1/B",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=9b18b013-9f4d-42d3-a0fc-597f0764e55c"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-16",
+   "time": "21:00",
+   "name": "#2 EvBets Live Main Event Day 1/C Turbo",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=454835d2-2016-4561-ad6a-d3f03c85e7c2"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-17",
+   "time": "13:00",
+   "name": "#7 Supersatellite to EvBets ME (10x Ticket GTD)",
+   "series": null,
+   "buy_in_eur": 70,
+   "buy_in_text": "60€ + 10€",
+   "guarantee_eur": 3500,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2d98f2d3-c585-4101-b5cb-c088506a1cce"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-17",
+   "time": "15:00",
+   "name": "#2 EvBets Live Main Event Day 1/D",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=499f7cbc-5f52-4758-b711-932c989d3ac2"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-17",
+   "time": "17:00",
+   "name": "#8 EvBets PLO High Roller (1-day Event)",
+   "series": null,
+   "buy_in_eur": 690,
+   "buy_in_text": "620€ + 70€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=92be5cfb-38e6-4b10-a487-8c49f7c73298"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-17",
+   "time": "21:00",
+   "name": "#2 EvBets Live Main Event Day 1/E Turbo",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7a790db2-2cea-4a8b-91ca-85ddf03d4b9f"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "12:00",
+   "name": "#2 EvBets Live Main Event Day 1/F",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=007a3751-df15-4f09-a1d2-3835ade22e41"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "15:00",
+   "name": "#10 EvBets Fish ´n´ Go",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "90€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=93b21c80-95f3-4904-8033-34c3e96a69fa"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "16:00",
+   "name": "#11 EvBets NLH High Roller (1-day Event)",
+   "series": null,
+   "buy_in_eur": 690,
+   "buy_in_text": "620€ + 70€",
+   "guarantee_eur": 20000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a097726b-1fce-49f7-b48c-788d5dd216e4"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "17:00",
+   "name": "#2 EvBets Live Main Event Day 1/G",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7f4c2ab1-c94c-480c-8702-fd26b6a5ff5a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "22:00",
+   "name": "#2 EvBets Live Main Event Day 1/H Turbo",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3022d361-4a85-407a-b4f8-e5abe6a3462b"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-19",
+   "time": "12:00",
+   "name": "#2 EvBets Live Main Event Day 1/I",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=69d44236-b44e-4d47-b420-345d0883e55a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-19",
+   "time": "15:00",
+   "name": "#13 EvBets PLO 4/5/6 (7-max)",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "90€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=37a054da-6464-480c-b57a-30f2291f93d1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-19",
+   "time": "17:00",
+   "name": "#2 EvBets Live Main Event Day 1/J",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7882c33d-3f0b-4aea-858d-9bd769f37128"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-19",
+   "time": "22:00",
+   "name": "#2 EvBets Live Main Event Day 1/K Turbo",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=78b01e5a-5462-4425-ba91-d88768d3808d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-20",
+   "time": "09:00",
+   "name": "#2 EvBets Live Main Event Day 1/L Hyperturbo",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=82f5f29c-5d2a-48e0-9f57-f5782d3453b3"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-20",
+   "time": "14:00",
+   "name": "#2 EvBets Live Main Event Final Day",
+   "series": null,
+   "buy_in_eur": 350,
+   "buy_in_text": null,
+   "guarantee_eur": 300000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=77e5438f-8630-4cd6-8e12-58ee85bf06e9"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-20",
+   "time": "18:00",
+   "name": "#16 EvBets Farewell NLH Turbo",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "90€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3424472b-7f62-4c40-89be-366e506cf90d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-21",
+   "time": "16:00",
+   "name": "CASH GAME NIGHT",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5fb651fc-b411-4b1c-959e-c00445c898fc"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-22",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=c4f80812-f984-427f-b6da-bb2b2d58bc1a"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-23",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=e09a995d-d3e2-49b5-aaa6-d535ad6f64cf"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-24",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f4ecd26f-0850-47ab-ac16-a895aff60cc4"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-25",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=82ba85cd-afc7-44bc-bcec-1a9dbf3a980e"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-26",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=dfd48154-83e7-4293-8319-b9ff93bcd7a1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-27",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0132d07a-7b0b-4a9a-abae-20042b34256f"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-28",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=41014454-a3c6-43e8-aaf5-3696301a22a4"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-29",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2d0f5898-8f38-411d-a6c3-693f7c17a052"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-30",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=1876a5f4-15ea-4984-8460-0cf0e32fbb19"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-31",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=74356988-8e92-4d64-9eb4-4c236fe3d50c"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-01",
+   "time": "00:00",
+   "name": "CASINO CLOSED",
+   "series": null,
+   "buy_in_eur": 0,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=86c44d3f-cb2b-4ac6-8153-df7eeb06d454"
   }
  ],
  "sources": [
+  {
+   "key": "banco_ba",
+   "label": "Banco Casino Bratislava",
+   "url": "https://www.bancocasino.sk/ba/sk/turnaje",
+   "fetched_at": "2026-11-09T02:56",
+   "rows": 112
+  },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
