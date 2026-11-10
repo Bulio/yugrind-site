@@ -1143,11 +1143,13 @@ function frame() {
     camera.position.copy(camPos); camera.lookAt(camLook);
   } else { me.g.visible = false; camera.position.set(P.x, 1.62, P.z); camera.rotation.set(P.pitch, P.yaw, 0); camPos.copy(camera.position); }
   if (marker.visible) marker.material.opacity = .55 + Math.sin(now / 180) * .35;
-  if (Q >= 2 && composer) composer.render(); else renderer.render(scene, camera);
+  if (canvas.clientWidth > 0 && canvas.clientHeight > 0) { if (Q >= 2 && composer) composer.render(); else renderer.render(scene, camera); } // a finestra chiusa o ridotta a zero non si disegna
   // qualità automatica: si ignora l'avvio, poi si scende per gradi se va a scatti (non si salva nulla)
   if (now - started > 6000 && !document.hidden) { fpsAcc += dt; fpsN++; if (fpsAcc > 2) { const fps = fpsN / fpsAcc; fpsAcc = 0; fpsN = 0; if (fps < 28) { if (Q === 2) Q = 1; else if (Q === 1) { Q = 0; sun.castShadow = false; } else if (pr > .8) { pr = Math.max(.8, pr * .85); renderer.setPixelRatio(pr); resize(); } } } }
   requestAnimationFrame(frame);
 }
 P.yaw = 0;
 $("#loading").hidden = true; openSheet(sheetMenu(), "menu"); requestAnimationFrame(frame);
+// contatore anonimo delle persone collegate (../online.js): sito intero e quanti sono nella sala
+if (window.YG_ONLINE) { const el = $("#online"), tx = el.querySelector("span"); window.YG_ONLINE.on(c => { el.hidden = false; tx.textContent = `${c.tot.toLocaleString("it-IT")} online · ${c.sala.toLocaleString("it-IT")} nella sala`; }); }
 window.__sala = { P, INTER, tonight, NOW, NEXT, COUNTRIES, get pr() { return pr; }, get Q() { return Q; }, get view() { return view; } }; // per le prove

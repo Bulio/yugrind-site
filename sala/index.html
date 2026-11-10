@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-online="sala">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -84,6 +84,8 @@ input.name:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 1px var
 .btot{display:grid;align-content:end;gap:4px}
 .btot b{font:700 20px var(--mono);color:var(--gold)}
 .fsel{width:100%;min-height:46px;padding:0 10px;border-radius:10px;border:1px solid var(--border);background:var(--raised);color:var(--text);font:15px var(--sans)}
+.online{position:fixed;top:calc(env(safe-area-inset-top) + 76px);left:50%;transform:translateX(-50%);z-index:5;display:inline-flex;align-items:center;gap:7px;padding:4px 11px;border-radius:999px;background:#0B110Fcc;border:1px solid var(--border);font:600 12px var(--sans);color:var(--muted);pointer-events:none;white-space:nowrap}
+.online i{width:7px;height:7px;border-radius:50%;background:var(--green2);box-shadow:0 0 6px var(--green2)}
 #vign{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.38) 100%)}
 #joy{position:fixed;width:120px;height:120px;border-radius:50%;border:2px solid #ECF2EE55;background:#0B110F44;z-index:6;pointer-events:none;backdrop-filter:blur(2px)}
 #joy i{position:absolute;left:36px;top:36px;width:48px;height:48px;border-radius:50%;background:#ECF2EEcc;box-shadow:0 2px 10px #0008}
@@ -103,6 +105,7 @@ input.name:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 1px var
   <a class="pill" href="../">Versione semplice</a>
 </header>
 <div class="legal">18+ · informazione sui tornei dal vivo</div>
+<div id="online" class="online" hidden aria-live="polite"><i></i><span></span></div>
 <nav class="dock">
   <button id="bMenu" class="main" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Cosa fare</button>
   <button id="bGo" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Vai a…</button>
@@ -115,6 +118,8 @@ input.name:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 1px var
 <div id="loading"><div><b>La Sala YUGRIND</b>Sto aprendo la sala…</div></div>
 <script type="importmap">{"imports":{"three":"./vendor/three-0.169/three.module.min.js","three/addons/":"./vendor/three-0.169/addons/"}}</script>
 <script src="../data.js"></script>
-<script type="module" src="./sala.js?v=18"></script>
+<script src="../config.js"></script>
+<script src="../online.js"></script>
+<script type="module" src="./sala.js?v=20"></script>
 </body>
 </html>
