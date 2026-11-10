@@ -15,6 +15,9 @@
     del(k) { try { localStorage.removeItem(k); } catch (e) { } }
   };
   let sb = null, caricamento = null;
+  // testo del consenso newsletter: se cambia, cambia anche NL_VERSIONE (si salva col consenso, art. 7.1 GDPR)
+  const NL_VERSIONE = "nl-2026-11-10";
+  const NL_TESTO = "Voglio ricevere via email «I tornei del weekend» e gli avvisi sui festival. Posso revocare quando voglio togliendo la spunta qui o dal link in ogni email.";
 
   function carica() {
     if (sb) return Promise.resolve(sb);
@@ -111,7 +114,7 @@
            <a class="btn" href="#/piano">Apri il piano</a> <a class="btn ghost" href="#/diario">Apri il diario</a> <button class="btn ghost" id="ygSync" type="button">Salva adesso</button>`
         : `<p class="meta">Non riesco a sincronizzare adesso${err ? " (" + esc(err) + ")" : ""}. I tuoi dati restano in questo browser.</p>`) +
       box("Newsletter (facoltativa)", `<label style="display:flex;gap:10px;align-items:flex-start"><input id="ygNl" type="checkbox" ${nl ? "checked" : ""} style="margin-top:4px">
-        <span>Voglio ricevere via email «I tornei del weekend» e gli avvisi sui festival. Posso togliere la spunta quando voglio.</span></label>`) +
+        <span>${esc(NL_TESTO)}</span></label>`) +
       box("I tuoi dati", `<p class="meta" style="margin:0 0 10px">Puoi scaricare una copia di tutto quello che abbiamo su di te, uscire o cancellare l'account. Dettagli nell'${PRIVACY}.</p>
         <button class="btn ghost" id="ygExport" type="button">Scarica i miei dati</button> <button class="btn ghost" id="ygOut" type="button">Esci</button>
         <button class="btn ghost" id="ygDel" type="button" style="color:#c0392b;border-color:#c0392b">Cancella il mio account</button>`);
@@ -119,7 +122,7 @@
     if (q("ygSync")) q("ygSync").onclick = async () => { try { await sincronizza(user); account(app, testa, user); } catch (e) { alert("Errore: " + e.message); } };
     q("ygNl").onchange = async ev => {
       const si = ev.target.checked, ora = new Date().toISOString();
-      const { error } = await sb.from("profili").update(si ? { newsletter: true, newsletter_consenso_il: ora, newsletter_revoca_il: null } : { newsletter: false, newsletter_revoca_il: ora }).eq("id", user.id);
+      const { error } = await sb.from("profili").update(si ? { newsletter: true, newsletter_consenso_il: ora, newsletter_revoca_il: null, newsletter_versione: NL_VERSIONE } : { newsletter: false, newsletter_revoca_il: ora }).eq("id", user.id);
       if (error) { alert("Errore: " + error.message); ev.target.checked = !si; }
     };
     q("ygExport").onclick = async () => {
