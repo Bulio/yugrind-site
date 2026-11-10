@@ -1,5 +1,7 @@
 /* YUGRIND — sito statico senza librerie. Dati in data.js (window.PLE_DATA). v2: 7/11/2026 */
 (() => {
+  // niente sito dentro la cornice di un altro sito (clickjacking): GitHub Pages non permette l'header X-Frame-Options
+  if (window.top !== window.self) { try { window.top.location.replace(window.self.location.href); } catch (e) { document.documentElement.style.display = "none"; } return; }
   const DATA = window.PLE_DATA || { festivals: [] };
   const FEST = DATA.festivals;
   const DAY_HOURS = 12;            // durata ipotizzata di un Day 1 quando non è pubblicata
@@ -8,6 +10,8 @@
   /* ---------- utilità ---------- */
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const enc = encodeURIComponent;
+  // link esterni presi dalle fonti: solo http/https, mai «javascript:» o altro (sicurezza 10/11/2026)
+  const safeUrl = u => /^https?:\/\//i.test(String(u ?? "").trim()) ? esc(String(u).trim()) : "#";
   const COUNTRY = { IT: "Italia", AT: "Austria", SI: "Slovenia", CZ: "Rep. Ceca", SK: "Slovacchia", MT: "Malta", CY: "Cipro", GB: "Regno Unito", IE: "Irlanda", FR: "Francia", ES: "Spagna", NL: "Paesi Bassi", BE: "Belgio", DE: "Germania", CH: "Svizzera", HR: "Croazia", PT: "Portogallo", MC: "Monaco", PL: "Polonia", HU: "Ungheria" };
   const flag = cc => cc && cc.length === 2 ? String.fromCodePoint(...[...cc.toUpperCase()].map(c => 127397 + c.charCodeAt(0))) : "";
   const eur = n => n == null ? null : "€" + Number(n).toLocaleString("it-IT");
@@ -320,7 +324,7 @@
     const me = f.events ? mainEvent(f) : null;
     return `<div class="actions">${L.map(([i, t, u, s]) => `<a class="action" href="${u}" target="_blank" rel="noopener sponsored">${icon(i)}<b>${t}</b><small>${s}</small></a>`).join("")}</div>
       <div class="box" style="margin-top:12px"><h3>${icon("ticket")} Quanto mi costa il viaggio?</h3>
-        <form class="grid2" id="budget" onsubmit="return false">
+        <form class="grid2" id="budget">
           <label class="f">Buy-in €<input type="number" inputmode="numeric" min="0" data-k="bi" value="${me && me.buy_in_eur != null ? me.buy_in_eur : ""}"></label>
           <label class="f">Re-entry<input type="number" inputmode="numeric" min="0" data-k="re" value="0"></label>
           <label class="f">Notti<input type="number" inputmode="numeric" min="0" data-k="n" value="${nights}"></label>
@@ -333,9 +337,9 @@
   function bindBudget() {
     const box = document.getElementById("budget"); if (!box) return;
     const calc = () => { const v = {}; box.querySelectorAll("input").forEach(i => v[i.dataset.k] = +i.value || 0); const t = v.bi * (1 + v.re) + v.n * v.h + v.v + (v.n + 1) * v.p; document.getElementById("tot").textContent = t ? eur(Math.round(t)) : "—"; };
-    box.addEventListener("input", calc); calc();
+    box.addEventListener("input", calc); box.addEventListener("submit", ev => ev.preventDefault()); calc();
   }
-  const sourcesBox = urls => `<div class="box"><h3>${icon("link")} Fonti</h3><div class="sources">${(urls || []).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 64))}</a>`).join("")}</div>
+  const sourcesBox = urls => `<div class="box"><h3>${icon("link")} Fonti</h3><div class="sources">${(urls || []).map(u => `<a href="${safeUrl(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 64))}</a>`).join("")}</div>
     <p class="meta" style="margin:8px 0 0">Un dato è sbagliato? <a href="mailto:info@yugrind.com?subject=${enc("Correzione dati")}">Scrivici</a>.</p></div>`;
 
   /* ---------- pagina festival ---------- */
@@ -355,7 +359,7 @@
         <button class="btn ${isFav("f:" + f.id) ? "" : "ghost"}" id="favF">${icon("star")} ${isFav("f:" + f.id) ? "Nel tuo piano" : "Salva nel piano"}</button>
         <button class="btn ghost" id="icsF">${icon("cal")} Aggiungi al calendario</button>
         <button class="btn ghost" id="shareF">${icon("share")} Condividi</button>
-        ${f.website ? `<a class="btn ghost" href="${esc(f.website)}" target="_blank" rel="noopener">${icon("link")} Sito ufficiale</a>` : ""}
+        ${f.website ? `<a class="btn ghost" href="${safeUrl(f.website)}" target="_blank" rel="noopener">${icon("link")} Sito ufficiale</a>` : ""}
       </div>
       <div class="layout" style="margin-top:16px"><div>
         <section><div class="sec-h"><h2>Eventi e Day</h2></div>
@@ -410,7 +414,7 @@
     };
     $app.innerHTML = `<div class="crumbs">${c.crumbs}</div>
       <h1>${esc(c.title)}</h1>
-      <p class="lead">${flag(f.country)} ${esc(f.venue || "")}, ${esc(f.city)}${e.structure_url ? ` · <a href="${esc(e.structure_url)}" target="_blank" rel="noopener">struttura ufficiale</a>` : ""}</p>
+      <p class="lead">${flag(f.country)} ${esc(f.venue || "")}, ${esc(f.city)}${e.structure_url ? ` · <a href="${safeUrl(e.structure_url)}" target="_blank" rel="noopener">struttura ufficiale</a>` : ""}</p>
       <div class="btns" style="margin-bottom:16px">
         <button class="btn ${isFav(c.fav) ? "" : "ghost"}" id="favT">${icon("star")} ${isFav(c.fav) ? "Nel tuo piano" : "Salva"}</button>
         ${fl.start || fl.date ? `<button class="btn ghost" id="icsT">${icon("cal")} Calendario</button>` : ""}
@@ -473,7 +477,7 @@
       <div class="row">${v.status === "closed" ? `<span class="badge closed">sala chiusa</span>` : ""} ${confBadge(v.confidence)}</div>
       <h1 style="margin-top:10px">${esc(v.venue)}</h1>
       <p class="lead">${flag(v.country)} ${esc(v.city)}</p>
-      <div class="btns">${v.poker_page ? `<a class="btn ghost" href="${esc(v.poker_page)}" target="_blank" rel="noopener">${icon("link")} Pagina poker ufficiale</a>` : ""}<a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=${enc(v.venue + " " + v.city)}" target="_blank" rel="noopener">${icon("nav")} Indicazioni</a></div>
+      <div class="btns">${v.poker_page ? `<a class="btn ghost" href="${safeUrl(v.poker_page)}" target="_blank" rel="noopener">${icon("link")} Pagina poker ufficiale</a>` : ""}<a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=${enc(v.venue + " " + v.city)}" target="_blank" rel="noopener">${icon("nav")} Indicazioni</a></div>
       ${v.status === "closed" ? `<div class="box warn" style="margin-top:16px"><h3>Attenzione</h3><p style="margin:0">${esc(v.status_note)}</p></div>` : ""}
       <div class="layout" style="margin-top:16px"><div>
         ${v.dated_source ? (() => { const d0 = todayIn(v.timezone); const up = DATED.filter(x => x.venue_id === v.id && x.date >= d0 && x.kind !== "cash").slice(0, 30);
@@ -512,7 +516,7 @@
     renderTournament({
       f: asFest(v), e: x, fl, k: `yg_rep_d_${x.venue_id}_${x.date}_${x.time}_${x.name}`, fav: `d:${x.venue_id}|${x.date}|${x.time}|${x.name}`, title: `${x.series ? x.series + " · " : ""}${x.name}`, hash: `#/d/${i}`,
       crumbs: `<a href="#/v/${v.id}">${icon("back")} ${esc(v.venue)}</a>`,
-      others: `<div class="box"><h3>${icon("cal")} Dal calendario ufficiale</h3><p class="meta" style="margin:0 0 10px">${esc(v.dated_source)} · ${fmtDate(x.date)}${x.time ? " alle " + esc(x.time) : ""}${x.buy_in_text ? " · buy-in " + esc(x.buy_in_text) : ""}</p>${x.url ? `<a class="btn ghost block" href="${esc(x.url)}" target="_blank" rel="noopener">${icon("link")} Scheda ufficiale</a>` : ""}</div>`,
+      others: `<div class="box"><h3>${icon("cal")} Dal calendario ufficiale</h3><p class="meta" style="margin:0 0 10px">${esc(v.dated_source)} · ${fmtDate(x.date)}${x.time ? " alle " + esc(x.time) : ""}${x.buy_in_text ? " · buy-in " + esc(x.buy_in_text) : ""}</p>${x.url ? `<a class="btn ghost block" href="${safeUrl(x.url)}" target="_blank" rel="noopener">${icon("link")} Scheda ufficiale</a>` : ""}</div>`,
       guide: `#/v/${v.id}`,
     });
   }
@@ -567,7 +571,7 @@
             <button class="btn" type="submit" style="align-self:end">${icon("check")} Salva</button>
           </form></div>
         <section class="sec"><div class="sec-h"><h2>Storico</h2>${rows.length ? `<button class="btn ghost" id="csv">${icon("down")} Esporta CSV</button>` : ""}</div>
-          ${rows.length ? `<div class="list">${rows.map((r, idx) => { const p = (+r.cash || 0) - (+r.buyin || 0) * (1 + (+r.reentry || 0)) - (+r.costs || 0); return `<div class="li"><span class="t" style="font-size:14px">${fmtDate(r.date).replace(/ \d{4}$/, "")}<small>${r.date.slice(0, 4)}</small></span><span class="n"><b>${esc(r.name)}</b><span>Buy-in ${eur(+r.buyin)}${+r.reentry ? ` ×${1 + +r.reentry}` : ""}${+r.costs ? ` · spese ${eur(+r.costs)}` : ""}${+r.cash ? ` · vinti ${eur(+r.cash)}` : ""}</span></span><span class="row"><b class="${p >= 0 ? "pnl-pos" : "pnl-neg"}">${fmt(p)}</b><button class="iconbtn" data-del="${idx}" aria-label="Elimina">${icon("trash")}</button></span></div>`; }).join("")}</div>` : `<div class="empty">Nessun torneo segnato.</div>`}</section>
+          ${rows.length ? `<div class="list">${rows.map((r, idx) => { const p = (+r.cash || 0) - (+r.buyin || 0) * (1 + (+r.reentry || 0)) - (+r.costs || 0); return `<div class="li"><span class="t" style="font-size:14px">${esc(fmtDate(String(r.date)).replace(/ \d{4}$/, ""))}<small>${esc(String(r.date).slice(0, 4))}</small></span><span class="n"><b>${esc(r.name)}</b><span>Buy-in ${eur(+r.buyin)}${+r.reentry ? ` ×${1 + +r.reentry}` : ""}${+r.costs ? ` · spese ${eur(+r.costs)}` : ""}${+r.cash ? ` · vinti ${eur(+r.cash)}` : ""}</span></span><span class="row"><b class="${p >= 0 ? "pnl-pos" : "pnl-neg"}">${fmt(p)}</b><button class="iconbtn" data-del="${idx}" aria-label="Elimina">${icon("trash")}</button></span></div>`; }).join("")}</div>` : `<div class="empty">Nessun torneo segnato.</div>`}</section>
       </div><aside>
         <div class="box"><h3>${icon("info")} Perché tenerlo</h3><p class="meta" style="margin:0">Il ROI vero di un giocatore live include viaggio e hotel: qui li segni insieme al buy-in. L'export CSV va bene per il commercialista o per un foglio di calcolo.</p></div>
         <div class="box ai"><h3>${icon("spark")} In arrivo</h3><p class="meta" style="margin:0">Fotografa la ricevuta del buy-in e il torneo si segna da solo. Statistiche per sala, buy-in e tipo di torneo.</p></div>

@@ -24,6 +24,8 @@
     if (caricamento) return caricamento;
     caricamento = new Promise((ok, ko) => {
       const s = document.createElement("script"); s.src = "/vendor/supabase-2.45.4.js";
+      // impronta del file ufficiale npm 2.45.4 (controllata il 10/11/2026): se qualcuno lo altera, il browser non lo esegue
+      s.integrity = "sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o"; s.crossOrigin = "anonymous";
       s.onload = () => {
         sb = window.supabase.createClient(C.supabaseUrl, C.supabaseAnonKey, {
           auth: { flowType: "pkce", detectSessionInUrl: true, persistSession: true, storageKey: "yg_sessione" }
@@ -34,6 +36,19 @@
       document.head.appendChild(s);
     });
     return caricamento;
+  }
+
+  // CAPTCHA anti-robot (Cloudflare Turnstile) — SPENTO finché config.js non ha turnstileSiteKey. Per accenderlo vedi SICUREZZA.md:
+  // serve anche la chiave segreta nel pannello Supabase (la mette Giuliano) e il dominio challenges.cloudflare.com nella CSP di index.html.
+  let captcha = null;
+  function preparaCaptcha(posto) {
+    if (!C.turnstileSiteKey) return Promise.resolve(null);
+    return new Promise(ok => {
+      const disegna = () => { captcha = null; window.turnstile.render(posto, { sitekey: C.turnstileSiteKey, language: "it", callback: t => { captcha = t; }, "expired-callback": () => { captcha = null; } }); ok(true); };
+      if (window.turnstile) return disegna();
+      const s = document.createElement("script"); s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+      s.onload = disegna; s.onerror = () => ok(false); document.head.appendChild(s);
+    });
   }
 
   // unione senza doppioni: il piano è una lista di chiavi, il diario una lista di oggetti
@@ -89,17 +104,21 @@
         <label class="meta" for="ygEmail">Email</label>
         <input id="ygEmail" type="email" autocomplete="email" required style="display:block;width:100%;margin:6px 0 12px;padding:12px;border-radius:12px;border:1px solid var(--line,#ccc);background:var(--panel);color:var(--text);font-size:16px">
         <label style="display:flex;gap:10px;align-items:flex-start;margin:8px 0"><input id="ygOk" type="checkbox" required style="margin-top:4px"><span>Ho almeno 18 anni e ho letto l'${PRIVACY}.</span></label>
+        <div id="ygCaptcha" style="margin:8px 0"></div>
         <button class="btn" type="submit" style="margin-top:8px">Mandami il link di accesso</button>
         <p class="meta" style="margin-top:12px">Niente password: ti mandiamo un link valido per poco tempo. Aprilo <b>su questo stesso dispositivo e browser</b>. Usiamo la tua email solo per l'accesso; la newsletter è a parte e la scegli tu dopo.</p>
         <p id="ygMsg" class="meta" role="status"></p></form>`);
+    preparaCaptcha(document.getElementById("ygCaptcha"));
     document.getElementById("ygLogin").addEventListener("submit", async ev => {
       ev.preventDefault();
       const email = document.getElementById("ygEmail").value.trim(), msg = document.getElementById("ygMsg");
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = "Controlla l'indirizzo email."; return; }
       if (!document.getElementById("ygOk").checked) { msg.textContent = "Spunta la casella per continuare."; return; }
+      if (C.turnstileSiteKey && !captcha) { msg.textContent = "Completa il controllo anti-robot qui sopra."; return; }
       ls.set("yg_dichiarazioni", { at: new Date().toISOString(), v: C.privacyVersione || "" });
       msg.textContent = "Invio in corso…";
-      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + "/#/area", shouldCreateUser: true } });
+      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + "/#/area", shouldCreateUser: true, ...(captcha ? { captchaToken: captcha } : {}) } });
+      if (captcha && window.turnstile) { window.turnstile.reset(); captcha = null; }
       msg.textContent = error ? "Errore: " + error.message : "Fatto. Controlla la posta (anche lo spam) e apri il link da qui.";
     });
   }

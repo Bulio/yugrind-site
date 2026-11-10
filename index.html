@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- sicurezza (10/11/2026, SICUREZZA.md): il browser carica solo cose nostre e parla solo con Supabase. Se aggiungi uno script esterno, aggiornalo qui. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://fsttoyymtdsqesiifsvn.supabase.co; frame-src 'none'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>YUGRIND · Tutti i tornei di poker live in Europa</title>
 <meta name="description" content="Tutti i tornei e i festival di poker live in Europa: cosa si gioca adesso, i tornei di stasera nei casinò e il calendario dei prossimi mesi, con clock, late registration e guida del viaggio.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
