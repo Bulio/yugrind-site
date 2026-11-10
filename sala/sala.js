@@ -8,6 +8,9 @@ import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js"
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 import { ShaderPass } from "three/addons/postprocessing/ShaderPass.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
+import * as SkeletonUtils from "three/addons/utils/SkeletonUtils.js";
 
 const D = window.PLE_DATA || { festivals: [], venues: [], dated: [] };
 const $ = s => document.querySelector(s);
@@ -586,6 +589,104 @@ function pose(p, t, k, run, idle) { // k = 0 fermo, 1 passo pieno; run = 0..1
   p.spine.rotation.x = -(.04 + .14 * run) * k; p.spine.position.y = 1.0 + Math.abs(Math.cos(t)) * .025 * k + Math.sin(idle * 1.6) * .004 * (1 - k);
   p.spine.rotation.y = Math.sin(t) * .06 * k;
 }
+// ---------------------------------------------------------------- persone vere (modelli 3D con scheletro e animazioni)
+// Corpi, acconciature e animazioni: Quaternius, licenza CC0 (vedi modelli/CREDITI.txt). Personaggi originali: nessun aspetto
+// preso da giochi esistenti. I vestiti li coloriamo noi, zona per zona, in base all'osso che muove ogni punto del corpo:
+// così seguono il corpo quando cammina o si siede. Finché i modelli non sono caricati (o se il caricamento fallisce)
+// restano le persone disegnate qui sopra.
+const HUM = { ready: false, base: {}, hair: {}, skin: {}, clips: [] };
+const HAIRFILE = { corti: "Hair_SimpleParted", indietro: "Hair_SimpleParted", rasati: "Hair_Buzzed", ricci: "Hair_Buzzed", lunghi: "Hair_Long", coda: "Hair_Buns" };
+const REG = { pelle: 0, giacca: 1, pantaloni: 2, scarpe: 3, avambraccio: 4 };
+function regionOfBone(n) {
+  if (/hand|thumb|index|middle|ring|pinky/i.test(n)) return REG.pelle;
+  if (/neck|head/i.test(n)) return REG.pelle;
+  if (/foot|ball/i.test(n)) return REG.scarpe;
+  if (/thigh|calf|pelvis|root/i.test(n)) return REG.pantaloni;
+  if (/lowerarm/i.test(n)) return REG.avambraccio;
+  return REG.giacca; // spine, clavicle, upperarm
+}
+function addRegions(mesh) {
+  const g = mesh.geometry, si = g.attributes.skinIndex, sw = g.attributes.skinWeight, n = g.attributes.position.count, reg = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    let best = 0, bw = -1;
+    for (let k = 0; k < 4; k++) { const w = sw.getComponent(i, k); if (w > bw) { bw = w; best = si.getComponent(i, k); } }
+    reg[i] = regionOfBone(mesh.skeleton.bones[best].name);
+  }
+  g.setAttribute("aReg", new THREE.BufferAttribute(reg, 1));
+}
+const OUTFIT = { // per stile: maniche lunghe o corte, ruvidezza della stoffa, scarpe
+  completo: { sleeve: 1, rough: .62, shoes: "#0d0b0a", pantsFromTop: true },
+  pelle: { sleeve: 1, rough: .3, shoes: "#0d0b0a" },
+  felpa: { sleeve: 1, rough: .95, shoes: "#ececea" },
+  camicia: { sleeve: 0, rough: .7, shoes: "#5a3a22" },
+  polo: { sleeve: 0, rough: .8, shoes: "#ececea" },
+};
+function bodyMaterial(src, L, female) {
+  const m = src.clone(), o = OUTFIT[L.outfit] || OUTFIT.completo, dark = LOOK.skin.indexOf(L.skin) >= 3;
+  m.map = HUM.skin[(female ? "donna" : "uomo") + (dark ? "_scura" : "_chiara")] || m.map;
+  const tint = new THREE.Color(L.skin || "#e0ac86"), base = new THREE.Color(dark ? "#9a6440" : "#e0ac86");
+  const U = {
+    uTop: { value: new THREE.Color(L.top || "#1b1b1f") }, uPants: { value: new THREE.Color(o.pantsFromTop ? (L.top || "#1b1b1f") : (L.pants || "#1a1a1d")) },
+    uShoes: { value: new THREE.Color(o.shoes) }, uSleeve: { value: o.sleeve }, uRough: { value: o.rough },
+    uSkin: { value: new THREE.Color(tint.r / base.r, tint.g / base.g, tint.b / base.b) },
+  };
+  m.onBeforeCompile = sh => {
+    Object.assign(sh.uniforms, U);
+    sh.vertexShader = "attribute float aReg;\nvarying float vReg;\n" + sh.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvReg = aReg;");
+    sh.fragmentShader = "uniform vec3 uTop, uPants, uShoes, uSkin; uniform float uSleeve, uRough;\nvarying float vReg;\nfloat isCloth = 0.0;\n" + sh.fragmentShader
+      .replace("#include <map_fragment>", `#include <map_fragment>
+        float r = floor(vReg + .5);
+        vec3 cloth = r < 1.5 ? uTop : (r < 2.5 ? uPants : (r < 3.5 ? uShoes : uTop));
+        isCloth = (r > .5 && !(r > 3.5 && uSleeve < .5)) ? 1.0 : 0.0;
+        float lum = dot(diffuseColor.rgb, vec3(.299, .587, .114));
+        diffuseColor.rgb = mix(clamp(diffuseColor.rgb * uSkin, 0., 1.), cloth * (.7 + .6 * lum), isCloth);`)
+      .replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nroughnessFactor = mix(roughnessFactor, uRough, isCloth);")
+      .replace("#include <normal_fragment_maps>", "#include <normal_fragment_maps>\nnormal = normalize(mix(normal, nonPerturbedNormal, isCloth * .75));");
+  };
+  m.customProgramCacheKey = () => "yg-body";
+  m.normalScale = new THREE.Vector2(.8, .8);
+  return m;
+}
+function attachHair(root, file, color) {
+  const src = HUM.hair[file]; if (!src) return;
+  const bones = {}; root.traverse(o => { if (o.isBone) bones[o.name] = o; });
+  src.traverse(o => {
+    if (!o.isSkinnedMesh) return;
+    const nb = o.skeleton.bones.map(b => bones[b.name]); if (nb.some(b => !b)) return;
+    const mesh = new THREE.SkinnedMesh(o.geometry, o.material.clone()); mesh.material.color.set(color); mesh.castShadow = true; mesh.frustumCulled = false;
+    root.add(mesh); mesh.bind(new THREE.Skeleton(nb, o.skeleton.boneInverses.map(m2 => m2.clone())), new THREE.Matrix4());
+  });
+}
+// una persona vera: { g (gruppo da muovere e girare), mixer, play(nome animazione) }
+function human(L, opts = {}) {
+  const female = L.corpo === "donna", src = HUM.base[female ? "donna" : "uomo"];
+  const inner = SkeletonUtils.clone(src); inner.rotation.y = Math.PI; // i modelli guardano +Z, la sala usa -Z come «avanti»
+  inner.traverse(o => { if (o.isSkinnedMesh) { o.castShadow = true; o.frustumCulled = false; if (o.geometry.attributes.aReg) o.material = bodyMaterial(o.material, L, female); } });
+  attachHair(inner, HAIRFILE[L.hair] || "Hair_SimpleParted", L.hairC || "#4a2e1a");
+  if (L.beard && !female) attachHair(inner, "Hair_Beard", L.hairC || "#4a2e1a");
+  const g = new THREE.Group(); g.add(inner);
+  const mixer = new THREE.AnimationMixer(inner), acts = {};
+  for (const c of HUM.clips) acts[c.name] = mixer.clipAction(c);
+  let cur = null;
+  const play = (name, fade = .25, ts = 1) => { const a = acts[name]; if (!a) return; a.timeScale = ts; if (cur === a) return; a.reset().setEffectiveWeight(1).fadeIn(fade).play(); if (cur) cur.fadeOut(fade); cur = a; };
+  if (opts.offset) mixer.setTime(opts.offset);
+  return { g, inner, mixer, play, acts, real: true };
+}
+async function loadHumans() {
+  const L = new GLTFLoader(); L.setMeshoptDecoder(MeshoptDecoder);
+  const get = f => L.loadAsync("./modelli/" + f + ".glb");
+  const HF = ["Hair_SimpleParted", "Hair_Buzzed", "Hair_Long", "Hair_Buns", "Hair_Beard"];
+  const [u, d, an, ...hs] = await Promise.all([get("corpo_uomo"), get("corpo_donna"), get("animazioni"), ...HF.map(get)]);
+  HF.forEach((n, i) => { HUM.hair[n] = hs[i].scene; });
+  const tl = new THREE.TextureLoader(), lt = f => new Promise((ok, ko) => tl.load("./modelli/" + f + ".webp", t => { t.colorSpace = THREE.SRGBColorSpace; t.flipY = false; ok(t); }, undefined, ko));
+  [HUM.skin.uomo_chiara, HUM.skin.uomo_scura, HUM.skin.donna_chiara, HUM.skin.donna_scura] = await Promise.all(["pelle_uomo_chiara", "pelle_uomo_scura", "pelle_donna_chiara", "pelle_donna_scura"].map(lt));
+  for (const [k, gl] of [["uomo", u], ["donna", d]]) { gl.scene.traverse(o => { if (o.isSkinnedMesh && /hero/i.test(o.name)) addRegions(o); }); HUM.base[k] = gl.scene; }
+  HUM.clips = an.animations;
+  HUM.ready = true;
+}
+const NPCS = []; // persone animate nella sala (comparse)
+const SIT_Y = 0; // altezza a cui si mette una persona seduta (si regola guardando la scena)
+
 // I tavoli dei festival, le loro sedie e le comparse stanno in un gruppo che si ricostruisce quando cambiano i filtri.
 // Comparse (giocatori seduti e croupier) solo ai tavoli in corso: senza nome, non sono persone vere.
 // Sono ferme: si uniscono in pochi pezzi (uno per materiale) così il telefono disegna poco.
@@ -610,6 +711,22 @@ function buildFestivals(list, filtered) {
   let r = 42; const rnd = () => (r = (r * 9301 + 49297) % 233280) / 233280, pick = a => a[Math.floor(rnd() * a.length)];
   const randLook = () => ({ skin: pick(LOOK.skin), hair: pick(LOOK.hair), hairC: pick(LOOK.hairC), outfit: pick(LOOK.outfit), top: pick(LOOK.top), pants: pick(LOOK.pants),
     glasses: rnd() < .35, cap: rnd() < .15, capC: pick(["#1F8A5B", "#1b1b1f", "#6b1f2a", "#2d3a52"]), beard: rnd() < .25, stache: rnd() < .12, chain: rnd() < .2, tieC: pick(["#8a1d24", "#1f3a6b", "#2b2b2b"]) });
+  NPCS.length = 0;
+  if (HUM.ready) {
+    const lookR = () => { const fem = rnd() < .35; return { corpo: fem ? "donna" : "uomo", skin: pick(LOOK.skin), hair: fem ? pick(["lunghi", "coda", "corti"]) : pick(["corti", "rasati", "indietro"]), hairC: pick(LOOK.hairC), outfit: pick(LOOK.outfit), top: pick(LOOK.top), pants: pick(LOOK.pants), beard: !fem && rnd() < .3 }; };
+    const perTable = TOUCH0 ? 2 : 4;
+    for (const it of INTER.filter(i => i.kind === "festival" && i.live)) {
+      const { x, z } = it.center, a = it.ta, b = it.tb, n = 8, chosen = [0, 3, 2, 6].slice(0, perTable);
+      for (const i of chosen) {
+        const ang = (i + .5) / n * Math.PI * 2, cx = Math.cos(ang) * (a + .62), cz = Math.sin(ang) * (b + .62);
+        const h = human(lookR(), { offset: rnd() * 3 }); h.g.position.set(x + cx, SIT_Y, z + cz); h.g.rotation.y = Math.atan2(cx, cz);
+        h.play(rnd() < .5 ? "Sitting_Idle_Loop" : "Sitting_Talking_Loop", 0); festRoot.add(h.g); NPCS.push(h);
+      }
+      const dl = human({ corpo: rnd() < .4 ? "donna" : "uomo", skin: pick(LOOK.skin), hair: "corti", hairC: pick(LOOK.hairC), outfit: "completo", top: "#121214", pants: "#121214" }, { offset: rnd() * 2 });
+      dl.g.position.set(x, 0, z - (b + .55)); dl.g.rotation.y = Math.PI; dl.play("Idle_Loop", 0); festRoot.add(dl.g); NPCS.push(dl);
+    }
+    return;
+  }
   const extras = [];
   for (const it of INTER.filter(i => i.kind === "festival" && i.live)) {
     const { x, z } = it.center, a = it.ta, b = it.tb, n = 8, chosen = [0, 2, 3, 6].slice(0, 3 + Math.floor(rnd() * 2));
@@ -675,10 +792,12 @@ function nameTex(n) { return label([{ t: n || "Tu", size: 48, weight: 700 }], { 
 function buildMe() {
   const L = myLook();
   if (me) scene.remove(me.g);
-  me = person(L); me.g.traverse(o => { o.userData.me = true; }); scene.add(me.g);
+  me = HUM.ready ? human(L) : person(L); me.g.traverse(o => { o.userData.me = true; }); scene.add(me.g);
   meLabel = sprite(nameTex(L.name || "Tu"), .78, .16); meLabel.position.y = 2.0; me.g.add(meLabel);
 }
 buildMe();
+// i modelli veri arrivano dopo: la sala si apre subito con le persone disegnate, poi si sostituiscono
+loadHumans().then(() => { buildMe(); applyFiltri(FILTRI, true); }).catch(e => console.warn("Personaggi 3D non caricati, restano quelli disegnati:", e));
 
 let target = null;           // {x,z,yaw?,pitch?,glide?,it?}
 let marker;
@@ -882,11 +1001,12 @@ function sheetMe() {
   <label class="lab gh" for="meName" style="display:block">Nome (max 20 caratteri)</label>
   <input id="meName" class="name" maxlength="20" autocomplete="off" value="${esc(L.name)}" placeholder="Il tuo nome nella sala">
   <div class="lab gh">Carnagione</div>${sw("skin", LOOK.skin)}
-  <div class="lab gh">Capelli</div>${op("hair", LOOK.hair)}${sw("hairC", LOOK.hairC)}
+  <div class="lab gh">Corpo</div>${op("corpo", ["uomo", "donna"], ["Uomo", "Donna"])}
+  <div class="lab gh">Capelli</div>${op("hair", ["corti", "rasati", "lunghi", "coda"], ["Corti", "Rasati", "Lunghi", "Raccolti"])}${sw("hairC", LOOK.hairC)}
   <div class="lab gh">Stile</div>${op("outfit", LOOK.outfit, LOOK.outfit.map(k => OUTFIT_NAMES[k]))}
   <div class="lab gh">Colore del capo</div>${sw("top", LOOK.top)}
   <div class="lab gh">Pantaloni</div>${sw("pants", LOOK.pants)}
-  <div class="lab gh">Dettagli</div><div class="opts">${tg("glasses", "Occhiali da sole")}${tg("cap", "Cappellino")}${tg("beard", "Barba")}${tg("stache", "Baffi")}${tg("chain", "Catenina")}</div>
+  <div class="lab gh">Dettagli</div><div class="opts">${tg("beard", "Barba")}</div>
   <p class="note">Si salva solo in questo telefono. Per ora nella sala sei da solo: nessun altro vede il tuo nome.</p>`;
 }
 function saveMe(patch) {
@@ -1007,7 +1127,9 @@ function frame() {
   for (const L of LABELS) { const d = Math.hypot(P.x - L.x, P.z - L.z), o = THREE.MathUtils.clamp((11 - d) / 3, 0, 1); L.s.material.opacity = o; L.s.visible = o > .02; }
   // --- il personaggio
   const runK = THREE.MathUtils.clamp((spd - 2.6) / 2.4, 0, 1);
-  me.g.position.set(P.x, 0, P.z); me.g.rotation.y = P.h; walkT += dt * (spd * 2.5 + (spd > .1 ? 1.2 : 0)); pose(me, walkT, Math.min(1, spd / 1.6), runK, idleT);
+  me.g.position.set(P.x, 0, P.z); me.g.rotation.y = P.h; walkT += dt * (spd * 2.5 + (spd > .1 ? 1.2 : 0)); if (me.real) { me.mixer.update(dt); if (spd < .25) me.play("Idle_Loop"); else if (spd < 3.2) me.play("Walk_Loop", .25, THREE.MathUtils.clamp(spd / 1.5, .7, 1.7)); else if (spd < 4.4) me.play("Jog_Fwd_Loop", .25, spd / 3.6); else me.play("Sprint_Loop", .25, spd / 5.2); }
+  else pose(me, walkT, Math.min(1, spd / 1.6), runK, idleT);
+  for (const h of NPCS) h.mixer.update(dt);
   // --- telecamera da dietro, che segue con un leggero ritardo
   if (view === "3") {
     me.g.visible = true; meLabel.visible = camDist > 2.6;
