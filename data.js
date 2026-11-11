@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-11 06:33. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-11 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-11 06:33",
+ "generated": "2026-11-11 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -4081,6 +4081,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-movember-cash-game-action-seefeld"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-13",
+   "time": "17:00",
+   "name": "Freitag, der 13.",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-innsbruck"
+  },
+  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-11-13",
    "time": "17:30",
@@ -4187,18 +4199,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-linz"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-13",
-   "time": "19:00",
-   "name": "Freitag, der 13.",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-innsbruck"
   },
   {
    "venue_id": "casino-velden-velden-am-worthersee",
@@ -9282,14 +9282,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-11T06:33",
+   "fetched_at": "2026-11-11T17:32",
    "rows": 110
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-11T06:32",
+   "fetched_at": "2026-11-11T17:32",
    "rows": 360
   }
  ]
