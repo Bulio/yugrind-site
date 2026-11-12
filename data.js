@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-11 17:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-12 06:33. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-11 17:32",
+ "generated": "2026-11-12 06:33",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3636,138 +3636,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-11",
-   "time": "12:00",
-   "name": "#1 PPC Main Event Day 1/F",
-   "series": null,
-   "buy_in_eur": 150,
-   "buy_in_text": null,
-   "guarantee_eur": 500000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d7d03107-9306-4be0-bb31-52874f7c1b13"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-11",
-   "time": "16:00",
-   "name": "#2 PPC Deepstack (1 Day Event)",
-   "series": null,
-   "buy_in_eur": 250,
-   "buy_in_text": null,
-   "guarantee_eur": 20000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=baa2875b-ffb5-4adf-a96f-ca6773310eb6"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-11",
-   "time": "17:00",
-   "name": "#1 PPC Main Event Day 1/G",
-   "series": null,
-   "buy_in_eur": 150,
-   "buy_in_text": null,
-   "guarantee_eur": 500000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=31690aaa-ba83-4df7-95fb-56b5fc146959"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-11",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-11",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-11",
-   "time": "18:00",
-   "name": "Surrender Turnier",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-surrender-turnier-baden"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2026-11-11",
-   "time": "18:20",
-   "name": "Wednesday Poker Challenge NLH DEEPSTACK",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-wednesday-poker-challenge-nlh-classic-seefeld"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-11",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2026-11-11",
-   "time": "19:00",
-   "name": "Cash Game Action",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-cash-game-action-seefeld"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-11",
-   "time": "19:30",
-   "name": "Poker Mittwoch | NLH",
-   "series": null,
-   "buy_in_eur": 36,
-   "buy_in_text": "€ 30 + 6",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-11-poker-mittwoch-nlh-salzburg"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-11",
-   "time": "22:00",
-   "name": "#1 PPC Main Event Day 1/H Turbo",
-   "series": null,
-   "buy_in_eur": 150,
-   "buy_in_text": null,
-   "guarantee_eur": 500000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=723d62d4-9ccb-465a-84f3-2dcba143dc4a"
-  },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-11-12",
@@ -8186,6 +8054,18 @@ window.PLE_DATA = {
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-15",
+   "time": "21:00",
+   "name": "#3 EvBets PLO Championship (8-max)",
+   "series": null,
+   "buy_in_eur": 200,
+   "buy_in_text": "180€ + 20€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b9aa18a2-4419-4c8e-b9ea-0c91106e45d7"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-16",
    "time": "13:00",
    "name": "#4 Supersatellite to EvBets ME (10x Ticket GTD)",
@@ -8207,6 +8087,18 @@ window.PLE_DATA = {
    "guarantee_eur": 300000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=9b18b013-9f4d-42d3-a0fc-597f0764e55c"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-16",
+   "time": "17:00",
+   "name": "#5 EvBets NLH P.K.O. (100€+50€ BOUNTY)",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "85€ + 15€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=df4da53c-7809-434d-9ad9-41500b91f5aa"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -8500,13 +8392,13 @@ window.PLE_DATA = {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-18",
    "time": "15:00",
-   "name": "#10 EvBets Fish ´n´ Go",
+   "name": "#12 EvBets NLH / PLO LoE (8-max)",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "90€ + 10€",
+   "buy_in_eur": 150,
+   "buy_in_text": "135€ + 15€",
    "guarantee_eur": null,
    "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=93b21c80-95f3-4904-8033-34c3e96a69fa"
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0d4070ba-0162-4459-a2bb-1209f0cb1a64"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8591,6 +8483,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-18-nlh-plo-bad-beat-jackpot-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-18",
+   "time": "19:00",
+   "name": "#10 EvBets Fish ´n´ Go ROYAL CLUB",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "90€ + 10€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=93b21c80-95f3-4904-8033-34c3e96a69fa"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -8723,6 +8627,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-19-nlh-plo-bad-beat-jackpot-salzburg"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2026-12-19",
+   "time": "19:00",
+   "name": "#14 EvBets Bomb Pot Championship",
+   "series": null,
+   "buy_in_eur": 150,
+   "buy_in_text": "135€ + 15€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=ef030a95-848c-4efa-80ff-537c670babd2"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -9181,6 +9097,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-x-mas-cash-game-aktion-innsbruck"
   },
   {
+   "venue_id": "casino-graz-graz",
+   "date": "2026-12-26",
+   "time": "18:00",
+   "name": "X-Mas Cash Game Days",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-x-mas-cash-game-days-graz"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-26",
    "time": "19:00",
@@ -9215,6 +9143,78 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0132d07a-7b0b-4a9a-abae-20042b34256f"
+  },
+  {
+   "venue_id": "casino-velden-velden-am-worthersee",
+   "date": "2026-12-27",
+   "time": "17:00",
+   "name": "NLH Christmas Mania Deepstack",
+   "series": "Christmas Mania",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-nlh-christmas-mania-deepstack-velden"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2026-12-27",
+   "time": "18:00",
+   "name": "Omaha Tag - PLO Bounty Turnier",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-omaha-tag-plo-bounty-turnier-baden"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2026-12-27",
+   "time": "18:00",
+   "name": "Omaha Tag - Cash Game",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-omaha-tag-cash-game-baden"
+  },
+  {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-12-27",
+   "time": "18:00",
+   "name": "X-Mas Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-x-mas-cash-game-aktion-innsbruck"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-27",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "casino-velden-velden-am-worthersee",
+   "date": "2026-12-27",
+   "time": "21:00",
+   "name": "Christmas Mania Cash Game Special",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-christmas-mania-cash-game-special-velden-1"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9282,14 +9282,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-11T17:32",
+   "fetched_at": "2026-11-12T06:33",
    "rows": 110
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-11T17:32",
+   "fetched_at": "2026-11-12T06:32",
    "rows": 360
   }
  ]
