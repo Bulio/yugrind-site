@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-12 06:33. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-12 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-12 06:33",
+ "generated": "2026-11-12 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3769,18 +3769,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-12-capt-million-satellite-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-12",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-12-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-11-12",
    "time": "19:00",
@@ -3791,6 +3779,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-12-cash-game-aktion-innsbruck"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-12-weekly-high-hand-kopie-1-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4048,18 +4048,6 @@ window.PLE_DATA = {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-13",
    "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-13",
-   "time": "19:00",
    "name": "Freitag, der 13.",
    "series": null,
    "buy_in_eur": null,
@@ -4079,6 +4067,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-poker-cash-game-aktion-velden"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -4261,6 +4273,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-14-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-14-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-11-14",
    "time": "20:00",
@@ -4381,6 +4405,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-15-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-15-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-11-16",
    "time": "14:00",
@@ -4477,6 +4513,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-low-budget-monday-linz"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "name": "Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-cash-game-aktion-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-16",
    "time": "19:00",
@@ -4489,16 +4537,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-innsbruck-innsbruck",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-16",
    "time": "19:00",
-   "name": "Cash Game Aktion",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-cash-game-aktion-innsbruck"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-16-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -4597,6 +4645,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-17-dienstagsturnier-newcomer-deepstack-graz"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "name": "Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-17-cash-game-aktion-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-17",
    "time": "19:00",
@@ -4609,16 +4669,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-17-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-innsbruck-innsbruck",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-17",
    "time": "19:00",
-   "name": "Cash Game Aktion",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-17-cash-game-aktion-innsbruck"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-17-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4693,6 +4753,18 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=ba5f14fd-b1f6-478c-a146-87d31b5dbfd3"
   },
   {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "name": "Cash Game Action",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-18-cash-game-action-seefeld"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-18",
    "time": "19:00",
@@ -4705,16 +4777,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-18-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-18",
    "time": "19:00",
-   "name": "Cash Game Action",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-18-cash-game-action-seefeld"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-18-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4825,6 +4897,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-19-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-19-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-11-19",
    "time": "19:30",
@@ -4931,6 +5015,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-20-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-20-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5053,6 +5149,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-22",
    "time": "15:00",
@@ -5161,6 +5269,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-23",
    "time": "15:00",
@@ -5257,6 +5377,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-low-budget-monday-linz"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-23",
+   "time": "19:00",
+   "name": "Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-cash-game-aktion-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-23",
    "time": "19:00",
@@ -5269,16 +5401,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-innsbruck-innsbruck",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-23",
    "time": "19:00",
-   "name": "Cash Game Aktion",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-cash-game-aktion-innsbruck"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -5389,6 +5521,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-dienstagsturnier-beginner-tuesday-classic-graz"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-24",
+   "time": "19:00",
+   "name": "Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-cash-game-aktion-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-24",
    "time": "19:00",
@@ -5401,16 +5545,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-innsbruck-innsbruck",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-24",
    "time": "19:00",
-   "name": "Cash Game Aktion",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-cash-game-aktion-innsbruck"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-24-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -5521,6 +5665,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-ladies-event-turnier-baden"
   },
   {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "name": "Cash Game Action",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-cash-game-action-seefeld"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-25",
    "time": "19:00",
@@ -5533,16 +5689,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-25",
    "time": "19:00",
-   "name": "Cash Game Action",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-cash-game-action-seefeld"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-25-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -5677,6 +5833,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-poker-thursday-nlh-classic-linz"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2026-11-26",
+   "time": "19:00",
+   "name": "Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-cash-game-aktion-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2026-11-26",
    "time": "19:00",
@@ -5689,16 +5857,16 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-weekly-high-hand-linz"
   },
   {
-   "venue_id": "casino-innsbruck-innsbruck",
+   "venue_id": "casino-linz-linz",
    "date": "2026-11-26",
    "time": "19:00",
-   "name": "Cash Game Aktion",
+   "name": "Weekly High Hand",
    "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-cash-game-aktion-innsbruck"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-26-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -5809,6 +5977,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-27-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-27",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-27-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-27",
    "time": "20:00",
@@ -5917,6 +6097,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-28-weekly-high-hand-linz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-28-weekly-high-hand-linz-1"
+  },
+  {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-29",
    "time": "15:00",
@@ -5987,6 +6179,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-29-weekly-high-hand-linz"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-11-29",
+   "time": "19:00",
+   "name": "Weekly High Hand",
+   "series": null,
+   "buy_in_eur": 100,
+   "buy_in_text": "€ 100",
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-29-weekly-high-hand-linz-1"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -6071,18 +6275,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-30-low-budget-monday-linz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-30",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-30-weekly-high-hand-linz"
   },
   {
    "venue_id": "casino-innsbruck-innsbruck",
@@ -6181,18 +6373,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-nlh-bounty-satellite-xmas-main-event-bregenz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-01",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-01",
    "time": "19:00",
@@ -6227,6 +6407,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-poker-dienstag-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-01",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -6325,18 +6517,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=c4a97de1-e787-448a-bb5b-e15eea3d6196"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-02",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2026-12-02",
    "time": "19:00",
@@ -6371,6 +6551,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7584d7e3-cabb-4730-82e6-eaaa7fc2c689"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-02",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -6493,18 +6685,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-poker-thursday-nlh-classic-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-03",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-03",
    "time": "19:00",
@@ -6587,6 +6767,18 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0a461f4c-82cc-4c66-90d5-1867e8b06bb3"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-03",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -6709,18 +6901,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b250ed33-f0bf-4aae-8a55-835dbb40b599"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-04",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-04",
    "time": "20:00",
@@ -6743,6 +6923,18 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=e39c4d45-8153-453f-9076-2e9f40a9423f"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-04",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -6949,18 +7141,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=107e5b69-987b-43fb-a910-b52205bdcb74"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-05",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-05",
    "time": "19:00",
@@ -7007,6 +7187,18 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3147589b-45f8-40aa-b17c-6e42a582a6d5"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-05",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -7141,18 +7333,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d88e9c29-0984-40ba-bf40-882252d49ffd"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-06",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-06",
    "time": "20:00",
@@ -7163,6 +7343,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2650a515-60ab-4fa3-8a02-3d5c90c22085"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-06",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -7261,18 +7453,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-low-budget-monday-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-07",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-07",
    "time": "19:00",
@@ -7283,6 +7463,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-cash-game-aktion-innsbruck"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-07",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -7369,18 +7561,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-08-low-budget-turbo-bregenz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-08",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-08-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-08",
    "time": "19:00",
@@ -7415,6 +7595,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-08-poker-dienstag-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-08",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-08-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -7477,18 +7669,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8ce0c746-bc8c-49a9-8c80-f13cae0f8d7b"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-09",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-09-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-12-09",
    "time": "19:30",
@@ -7499,6 +7679,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-09-poker-mittwoch-nlh-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-09",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-09-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -7573,18 +7765,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-poker-thursday-nlh-classic-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-10",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-12-10",
    "time": "19:30",
@@ -7595,6 +7775,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-poker-donnerstag-progressive-bounty-salzburg"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-10",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-10-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -7659,14 +7851,14 @@ window.PLE_DATA = {
   {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-11",
-   "time": "19:00",
-   "name": "Weekly High Hand",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-weekly-high-hand-linz"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-11-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -7731,14 +7923,14 @@ window.PLE_DATA = {
   {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-12",
-   "time": "19:00",
-   "name": "Weekly High Hand",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-12-weekly-high-hand-linz"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-12-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -7803,14 +7995,14 @@ window.PLE_DATA = {
   {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-13",
-   "time": "19:00",
-   "name": "Weekly High Hand",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-13-weekly-high-hand-linz"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-13-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -7873,18 +8065,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-14-low-budget-monday-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-14",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-14-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-14",
    "time": "19:00",
@@ -7907,6 +8087,18 @@ window.PLE_DATA = {
    "guarantee_eur": 3500,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b05863df-44d1-45f7-91cc-9915825f35ef"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-14",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-14-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8005,18 +8197,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-15-low-budget-turbo-bregenz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-15",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-15-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-15",
    "time": "19:00",
@@ -8063,6 +8243,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b9aa18a2-4419-4c8e-b9ea-0c91106e45d7"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-15",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-15-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8173,18 +8365,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-16-dst-bounty-bregenz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-16",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-16-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-12-16",
    "time": "19:30",
@@ -8207,6 +8387,18 @@ window.PLE_DATA = {
    "guarantee_eur": 300000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=454835d2-2016-4561-ad6a-d3f03c85e7c2"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-16",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-16-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8329,18 +8521,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-17-poker-thursday-nlh-classic-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-17",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-17-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-graz-graz",
    "date": "2026-12-17",
    "time": "19:00",
@@ -8375,6 +8555,18 @@ window.PLE_DATA = {
    "guarantee_eur": 300000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7a790db2-2cea-4a8b-91ca-85ddf03d4b9f"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-17",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-17-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8497,18 +8689,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=93b21c80-95f3-4904-8033-34c3e96a69fa"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-18",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-18-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-18",
    "time": "22:00",
@@ -8519,6 +8699,18 @@ window.PLE_DATA = {
    "guarantee_eur": 300000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3022d361-4a85-407a-b4f8-e5abe6a3462b"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-18",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-18-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8641,18 +8833,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=ef030a95-848c-4efa-80ff-537c670babd2"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-19",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-19-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-19",
    "time": "22:00",
@@ -8663,6 +8843,18 @@ window.PLE_DATA = {
    "guarantee_eur": 300000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=78b01e5a-5462-4425-ba91-d88768d3808d"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-19",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-19-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8751,14 +8943,14 @@ window.PLE_DATA = {
   {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-20",
-   "time": "19:00",
-   "name": "Weekly High Hand",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-20-weekly-high-hand-linz"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-20-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8809,18 +9001,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-21-low-budget-monday-linz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-21",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-21-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-21",
    "time": "19:00",
@@ -8831,6 +9011,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-21-cash-game-aktion-innsbruck"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-21",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-21-poker-adventkalender-cash-game-aktion-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -8893,18 +9085,6 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-22-low-budget-bounty-bregenz"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-22",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-22-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "casino-innsbruck-innsbruck",
    "date": "2026-12-22",
    "time": "19:00",
@@ -8941,6 +9121,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-22-poker-dienstag-salzburg"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-22",
+   "time": "24:00",
+   "name": "Poker Adventkalender Cash Game Aktion",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-22-poker-adventkalender-cash-game-aktion-linz"
+  },
+  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-23",
    "time": "00:00",
@@ -8967,14 +9159,14 @@ window.PLE_DATA = {
   {
    "venue_id": "casino-linz-linz",
    "date": "2026-12-23",
-   "time": "19:00",
-   "name": "Weekly High Hand",
+   "time": "23:30",
+   "name": "Poker Adventkalender Cash Game Aktion",
    "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": null,
    "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-23-weekly-high-hand-linz"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-23-poker-adventkalender-cash-game-aktion-linz-1"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9001,42 +9193,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=82ba85cd-afc7-44bc-bcec-1a9dbf3a980e"
   },
   {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-12-25",
-   "time": "17:00",
-   "name": "Weihnachtsturnier",
-   "series": null,
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-25-weihnachtsturnier-baden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-12-25",
-   "time": "18:00",
-   "name": "X-Mas Cash Game Aktion",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-25-x-mas-cash-game-aktion-innsbruck"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-25",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-25-weekly-high-hand-linz"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-26",
    "time": "00:00",
@@ -9049,90 +9205,6 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=dfd48154-83e7-4293-8319-b9ff93bcd7a1"
   },
   {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-26",
-   "time": "17:00",
-   "name": "Saturday Deepstack Freezeout",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-saturday-deepstack-freezeout-linz"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-12-26",
-   "time": "17:00",
-   "name": "Saturday Night Poker Fever",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-saturday-night-poker-fever-baden"
-  },
-  {
-   "venue_id": "casino-velden-velden-am-worthersee",
-   "date": "2026-12-26",
-   "time": "17:00",
-   "name": "NLH Christmas Mania",
-   "series": "Christmas Mania",
-   "buy_in_eur": 330,
-   "buy_in_text": "€ 300 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-nlh-christmas-mania-velden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-12-26",
-   "time": "18:00",
-   "name": "X-Mas Cash Game Aktion",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-x-mas-cash-game-aktion-innsbruck"
-  },
-  {
-   "venue_id": "casino-graz-graz",
-   "date": "2026-12-26",
-   "time": "18:00",
-   "name": "X-Mas Cash Game Days",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-x-mas-cash-game-days-graz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-26",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-velden-velden-am-worthersee",
-   "date": "2026-12-26",
-   "time": "21:00",
-   "name": "Christmas Mania Cash Game Special",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-26-christmas-mania-cash-game-special-velden-1"
-  },
-  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-27",
    "time": "00:00",
@@ -9143,78 +9215,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0132d07a-7b0b-4a9a-abae-20042b34256f"
-  },
-  {
-   "venue_id": "casino-velden-velden-am-worthersee",
-   "date": "2026-12-27",
-   "time": "17:00",
-   "name": "NLH Christmas Mania Deepstack",
-   "series": "Christmas Mania",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-nlh-christmas-mania-deepstack-velden"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-12-27",
-   "time": "18:00",
-   "name": "Omaha Tag - PLO Bounty Turnier",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-omaha-tag-plo-bounty-turnier-baden"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-12-27",
-   "time": "18:00",
-   "name": "Omaha Tag - Cash Game",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-omaha-tag-cash-game-baden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-12-27",
-   "time": "18:00",
-   "name": "X-Mas Cash Game Aktion",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-x-mas-cash-game-aktion-innsbruck"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-12-27",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-velden-velden-am-worthersee",
-   "date": "2026-12-27",
-   "time": "21:00",
-   "name": "Christmas Mania Cash Game Special",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-27-christmas-mania-cash-game-special-velden-1"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9282,14 +9282,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-12T06:33",
+   "fetched_at": "2026-11-12T17:32",
    "rows": 110
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-12T06:32",
+   "fetched_at": "2026-11-12T17:32",
    "rows": 360
   }
  ]
