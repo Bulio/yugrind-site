@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-13 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-13 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-13 06:32",
+ "generated": "2026-11-13 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3839,18 +3839,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-13-freitag-der-13-poker-cash-game-aktion-graz"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-13",
-   "time": "19:00",
-   "name": "#9 PPC NLH Championship K.O. (90€+60€ BOUNTY)",
-   "series": null,
-   "buy_in_eur": 90,
-   "buy_in_text": "75€ + 15€",
-   "guarantee_eur": 10000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f96fb08c-2c20-48a8-a7ed-48f16ac026a7"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -9198,14 +9186,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-13T06:32",
-   "rows": 103
+   "fetched_at": "2026-11-13T17:32",
+   "rows": 102
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-13T06:32",
+   "fetched_at": "2026-11-13T17:32",
    "rows": 360
   }
  ]
