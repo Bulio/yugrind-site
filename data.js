@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-16 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-16 07:05. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-16 06:32",
+ "generated": "2026-11-16 07:05",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -838,7 +838,7 @@ window.PLE_DATA = {
     "https://evbets.com/tornei-poker-live/evento/184/"
    ],
    "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.circus-poker.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Estratto in automatico (modello gratis) da www.circus-poker.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
      "name": "CPS Main Event",
@@ -940,7 +940,7 @@ window.PLE_DATA = {
   {
    "festival": "The Festival Tallinn 2026",
    "tour": null,
-   "venue": "Olympic Park Casino",
+   "venue": "Olympic Park Casino, Hilton Tallinn Park Hotel",
    "city": "Tallinn",
    "country": "EE",
    "lat": null,
@@ -954,12 +954,12 @@ window.PLE_DATA = {
     "https://evbets.com/tornei-poker-live/evento/154/"
    ],
    "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.thefestival.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Estratto in automatico (modello gratis) da www.thefestival.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
      "name": "NLH Main Event",
      "is_main": true,
-     "buy_in_eur": 555,
+     "buy_in_eur": null,
      "guarantee_eur": null,
      "flights": [],
      "level_minutes": null,
@@ -1576,7 +1576,7 @@ window.PLE_DATA = {
     "https://somuchpoker.com/events-calendar/ept/2026/ept-prague-2026"
    ],
    "confidence": "high",
-   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-09; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
+   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "events": [
     {
      "name": "EPT Main Event",
@@ -2145,22 +2145,37 @@ window.PLE_DATA = {
    "id": "battle-of-malta-barcelona-2027-01-20"
   },
   {
-   "festival": "EPT Paris 2027",
-   "tour": "PokerStars EPT",
+   "festival": "EPT Paris",
+   "tour": null,
+   "venue": "Le Palais des Congrès",
    "city": "Paris",
    "country": "FR",
+   "lat": null,
+   "lon": null,
    "timezone": "Europe/Paris",
-   "venue": null,
    "start_date": "2027-02-09",
    "end_date": "2027-02-20",
    "website": "https://www.pokerstarslive.com/ept/paris/",
    "source_urls": [
     "https://www.pokerstarslive.com/ept/paris/"
    ],
-   "confidence": "high",
-   "events": [],
-   "notes": "Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
-   "id": "ept-paris-2027-2027-02-09"
+   "confidence": "medium",
+   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
+   "events": [
+    {
+     "name": "Main Event",
+     "is_main": true,
+     "buy_in_eur": null,
+     "guarantee_eur": null,
+     "flights": [],
+     "level_minutes": null,
+     "starting_stack": null,
+     "late_reg": null,
+     "structure_url": null,
+     "id": "main-event"
+    }
+   ],
+   "id": "ept-paris-2027-02-09"
   },
   {
    "festival": "Tana delle Tigri",
@@ -2326,6 +2341,72 @@ window.PLE_DATA = {
    "events": [],
    "notes": "Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "id": "ept-monte-carlo-2027-2027-04-21"
+  },
+  {
+   "festival": "EPT Barcelona",
+   "tour": null,
+   "venue": "Casino Barcelona",
+   "city": "Barcelona",
+   "country": "ES",
+   "lat": null,
+   "lon": null,
+   "timezone": "Europe/Madrid",
+   "start_date": "2027-08-15",
+   "end_date": "2027-08-28",
+   "website": "https://www.pokerstarslive.com/ept/barcelona/",
+   "source_urls": [
+    "https://www.pokerstarslive.com/ept/barcelona/"
+   ],
+   "confidence": "medium",
+   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina.",
+   "events": [
+    {
+     "name": "EPT Barcelona Main Event",
+     "is_main": true,
+     "buy_in_eur": null,
+     "guarantee_eur": null,
+     "flights": [],
+     "level_minutes": null,
+     "starting_stack": null,
+     "late_reg": null,
+     "structure_url": null,
+     "id": "ept-barcelona-main-event"
+    }
+   ],
+   "id": "ept-barcelona-2027-08-15"
+  },
+  {
+   "festival": "EPT Malta",
+   "tour": null,
+   "venue": "Portomaso Casino",
+   "city": "St Julian's",
+   "country": "MT",
+   "lat": null,
+   "lon": null,
+   "timezone": "Europe/Malta",
+   "start_date": "2027-09-28",
+   "end_date": "2027-10-09",
+   "website": "https://www.pokerstarslive.com/ept/malta/",
+   "source_urls": [
+    "https://www.pokerstarslive.com/ept/malta/"
+   ],
+   "confidence": "medium",
+   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina.",
+   "events": [
+    {
+     "name": "Main Event",
+     "is_main": true,
+     "buy_in_eur": null,
+     "guarantee_eur": null,
+     "flights": [],
+     "level_minutes": null,
+     "starting_stack": null,
+     "late_reg": null,
+     "structure_url": null,
+     "id": "main-event"
+    }
+   ],
+   "id": "ept-malta-2027-09-28"
   }
  ],
  "venues": [
@@ -9030,14 +9111,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-16T06:32",
+   "fetched_at": "2026-11-16T07:05",
    "rows": 89
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-16T06:32",
+   "fetched_at": "2026-11-16T07:05",
    "rows": 360
   }
  ]
