@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-16 07:05. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-16 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-16 07:05",
+ "generated": "2026-11-16 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -9111,14 +9111,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-16T07:05",
+   "fetched_at": "2026-11-16T17:32",
    "rows": 89
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-16T07:05",
+   "fetched_at": "2026-11-16T17:32",
    "rows": 360
   }
  ]
