@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-21 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-21 17:33. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-21 06:32",
+ "generated": "2026-11-21 17:33",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -7099,13 +7099,13 @@ window.PLE_DATA = {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-12-16",
    "time": "19:30",
-   "name": "Poker Mittwoch | NLH",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
+   "name": "Poker Neujahrsfestival | Satellite Main Event",
+   "series": "Neujahrsfestival",
+   "buy_in_eur": 36,
+   "buy_in_text": "€ 30 + 6",
    "guarantee_eur": null,
    "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-16-poker-mittwoch-nlh-salzburg"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-16-poker-neujahrsfestival-satellite-main-event-salzburg"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9069,14 +9069,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-21T06:32",
+   "fetched_at": "2026-11-21T17:33",
    "rows": 84
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-21T06:32",
+   "fetched_at": "2026-11-21T17:32",
    "rows": 360
   }
  ]
