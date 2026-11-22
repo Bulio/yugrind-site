@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-21 17:33. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-22 06:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-21 17:33",
+ "generated": "2026-11-22 06:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3735,150 +3735,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-21",
-   "time": "14:00",
-   "name": "VPT Poker Round 4 (PRIVATE)",
-   "series": null,
-   "buy_in_eur": 50,
-   "buy_in_text": "25€ + 25€",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=85230e23-583a-4e70-b0f5-585435993697"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-21",
-   "time": "15:00",
-   "name": "CAPT Million DAY 1 of 1A Turnier",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-capt-million-day-1-of-1a-turnier-baden"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-21",
-   "time": "15:00",
-   "name": "CAPT Million | Day 1/1A",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-capt-million-day-1-1a-salzburg"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-21",
-   "time": "17:00",
-   "name": "Saturday Deepstack Freezeout",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-saturday-deepstack-freezeout-linz"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-21",
-   "time": "17:00",
-   "name": "High Roller Satellite",
-   "series": "CAPT",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-high-roller-satellite-baden"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2026-11-21",
-   "time": "17:20",
-   "name": "Saturday Poker Challenge NLH Deepstack XL",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-saturday-poker-challenge-nlh-classic-seefeld"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-21",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-21",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-21",
-   "time": "18:00",
-   "name": "Banco Poker Open",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": null,
-   "guarantee_eur": 50000,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d4cd5fb3-a520-4104-8c6b-c3a4a176d2ab"
-  },
-  {
-   "venue_id": "casino-bregenz-bregenz",
-   "date": "2026-11-21",
-   "time": "18:00",
-   "name": "NLH CAPT Million Day 1",
-   "series": null,
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-nlh-capt-million-day-1-bregenz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-21",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-21",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-weekly-high-hand-linz-1"
-  },
   {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-22",
@@ -9062,6 +8918,126 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-17-nlh-bounty-eur-100-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-17",
+   "time": "20:00",
+   "name": "NLH Satellite Alpine Classic",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-17-nlh-satellite-alpine-classic-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-18",
+   "time": "13:00",
+   "name": "NLH Snow Festival FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-nlh-snow-festival-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-18",
+   "time": "13:00",
+   "name": "NLH Alpine Classic DAY 1",
+   "series": "CAPT",
+   "buy_in_eur": 1100,
+   "buy_in_text": "€ 1.000 + 100",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-nlh-alpine-classic-day-1-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-18",
+   "time": "13:30",
+   "name": "NLH Deepstack Freezeout",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-nlh-deepstack-freezeout-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-18",
+   "time": "20:00",
+   "name": "NLH Satellite Highlander / PL OMAHA",
+   "series": "CAPT",
+   "buy_in_eur": 385,
+   "buy_in_text": "€ 350 + 35",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-nlh-satellite-highlander-pl-omaha-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-19",
+   "time": "13:00",
+   "name": "NLH Alpine Classic FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-alpine-classic-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-19",
+   "time": "13:30",
+   "name": "NLH Deepsrack Freezeout",
+   "series": "CAPT",
+   "buy_in_eur": 330,
+   "buy_in_text": "€ 300 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-deepsrack-freezeout-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-19",
+   "time": "14:00",
+   "name": "PL Omaha Classic",
+   "series": "CAPT",
+   "buy_in_eur": 550,
+   "buy_in_text": "€ 500 + 50",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-pl-omaha-classic-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-19",
+   "time": "16:00",
+   "name": "NLH Satellite HIGHLANDER / PL OMAHA",
+   "series": "CAPT",
+   "buy_in_eur": 385,
+   "buy_in_text": "€ 350 + 35",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-satellite-highlander-pl-omaha-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-19",
+   "time": "20:00",
+   "name": "NLH Highlander DAY 1",
+   "series": "CAPT",
+   "buy_in_eur": 3300,
+   "buy_in_text": "€ 3.000 + 300",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-highlander-day-1-seefeld"
   }
  ],
  "sources": [
@@ -9069,14 +9045,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-21T17:33",
-   "rows": 84
+   "fetched_at": "2026-11-22T06:32",
+   "rows": 82
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-21T17:32",
+   "fetched_at": "2026-11-22T06:32",
    "rows": 360
   }
  ]
