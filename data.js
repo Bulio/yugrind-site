@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-22 17:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-23 17:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-22 17:32",
+ "generated": "2026-11-23 17:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -827,30 +827,30 @@ window.PLE_DATA = {
    "venue": "Circus Casino Resort Namur",
    "city": "Namur",
    "country": "BE",
-   "lat": null,
-   "lon": null,
+   "lat": 50.47,
+   "lon": 4.87,
    "timezone": "Europe/Brussels",
    "start_date": "2026-11-17",
    "end_date": "2026-11-29",
    "website": "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
    "source_urls": [
-    "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur",
-    "https://evbets.com/tornei-poker-live/evento/184/"
+    "https://evbets.com/tornei-poker-live/evento/184/",
+    "https://www.circus-poker.com/en/news/306_circus-poker-series-2026-2000000-guaranteed-in-namur"
    ],
    "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.circus-poker.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
    "events": [
     {
-     "name": "CPS Main Event",
+     "name": "Main Event (dato festival)",
      "is_main": true,
      "buy_in_eur": 2200,
-     "guarantee_eur": 800000,
+     "guarantee_eur": 2000000,
      "flights": [],
      "level_minutes": null,
      "starting_stack": null,
      "late_reg": null,
      "structure_url": null,
-     "id": "cps-main-event"
+     "id": "main-event-dato-festival"
     }
    ],
    "id": "circus-poker-series-2026-2026-11-17"
@@ -938,40 +938,6 @@ window.PLE_DATA = {
    "id": "gukpt-grand-final-london-2026-11-19"
   },
   {
-   "festival": "The Festival Tallinn 2026",
-   "tour": null,
-   "venue": "Olympic Park Casino, Hilton Tallinn Park Hotel",
-   "city": "Tallinn",
-   "country": "EE",
-   "lat": null,
-   "lon": null,
-   "timezone": "Europe/Tallinn",
-   "start_date": "2026-11-20",
-   "end_date": "2026-11-29",
-   "website": "https://www.thefestival.com/the-festival-tallinn-2026",
-   "source_urls": [
-    "https://www.thefestival.com/the-festival-tallinn-2026",
-    "https://evbets.com/tornei-poker-live/evento/154/"
-   ],
-   "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.thefestival.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
-   "events": [
-    {
-     "name": "NLH Main Event",
-     "is_main": true,
-     "buy_in_eur": null,
-     "guarantee_eur": null,
-     "flights": [],
-     "level_minutes": null,
-     "starting_stack": null,
-     "late_reg": null,
-     "structure_url": null,
-     "id": "nlh-main-event"
-    }
-   ],
-   "id": "the-festival-tallinn-2026-2026-11-20"
-  },
-  {
    "tour": "German Poker Tour",
    "lat": 49.7,
    "lon": 13.0,
@@ -1054,6 +1020,40 @@ window.PLE_DATA = {
    "country": "CZ",
    "timezone": "Europe/Prague",
    "id": "german-poker-masters-1million-2026-11-20"
+  },
+  {
+   "festival": "The Festival Tallinn 2026",
+   "tour": null,
+   "venue": "Olympic Park Casino",
+   "city": "Tallinn",
+   "country": "EE",
+   "lat": 59.44,
+   "lon": 24.75,
+   "timezone": "Europe/Tallinn",
+   "start_date": "2026-11-20",
+   "end_date": "2026-11-29",
+   "website": "https://www.thefestival.com/the-festival-tallinn-2026",
+   "source_urls": [
+    "https://evbets.com/tornei-poker-live/evento/154/",
+    "https://www.thefestival.com/the-festival-tallinn-2026"
+   ],
+   "confidence": "medium",
+   "notes": "Dati dal calendario EVBets (guarantee e buy-in del festival come indicati da EVBets; il programma completo è un'immagine, da leggere).",
+   "events": [
+    {
+     "name": "Main Event (dato festival)",
+     "is_main": true,
+     "buy_in_eur": 350,
+     "guarantee_eur": null,
+     "flights": [],
+     "level_minutes": null,
+     "starting_stack": null,
+     "late_reg": null,
+     "structure_url": null,
+     "id": "main-event-dato-festival"
+    }
+   ],
+   "id": "the-festival-tallinn-2026-2026-11-20"
   },
   {
    "festival": "WSOP Circuit Sanremo 2026",
@@ -1576,7 +1576,7 @@ window.PLE_DATA = {
     "https://somuchpoker.com/events-calendar/ept/2026/ept-prague-2026"
    ],
    "confidence": "high",
-   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
+   "notes": "Include PokerStars Open Main Event 1.100 (2-7 dic, flight A-F), Qualifier WYS@50K/100K. Schedule ufficiale: https://www.pokerstarslive.com/ept/prague/schedule/ (non letto direttamente). Level 60 min Day 1, 90 min dal Day 2 (fonte somuchpoker). | Fonti discordanti su date/venue (una dice 25/11-6/12). Flights, guarantee, struttura non trovati. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "events": [
     {
      "name": "EPT Main Event",
@@ -2163,37 +2163,22 @@ window.PLE_DATA = {
    "id": "battle-of-malta-barcelona-2027-01-20"
   },
   {
-   "festival": "EPT Paris",
-   "tour": null,
-   "venue": "Le Palais des Congrès",
+   "festival": "EPT Paris 2027",
+   "tour": "PokerStars EPT",
    "city": "Paris",
    "country": "FR",
-   "lat": null,
-   "lon": null,
    "timezone": "Europe/Paris",
+   "venue": null,
    "start_date": "2027-02-09",
    "end_date": "2027-02-20",
    "website": "https://www.pokerstarslive.com/ept/paris/",
    "source_urls": [
     "https://www.pokerstarslive.com/ept/paris/"
    ],
-   "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina. | Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
-   "events": [
-    {
-     "name": "Main Event",
-     "is_main": true,
-     "buy_in_eur": null,
-     "guarantee_eur": null,
-     "flights": [],
-     "level_minutes": null,
-     "starting_stack": null,
-     "late_reg": null,
-     "structure_url": null,
-     "id": "main-event"
-    }
-   ],
-   "id": "ept-paris-2027-02-09"
+   "confidence": "high",
+   "events": [],
+   "notes": "Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
+   "id": "ept-paris-2027-2027-02-09"
   },
   {
    "festival": "Tana delle Tigri",
@@ -2359,72 +2344,6 @@ window.PLE_DATA = {
    "events": [],
    "notes": "Date dal calendario ufficiale PokerStars Live (lettura automatica). Sede, eventi e buy-in: vedi le altre fonti o il sito ufficiale.",
    "id": "ept-monte-carlo-2027-2027-04-21"
-  },
-  {
-   "festival": "EPT Barcelona",
-   "tour": null,
-   "venue": "Casino Barcelona",
-   "city": "Barcelona",
-   "country": "ES",
-   "lat": null,
-   "lon": null,
-   "timezone": "Europe/Madrid",
-   "start_date": "2027-08-15",
-   "end_date": "2027-08-28",
-   "website": "https://www.pokerstarslive.com/ept/barcelona/",
-   "source_urls": [
-    "https://www.pokerstarslive.com/ept/barcelona/"
-   ],
-   "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina.",
-   "events": [
-    {
-     "name": "EPT Barcelona Main Event",
-     "is_main": true,
-     "buy_in_eur": null,
-     "guarantee_eur": null,
-     "flights": [],
-     "level_minutes": null,
-     "starting_stack": null,
-     "late_reg": null,
-     "structure_url": null,
-     "id": "ept-barcelona-main-event"
-    }
-   ],
-   "id": "ept-barcelona-2027-08-15"
-  },
-  {
-   "festival": "EPT Malta",
-   "tour": null,
-   "venue": "Portomaso Casino",
-   "city": "St Julian's",
-   "country": "MT",
-   "lat": null,
-   "lon": null,
-   "timezone": "Europe/Malta",
-   "start_date": "2027-09-28",
-   "end_date": "2027-10-09",
-   "website": "https://www.pokerstarslive.com/ept/malta/",
-   "source_urls": [
-    "https://www.pokerstarslive.com/ept/malta/"
-   ],
-   "confidence": "medium",
-   "notes": "Estratto in automatico (modello gratis) da www.pokerstarslive.com il 2026-11-16; date e cifre verificate sul testo della pagina.",
-   "events": [
-    {
-     "name": "Main Event",
-     "is_main": true,
-     "buy_in_eur": null,
-     "guarantee_eur": null,
-     "flights": [],
-     "level_minutes": null,
-     "starting_stack": null,
-     "late_reg": null,
-     "structure_url": null,
-     "id": "main-event"
-    }
-   ],
-   "id": "ept-malta-2027-09-28"
   }
  ],
  "venues": [
@@ -3735,126 +3654,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-22",
-   "time": "15:00",
-   "name": "CAPT Million DAY 2 of 1A Turnier",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-21-capt-million-day-1-of-1a-turnier-baden-1"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-22",
-   "time": "15:00",
-   "name": "CAPT Million | Day 2/1A",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-capt-million-day-2-1a-salzburg"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-22",
-   "time": "16:00",
-   "name": "CASH GAME NIGHT",
-   "series": null,
-   "buy_in_eur": 0,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=077e8912-e0ec-444e-aab2-90262e325553"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-22",
-   "time": "16:00",
-   "name": "PLO Satellite",
-   "series": "CAPT",
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-plo-satellite-baden"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-22",
-   "time": "17:00",
-   "name": "CAPT Million DAY 1 Turbo Turnier",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-capt-million-day-1-turbo-turnier-baden"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-22",
-   "time": "17:00",
-   "name": "CAPT Million | Day 1",
-   "series": "CAPT",
-   "buy_in_eur": 550,
-   "buy_in_text": "€ 500 + 50",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-capt-million-day-1-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-22",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-22",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-22",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-22",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-22-weekly-high-hand-linz-1"
-  },
   {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-23",
@@ -5877,8 +5676,8 @@ window.PLE_DATA = {
    "time": "17:30",
    "name": "Poker CUP Salzburg Finale",
    "series": null,
-   "buy_in_eur": 190,
-   "buy_in_text": "€ 165 + 25",
+   "buy_in_eur": null,
+   "buy_in_text": null,
    "guarantee_eur": 15000,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-poker-cup-salzburg-finale-salzburg"
@@ -9028,6 +8827,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-satellite-highlander-pl-omaha-seefeld"
   },
   {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2027-01-19",
+   "time": "19:30",
+   "name": "Poker Dienstag",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-poker-dienstag-salzburg"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-19",
    "time": "20:00",
@@ -9038,6 +8849,102 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-highlander-day-1-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-20",
+   "time": "13:00",
+   "name": "NLH Highlander FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": 3300,
+   "buy_in_text": "€ 3.000 + 300",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-nlh-highlander-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-20",
+   "time": "13:30",
+   "name": "NLH Monster Deepstack Freezeout",
+   "series": "CAPT",
+   "buy_in_eur": 330,
+   "buy_in_text": "€ 300 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-nlh-monster-deepstack-freezeout-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-20",
+   "time": "14:00",
+   "name": "PL Omaha Classic Championship DAY 1",
+   "series": "CAPT",
+   "buy_in_eur": 1650,
+   "buy_in_text": "€ 1.500 + 150",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-pl-omaha-classic-championship-day-1-seefeld"
+  },
+  {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2027-01-20",
+   "time": "19:30",
+   "name": "Poker Mittwoch | NLH",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-poker-mittwoch-nlh-salzburg"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-20",
+   "time": "20:00",
+   "name": "NLH Satellite MAIN EVENT",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-nlh-satellite-main-event-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-21",
+   "time": "13:00",
+   "name": "PL Omaha Classic Championship FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-pl-omaha-classic-championship-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-21",
+   "time": "13:00",
+   "name": "NLH Main Event DAY 1A",
+   "series": "CAPT",
+   "buy_in_eur": 2200,
+   "buy_in_text": "€ 2.000 + 200",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-nlh-main-event-day-1a-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-21",
+   "time": "14:00",
+   "name": "PL Omaha 5-Card",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-pl-omaha-5-card-seefeld"
   }
  ],
  "sources": [
@@ -9045,14 +8952,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-22T17:32",
-   "rows": 82
+   "fetched_at": "2026-11-23T17:32",
+   "rows": 81
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-22T17:32",
+   "fetched_at": "2026-11-23T17:32",
    "rows": 360
   }
  ]
