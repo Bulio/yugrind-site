@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-23 17:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-24 06:32. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-23 17:32",
+ "generated": "2026-11-24 06:32",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -3654,138 +3654,6 @@ window.PLE_DATA = {
   }
  ],
  "dated": [
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-23",
-   "time": "15:00",
-   "name": "CAPT Million Mega Satellite",
-   "series": "CAPT",
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-19-capt-million-mega-satellite-baden-1"
-  },
-  {
-   "venue_id": "banco-casino-bratislava-bratislava",
-   "date": "2026-11-23",
-   "time": "16:00",
-   "name": "CASH GAME NIGHT",
-   "series": null,
-   "buy_in_eur": 0,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=3d11b271-38ee-455e-84a0-00e84de766d8"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-23",
-   "time": "17:00",
-   "name": "PLO Turnier",
-   "series": "CAPT",
-   "buy_in_eur": 880,
-   "buy_in_text": "€ 800 + 80",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-plo-turnier-baden"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-23",
-   "time": "17:30",
-   "name": "NLH | PLO Early Bird Bonus",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-nlh-plo-early-bird-bonus-salzburg"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2026-11-23",
-   "time": "17:30",
-   "name": "NLH | PLO Bad Beat Jackpot",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-nlh-plo-bad-beat-jackpot-salzburg"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2026-11-23",
-   "time": "18:00",
-   "name": "High Roller Satellite",
-   "series": "CAPT",
-   "buy_in_eur": 230,
-   "buy_in_text": "€ 200 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-high-roller-satellite-baden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-23",
-   "time": "18:20",
-   "name": "NLH Deepstack Wochenturnier",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-nlh-deepstack-wochenturnier-innsbruck"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "name": "Low Budget Monday",
-   "series": null,
-   "buy_in_eur": 30,
-   "buy_in_text": "€ 25 + 5",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-low-budget-monday-linz"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "name": "Cash Game Aktion",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-cash-game-aktion-innsbruck"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-weekly-high-hand-linz"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "name": "Weekly High Hand",
-   "series": null,
-   "buy_in_eur": 100,
-   "buy_in_text": "€ 100",
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-11-23-weekly-high-hand-linz-1"
-  },
   {
    "venue_id": "casino-baden-baden-bei-wien",
    "date": "2026-11-24",
@@ -8503,6 +8371,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-12-mix-game-nlh-plo-seefeld-1"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-12",
+   "time": "18:00",
+   "name": "BCM Main Event Day 1/A HALF PRICE",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=92e0b917-183d-4231-8f02-6d96102726a7"
+  },
+  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2027-01-12",
    "time": "19:30",
@@ -8549,6 +8429,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-13-nlh-mystery-bounty-eur-500-day-1-seefeld-1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-13",
+   "time": "18:00",
+   "name": "BCM Main Event Day 1/B",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a9a4f100-699d-4a3f-84a3-456847fcfe34"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8599,6 +8491,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-14-limit-seven-card-stud-championship-day-1-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-14",
+   "time": "15:00",
+   "name": "BCM Main Event Day 1/C",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0e9daf44-2635-4484-ac5b-63e7b9731457"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-14",
    "time": "15:00",
@@ -8635,6 +8539,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-14-nlh-ladies-championship-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-14",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/D Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2da7e7f3-db06-4715-9130-297ab29f5bcb"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-15",
    "time": "13:30",
@@ -8659,6 +8575,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-15-nlh-snow-festival-day-1b-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-15",
+   "time": "15:00",
+   "name": "BCM Main Event Day 1/E",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=de7a2245-5e2b-4b05-b20b-760eba74bca0"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-15",
    "time": "17:00",
@@ -8669,6 +8597,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-15-nlh-bounty-eur-50-seefeld"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-15",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/F Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=05e22453-85e5-4783-bff6-8d8d95b7a2d5"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-16",
+   "time": "12:00",
+   "name": "BCM Main Event Day 1/G",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=16b74c98-53b1-49ac-8894-2ce1939f5394"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8683,6 +8635,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-16-nlh-snow-festival-day-1c-seefeld"
   },
   {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-16",
+   "time": "17:00",
+   "name": "BCM Main Event Day 1/H",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8aab06f4-120a-4add-86ba-7b47cbbdf75f"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-16",
    "time": "20:00",
@@ -8693,6 +8657,42 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-16-nlh-snow-festival-day-1d-seefeld"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-16",
+   "time": "22:00",
+   "name": "BCM Main Event Day 1/I Turbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=2ca768e9-058d-42c0-a057-b9f740864dfb"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-17",
+   "time": "10:00",
+   "name": "BCM Main Event Day 1/J Hyperturbo",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=0588d2de-fa89-4849-8dde-d371daa2640d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-17",
+   "time": "12:30",
+   "name": "Last Chance Flip ´n´ Go to BCM ME",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=72d11cce-c043-4020-9b9f-1294ffe15585"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8717,6 +8717,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-17-nlh-bounty-eur-100-seefeld"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-01-17",
+   "time": "16:00",
+   "name": "BCM Main Event Day 2",
+   "series": null,
+   "buy_in_eur": 170,
+   "buy_in_text": null,
+   "guarantee_eur": 250000,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f09216b7-448f-45f4-a188-a2a6f038d736"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8945,6 +8957,210 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-pl-omaha-5-card-seefeld"
+  },
+  {
+   "venue_id": "casino-salzburg-salzburg",
+   "date": "2027-01-21",
+   "time": "19:30",
+   "name": "Poker Donnerstag | Crazy Pineapple",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-poker-donnerstag-crazy-pineapple-salzburg"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-21",
+   "time": "20:00",
+   "name": "NLH Satellite MAIN EVENT",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-nlh-satellite-main-event-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-22",
+   "time": "12:30",
+   "name": "NLH Satellite MAIN EVENT",
+   "series": "CAPT",
+   "buy_in_eur": 330,
+   "buy_in_text": "€ 300 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-22-nlh-satellite-main-event-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-22",
+   "time": "13:00",
+   "name": "NLH Main Event DAY 1B",
+   "series": "CAPT",
+   "buy_in_eur": 2200,
+   "buy_in_text": "€ 2.000 + 200",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-22-nlh-main-event-day-1b-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-23",
+   "time": "12:30",
+   "name": "NLH Deepstack Freezeout Winter Party",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-23-nlh-deepstack-freezeout-winter-party-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-23",
+   "time": "13:00",
+   "name": "NLH Main Event DAY 2",
+   "series": "CAPT",
+   "buy_in_eur": 2200,
+   "buy_in_text": "€ 2.000 + 200",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-23-nlh-main-event-day-2-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-23",
+   "time": "16:00",
+   "name": "NLH Deepstack XL DAY 1",
+   "series": "CAPT",
+   "buy_in_eur": 660,
+   "buy_in_text": "€ 600 + 60",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-23-nlh-deepstack-xl-day-1-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-24",
+   "time": "13:00",
+   "name": "NLH Main Event FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-nlh-main-event-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-24",
+   "time": "13:00",
+   "name": "NLH Deepstack XL FINAL DAY",
+   "series": "CAPT",
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-nlh-deepstack-xl-final-day-seefeld"
+  },
+  {
+   "venue_id": "casino-seefeld-seefeld-in-tirol",
+   "date": "2027-01-24",
+   "time": "14:00",
+   "name": "NLH Progressive Bounty € 100",
+   "series": "CAPT",
+   "buy_in_eur": 230,
+   "buy_in_text": "€ 200 + 30",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-nlh-progressive-bounty-eur-100-seefeld"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-09",
+   "time": "12:00",
+   "name": "#10 The Festival Main Event Day 1/A",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f263a526-2d97-43ff-8816-4fa4c85e3250"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-10",
+   "time": "12:00",
+   "name": "#10 The Festival Main Event Day 1/B",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5664a635-eb37-4b5f-8be0-a77481116a5d"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-11",
+   "time": "12:00",
+   "name": "#10 The Festival Main Event Day 1/C",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d34042df-a6d3-415f-8f32-dfa8fe6941e1"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-12",
+   "time": "12:00",
+   "name": "#10 The Festival Main Event Day 1/D",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=624230fa-2052-4271-bb87-36227c599bed"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-12",
+   "time": "20:00",
+   "name": "#10 The Festival Main Event Day 1/E Turbo",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=7055db2c-7ab6-4ff0-8658-17dfa5d4b6da"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-13",
+   "time": "11:00",
+   "name": "#10 The Festival Main Event Day 1/F Hyperturbo",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=5e7f8641-0e2c-4cc4-966f-3ee0be678ceb"
+  },
+  {
+   "venue_id": "banco-casino-bratislava-bratislava",
+   "date": "2027-02-13",
+   "time": "15:00",
+   "name": "#10 The Festival Main Event Day 2",
+   "series": null,
+   "buy_in_eur": 555,
+   "buy_in_text": "500€ + 55€",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=293176b9-6920-45f2-be9f-e261822d118d"
   }
  ],
  "sources": [
@@ -8952,14 +9168,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-23T17:32",
-   "rows": 81
+   "fetched_at": "2026-11-24T06:32",
+   "rows": 99
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-23T17:32",
+   "fetched_at": "2026-11-24T06:32",
    "rows": 360
   }
  ]
