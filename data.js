@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-26 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-26 17:33. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-26 06:32",
+ "generated": "2026-11-26 17:33",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -4252,7 +4252,7 @@ window.PLE_DATA = {
    "buy_in_text": "€ 50 + 10",
    "guarantee_eur": null,
    "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-beginner-mit-double-re-entry-baden"
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-12-beginner-mit-double-re-entry-baden"
   },
   {
    "venue_id": "casino-velden-velden-am-worthersee",
@@ -8047,6 +8047,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-10-bounty-turnier-baden"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-11",
+   "time": "18:00",
+   "name": "Beginner",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-11-beginner-baden"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-11",
    "time": "18:20",
@@ -8527,6 +8539,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-nlh-deepstack-freezeout-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-18",
+   "time": "18:00",
+   "name": "Beginner",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-18-beginner-baden"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-18",
    "time": "20:00",
@@ -8887,6 +8911,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-25-nlh-satellite-wochenturnier-innsbruck"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2027-01-26",
+   "time": "18:20",
+   "name": "NLH Beginner Wochenturnier",
+   "series": null,
+   "buy_in_eur": 36,
+   "buy_in_text": "€ 30 + 6",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-26-nlh-beginner-wochenturnier-innsbruck"
+  },
+  {
    "venue_id": "casino-graz-graz",
    "date": "2027-01-26",
    "time": "19:00",
@@ -8947,6 +8983,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-27-poker-mittwoch-nlh-salzburg"
   },
   {
+   "venue_id": "casino-innsbruck-innsbruck",
+   "date": "2027-01-28",
+   "time": "18:20",
+   "name": "Mix Game NLH/PLO Wochenturnier",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-28-mix-game-nlh-plo-wochenturnier-innsbruck"
+  },
+  {
    "venue_id": "casino-linz-linz",
    "date": "2027-01-28",
    "time": "19:00",
@@ -9005,54 +9053,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-29-winter-cash-game-special-seefeld"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-30",
-   "time": "17:00",
-   "name": "Winter Cash Game Special",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-winter-cash-game-special-seefeld"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2027-01-30",
-   "time": "17:00",
-   "name": "CAPT Major | Day 1",
-   "series": "CAPT",
-   "buy_in_eur": 330,
-   "buy_in_text": "€ 300 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-capt-major-day-1-baden"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-30",
-   "time": "17:20",
-   "name": "Saturday Poker Challenge | NLH Deepstack XL",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-saturday-poker-challenge-nlh-deepstack-xl-seefeld"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-02-01",
-   "time": "18:20",
-   "name": "NLH Satellite Wochenturnier",
-   "series": null,
-   "buy_in_eur": 48,
-   "buy_in_text": "€ 40 + 8",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-01-nlh-satellite-wochenturnier-innsbruck"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9144,14 +9144,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-26T06:32",
+   "fetched_at": "2026-11-26T17:33",
    "rows": 97
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-26T06:32",
+   "fetched_at": "2026-11-26T17:32",
    "rows": 360
   }
  ]
