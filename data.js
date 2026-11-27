@@ -1,6 +1,6 @@
-// Generato da scripts/build_data.py il 2026-11-27 06:32. Non modificare a mano.
+// Generato da scripts/build_data.py il 2026-11-27 17:33. Non modificare a mano.
 window.PLE_DATA = {
- "generated": "2026-11-27 06:32",
+ "generated": "2026-11-27 17:33",
  "festivals": [
   {
    "tour": "Malta Poker Festival",
@@ -4159,6 +4159,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-dienstagsturnier-beginner-tuesday-classic-graz"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-01",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-01-bad-beat-jackpot-linz"
+  },
+  {
    "venue_id": "casino-salzburg-salzburg",
    "date": "2026-12-01",
    "time": "19:30",
@@ -4289,6 +4301,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-cash-game-action-seefeld"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-02",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-02-bad-beat-jackpot-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4469,6 +4493,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-donnerstagsturnier-crazy-pineapple-graz"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-03",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-03-bad-beat-jackpot-linz"
   },
   {
    "venue_id": "casino-salzburg-salzburg",
@@ -4661,6 +4697,18 @@ window.PLE_DATA = {
    "guarantee_eur": 15000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=b250ed33-f0bf-4aae-8a55-835dbb40b599"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-04",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-04-bad-beat-jackpot-linz"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -4951,6 +4999,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-krampus-666-velden"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-05-bad-beat-jackpot-linz"
+  },
+  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-05",
    "time": "22:00",
@@ -5107,6 +5167,18 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=d88e9c29-0984-40ba-bf40-882252d49ffd"
   },
   {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-06",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-06-bad-beat-jackpot-linz"
+  },
+  {
    "venue_id": "banco-casino-bratislava-bratislava",
    "date": "2026-12-06",
    "time": "20:00",
@@ -5237,6 +5309,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "cash",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-cash-game-aktion-innsbruck"
+  },
+  {
+   "venue_id": "casino-linz-linz",
+   "date": "2026-12-07",
+   "time": "19:00",
+   "name": "Bad Beat Jackpot",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2026-12-07-bad-beat-jackpot-linz"
   },
   {
    "venue_id": "casino-linz-linz",
@@ -7951,6 +8035,18 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=92e0b917-183d-4231-8f02-6d96102726a7"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-12",
+   "time": "18:00",
+   "name": "Beginner mit Double Re-entry",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-12-beginner-mit-double-re-entry-baden-1"
+  },
+  {
    "venue_id": "casino-graz-graz",
    "date": "2027-01-12",
    "time": "19:00",
@@ -8021,6 +8117,18 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=a9a4f100-699d-4a3f-84a3-456847fcfe34"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-13",
+   "time": "18:00",
+   "name": "Surrender Turnier",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-13-surrender-turnier-baden"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8107,6 +8215,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-14-nlh-snow-festival-day-1a-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-14",
+   "time": "18:00",
+   "name": "Donnerstag Deepstack",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-14-donnerstag-deepstack-baden"
+  },
+  {
    "venue_id": "casino-graz-graz",
    "date": "2027-01-14",
    "time": "19:00",
@@ -8191,6 +8311,18 @@ window.PLE_DATA = {
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=de7a2245-5e2b-4b05-b20b-760eba74bca0"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-15",
+   "time": "17:00",
+   "name": "Freitags Freezeout",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-15-freitags-freezeout-baden"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-15",
    "time": "17:00",
@@ -8249,6 +8381,18 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=8aab06f4-120a-4add-86ba-7b47cbbdf75f"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-16",
+   "time": "17:00",
+   "name": "Saturday Night Poker Fever",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-16-saturday-night-poker-fever-baden"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8333,6 +8477,30 @@ window.PLE_DATA = {
    "guarantee_eur": 250000,
    "kind": "tournament",
    "url": "https://www.bancocasino.sk/ba/sk/tournaments/detail?id=f09216b7-448f-45f4-a188-a2a6f038d736"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-17",
+   "time": "18:00",
+   "name": "Omaha Tag - PLO Bounty Turnier",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-17-omaha-tag-plo-bounty-turnier-baden"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-17",
+   "time": "18:00",
+   "name": "Omaha Tag - Cash Game",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-17-omaha-tag-cash-game-baden"
   },
   {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
@@ -8455,6 +8623,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-nlh-satellite-highlander-pl-omaha-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-19",
+   "time": "18:00",
+   "name": "Beginner mit Double Re-entry",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-19-beginner-mit-double-re-entry-baden"
+  },
+  {
    "venue_id": "casino-graz-graz",
    "date": "2027-01-19",
    "time": "19:00",
@@ -8525,6 +8705,18 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-pl-omaha-classic-championship-day-1-seefeld"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-20",
+   "time": "18:00",
+   "name": "Surrender Turnier",
+   "series": null,
+   "buy_in_eur": 60,
+   "buy_in_text": "€ 50 + 10",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-20-surrender-turnier-baden"
   },
   {
    "venue_id": "casino-graz-graz",
@@ -8599,6 +8791,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-pl-omaha-5-card-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-21",
+   "time": "18:00",
+   "name": "Donnerstag Deepstack",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-21-donnerstag-deepstack-baden"
+  },
+  {
    "venue_id": "casino-graz-graz",
    "date": "2027-01-21",
    "time": "19:00",
@@ -8659,6 +8863,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-22-nlh-main-event-day-1b-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-22",
+   "time": "17:00",
+   "name": "Freitags Freezeout",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-22-freitags-freezeout-baden"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-23",
    "time": "12:30",
@@ -8695,6 +8911,18 @@ window.PLE_DATA = {
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-23-nlh-deepstack-xl-day-1-seefeld"
   },
   {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-23",
+   "time": "17:00",
+   "name": "Saturday Night Poker Fever",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-23-saturday-night-poker-fever-baden"
+  },
+  {
    "venue_id": "casino-seefeld-seefeld-in-tirol",
    "date": "2027-01-24",
    "time": "13:00",
@@ -8729,6 +8957,30 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-nlh-progressive-bounty-eur-100-seefeld"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-24",
+   "time": "18:00",
+   "name": "Omaha Tag - Cash Game",
+   "series": null,
+   "buy_in_eur": null,
+   "buy_in_text": null,
+   "guarantee_eur": null,
+   "kind": "cash",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-omaha-tag-cash-game-baden"
+  },
+  {
+   "venue_id": "casino-baden-baden-bei-wien",
+   "date": "2027-01-24",
+   "time": "18:00",
+   "name": "Omaha Tag - PLO Bounty Turnier",
+   "series": null,
+   "buy_in_eur": 120,
+   "buy_in_text": "€ 100 + 20",
+   "guarantee_eur": null,
+   "kind": "tournament",
+   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-24-omaha-tag-plo-bounty-turnier-baden"
   },
   {
    "venue_id": "casino-baden-baden-bei-wien",
@@ -8789,258 +9041,6 @@ window.PLE_DATA = {
    "guarantee_eur": null,
    "kind": "tournament",
    "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-26-poker-dienstag-turbo-salzburg"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-27",
-   "time": "18:20",
-   "name": "Wednesday Poker Challenge | NLH Deepstack",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-27-wednesday-poker-challenge-nlh-deepstack-seefeld-1"
-  },
-  {
-   "venue_id": "casino-graz-graz",
-   "date": "2027-01-27",
-   "time": "19:00",
-   "name": "Mittwochsturnier: Beginner Big Stack Freezout",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-27-mittwochsturnier-beginner-big-stack-freezout-graz"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2027-01-27",
-   "time": "19:30",
-   "name": "Poker Mittwoch | NLH",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": 2000,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-27-poker-mittwoch-nlh-salzburg"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-01-28",
-   "time": "18:20",
-   "name": "Mix Game NLH/PLO Wochenturnier",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-28-mix-game-nlh-plo-wochenturnier-innsbruck"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2027-01-28",
-   "time": "19:00",
-   "name": "CAPT Major Satellite",
-   "series": "CAPT",
-   "buy_in_eur": 36,
-   "buy_in_text": "€ 30 + 6",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-28-capt-major-satellite-linz"
-  },
-  {
-   "venue_id": "casino-graz-graz",
-   "date": "2027-01-28",
-   "time": "19:00",
-   "name": "Donnerstagsturnier: Classic Thursday",
-   "series": null,
-   "buy_in_eur": 90,
-   "buy_in_text": "€ 75 + 15",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-28-donnerstagsturnier-classic-thursday-graz"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2027-01-28",
-   "time": "19:30",
-   "name": "Poker Donnerstag | Pot Limit Omaha",
-   "series": null,
-   "buy_in_eur": 90,
-   "buy_in_text": "€ 75 + 15",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-28-poker-donnerstag-pot-limit-omaha-salzburg"
-  },
-  {
-   "venue_id": "casino-linz-linz",
-   "date": "2027-01-29",
-   "time": "17:00",
-   "name": "CAPT Major Day 1",
-   "series": "CAPT",
-   "buy_in_eur": 330,
-   "buy_in_text": "€ 300 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-29-capt-major-day-1-linz"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-29",
-   "time": "17:00",
-   "name": "Winter Cash Game Special",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-29-winter-cash-game-special-seefeld"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-01-29",
-   "time": "17:20",
-   "name": "NLH Weekender Classic Wochenturnier",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-29-nlh-weekender-classic-wochenturnier-innsbruck"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-30",
-   "time": "17:00",
-   "name": "Winter Cash Game Special",
-   "series": null,
-   "buy_in_eur": null,
-   "buy_in_text": null,
-   "guarantee_eur": null,
-   "kind": "cash",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-winter-cash-game-special-seefeld"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2027-01-30",
-   "time": "17:00",
-   "name": "CAPT Major | Day 1",
-   "series": "CAPT",
-   "buy_in_eur": 330,
-   "buy_in_text": "€ 300 + 30",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-capt-major-day-1-baden"
-  },
-  {
-   "venue_id": "casino-seefeld-seefeld-in-tirol",
-   "date": "2027-01-30",
-   "time": "17:20",
-   "name": "Saturday Poker Challenge | NLH Deepstack XL",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-01-30-saturday-poker-challenge-nlh-deepstack-xl-seefeld"
-  },
-  {
-   "venue_id": "casino-baden-baden-bei-wien",
-   "date": "2027-02-01",
-   "time": "18:00",
-   "name": "Beginner",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-01-beginner-baden"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-02-01",
-   "time": "18:20",
-   "name": "NLH Satellite Wochenturnier",
-   "series": null,
-   "buy_in_eur": 48,
-   "buy_in_text": "€ 40 + 8",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-01-nlh-satellite-wochenturnier-innsbruck"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-02-02",
-   "time": "18:20",
-   "name": "NLH Beginner Wochenturnier",
-   "series": null,
-   "buy_in_eur": 36,
-   "buy_in_text": "€ 30 + 6",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-02-nlh-beginner-wochenturnier-innsbruck"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2027-02-02",
-   "time": "19:30",
-   "name": "Poker Dienstag",
-   "series": null,
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-02-poker-dienstag-salzburg"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-02-03",
-   "time": "18:00",
-   "name": "NLH Deepstack XL",
-   "series": "Pokermania",
-   "buy_in_eur": 120,
-   "buy_in_text": "€ 100 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-03-nlh-deepstack-xl-innsbruck"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2027-02-03",
-   "time": "19:30",
-   "name": "Poker Mittwoch | NLH",
-   "series": null,
-   "buy_in_eur": 60,
-   "buy_in_text": "€ 50 + 10",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-03-poker-mittwoch-nlh-salzburg"
-  },
-  {
-   "venue_id": "casino-innsbruck-innsbruck",
-   "date": "2027-02-04",
-   "time": "17:00",
-   "name": "NLH Deepstack XXL",
-   "series": "Pokermania",
-   "buy_in_eur": 150,
-   "buy_in_text": "€ 130 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-04-nlh-deepstack-xxl-innsbruck"
-  },
-  {
-   "venue_id": "casino-salzburg-salzburg",
-   "date": "2027-02-04",
-   "time": "19:30",
-   "name": "Poker Donnerstag | Classic Freezeout",
-   "series": null,
-   "buy_in_eur": 150,
-   "buy_in_text": "€ 130 + 20",
-   "guarantee_eur": null,
-   "kind": "tournament",
-   "url": "https://www.casinos.at/events/poker-kalender/detail/2027-02-04-poker-donnerstag-classic-freezeout-salzburg"
   },
   {
    "venue_id": "banco-casino-bratislava-bratislava",
@@ -9132,14 +9132,14 @@ window.PLE_DATA = {
    "key": "banco_ba",
    "label": "Banco Casino Bratislava",
    "url": "https://www.bancocasino.sk/ba/sk/turnaje",
-   "fetched_at": "2026-11-27T06:32",
+   "fetched_at": "2026-11-27T17:33",
    "rows": 96
   },
   {
    "key": "casinos_at",
    "label": "Casinos Austria",
    "url": "https://www.casinos.at/events/poker-kalender",
-   "fetched_at": "2026-11-27T06:32",
+   "fetched_at": "2026-11-27T17:32",
    "rows": 360
   }
  ]
